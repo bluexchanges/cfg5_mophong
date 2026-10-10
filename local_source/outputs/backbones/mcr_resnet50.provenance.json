@@ -1,0 +1,8 @@
+{
+  "filename": "mcr_resnet50.pth",
+  "bytes": 94345861,
+  "sha256": "21560db9e795384a7b73b0626d33d6525f9d4c5de11fca6ded52089aab14f97c",
+  "revision": "057651ca0b6a27aba390449603f674cd0977f87c",
+  "upstream_repository": "https://github.com/luccachiang/robots-pretrain-robots",
+  "download_url": "https://huggingface.co/GqJiang/robots-pretrain-robots/resolve/057651ca0b6a27aba390449603f674cd0977f87c/mcr_resnet50.pth"
+}

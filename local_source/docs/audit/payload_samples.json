@@ -1,0 +1,2340 @@
+{
+  "generated_utc": "2026-09-27T08:37:40.494735+00:00",
+  "dataset_root": "D:\\Download\\mophong_RH20T\\RH20T_cfg5",
+  "scope": "Directory inventory and bounded samples; not a complete integrity or synchronization audit.",
+  "episode_directories": 2512,
+  "kinds": {
+    "robot": 1321,
+    "human": 1191
+  },
+  "task_count": 104,
+  "users": {
+    "0007": 1445,
+    "0010": 902,
+    "0014": 86,
+    "0020": 78,
+    "0062": 1
+  },
+  "configs": {
+    "0005": 2512
+  },
+  "unexpected_directories": [
+    "task_0001_user_0014_scene_0001_cfg_0005_human_2",
+    "task_0050_user_0007_scene_0005_cfg_0005_human_2",
+    "task_0062_user_0007_scene_0001_cfg_0005_human_2"
+  ],
+  "calibration_directory_exists": true,
+  "trusted_object_payloads": true,
+  "samples": [
+    {
+      "episode": "task_0001_user_0007_scene_0001_cfg_0005",
+      "entries": [
+        "audio_mixed",
+        "cam_036422060215",
+        "cam_037522062165",
+        "cam_104122061850",
+        "cam_104122063678",
+        "cam_104422070042",
+        "cam_104422070044",
+        "cam_105422061350",
+        "cam_135122079702",
+        "cam_f0461559",
+        "metadata.json",
+        "pedal_command",
+        "robot_command",
+        "transformed"
+      ],
+      "npy": [
+        {
+          "file": "cam_036422060215/timestamps.npy",
+          "bytes": 4012,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 2,
+            "keys_first": [
+              "color",
+              "depth"
+            ],
+            "examples": {
+              "color": {
+                "type": "list",
+                "length": 231,
+                "first_values": [
+                  1640002326912,
+                  1640002326992,
+                  1640002327060
+                ]
+              },
+              "depth": {
+                "type": "list",
+                "length": 231,
+                "first_values": [
+                  1640002326912,
+                  1640002326992,
+                  1640002327060
+                ]
+              }
+            }
+          },
+          "timestamp_stats": {
+            "color": {
+              "count": 231,
+              "median_delta_raw_units": 68.0,
+              "strictly_increasing": true
+            },
+            "depth": {
+              "count": 231,
+              "median_delta_raw_units": 68.0,
+              "strictly_increasing": true
+            }
+          }
+        },
+        {
+          "file": "robot_command/tcpcommand_timestamp.npy",
+          "bytes": 10840608,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "<f8",
+            "fortran_order": false,
+            "shape": [
+              193580,
+              7
+            ]
+          },
+          "payload_skipped": "File lớn hơn giới hạn 5 MB"
+        },
+        {
+          "file": "transformed/force_torque.npy",
+          "bytes": 323327,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 9,
+            "keys_first": [
+              "105422061350",
+              "104122063678",
+              "135122079702",
+              "036422060215",
+              "104422070044",
+              "104122061850",
+              "037522062165",
+              "104422070042",
+              "f0461559"
+            ],
+            "examples": {
+              "105422061350": {
+                "type": "list",
+                "length": 270,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002323648,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -2.0168086965502825,
+                          -0.2979919075316286,
+                          0.7333512500769921,
+                          0.7816189554004827,
+                          -0.3508272733653971,
+                          0.4793442473758416
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.5097040140464892,
+                          -2.0830720416472888,
+                          -2.9063874857654675,
+                          1.3163117186221909,
+                          -1.7231113567157894,
+                          1.358701665903137
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002323980,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -2.0253950759458057,
+                          -0.2901908472636171,
+                          0.7349827219625262,
+                          0.7746098652725557,
+                          -0.3525104631031959,
+                          0.47962590580591835
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.5182787174967571,
+                          -2.075265771442533,
+                          -2.9047484822820633,
+                          1.3093039480647084,
+                          -1.724805127240527,
+                          1.3589955238667608
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324049,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.8101573028220539,
+                          -0.05957350600880178,
+                          0.2780917610603437,
+                          0.710937690888378,
+                          0.19571690738690592,
+                          0.2160073523272129
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.6949143976870068,
+                          -1.8481462785384322,
+                          -3.361827348680434,
+                          1.2425718404010815,
+                          -1.170986960838135,
+                          1.0971909439606542
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "104122063678": {
+                "type": "list",
+                "length": 263,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324111,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.40181125693271963,
+                          -0.10131232721190102,
+                          -0.24027719443828927,
+                          -0.8536021078956244,
+                          -0.36792166072650384,
+                          0.1906928240966856
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.49329680177112106,
+                          -2.8557015099653866,
+                          -3.5843176887158825,
+                          -0.5835866724635549,
+                          0.9132473794510632,
+                          -0.8564615412510056
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324244,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -1.9236124335937534,
+                          -1.094432047034877,
+                          -0.9997051790705228,
+                          -0.5513355344626006,
+                          -0.7058544164915259,
+                          0.5063533505375273
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -1.971923522517865,
+                          -3.863781214832712,
+                          -4.348761796353372,
+                          -0.2970502958823223,
+                          0.540146287046013,
+                          -0.5049717844379551
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324315,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -1.9236124335937534,
+                          -1.094432047034877,
+                          -0.9997051790705228,
+                          -0.5513355344626006,
+                          -0.7058544164915259,
+                          0.5063533505375273
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -1.971923522517865,
+                          -3.863781214832712,
+                          -4.348761796353372,
+                          -0.2970502958823223,
+                          0.540146287046013,
+                          -0.5049717844379551
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "135122079702": {
+                "type": "list",
+                "length": 254,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326290,
+                      "zeroed": null,
+                      "raw": null
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326377,
+                      "zeroed": null,
+                      "raw": null
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326444,
+                      "zeroed": null,
+                      "raw": null
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "file": "transformed/force_torque_base.npy",
+          "bytes": 323327,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 9,
+            "keys_first": [
+              "105422061350",
+              "104122063678",
+              "135122079702",
+              "036422060215",
+              "104422070044",
+              "104122061850",
+              "037522062165",
+              "104422070042",
+              "f0461559"
+            ],
+            "examples": {
+              "105422061350": {
+                "type": "list",
+                "length": 270,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002323648,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          2.0086706168422657,
+                          0.08137211297520573,
+                          -0.8079241818940288,
+                          -0.5836812897526447,
+                          -0.7763575370652636,
+                          -0.14270249228832485
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          1.1420167232880551,
+                          -0.12172167681570016,
+                          3.424479108881439,
+                          -0.5517153872393283,
+                          -2.4902337318353513,
+                          -0.20544000940840973
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002323980,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          2.013861692308592,
+                          0.08978688532981159,
+                          -0.8142081690570779,
+                          -0.5765365418072582,
+                          -0.7755106196179499,
+                          -0.14322700274618122
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          1.1471952741880145,
+                          -0.11331020846151135,
+                          3.4181878819032323,
+                          -0.5445676114152451,
+                          -2.4894016939535613,
+                          -0.20597017260167308
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324049,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.7843958815314962,
+                          0.08935643527248174,
+                          -0.33760541170951447,
+                          -0.7259932814186729,
+                          -0.18314064552156795,
+                          -0.17259763531142927
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.07909664115605174,
+                          -0.11580129182628783,
+                          3.896250452870435,
+                          -0.6931616123146896,
+                          -1.8923466053389173,
+                          -0.2399468961989442
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "104122063678": {
+                "type": "list",
+                "length": 263,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324111,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.44530398408615013,
+                          -0.027514016052051476,
+                          0.17434719581274566,
+                          -0.7922275922261605,
+                          0.521747016898969,
+                          -0.02285066016854361
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -1.2830920732567985,
+                          -0.24387680752342894,
+                          4.420396472783355,
+                          -0.7539227995147011,
+                          -1.1519554484879324,
+                          -0.11278124429286743
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324244,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -2.101309686759096,
+                          0.4129982070606184,
+                          1.1451667243729018,
+                          -0.4293290588803441,
+                          0.9344109126279367,
+                          0.03387993513980678
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -2.8981540241290924,
+                          0.19779929940722488,
+                          5.412078667735197,
+                          -0.3986291035459005,
+                          -0.6873802910886612,
+                          -0.05997137651313672
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324315,
+                      "zeroed": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -2.101309686759096,
+                          0.4129982070606184,
+                          1.1451667243729018,
+                          -0.4293290588803441,
+                          0.9344109126279367,
+                          0.03387993513980678
+                        ]
+                      },
+                      "raw": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -2.8981540241290924,
+                          0.19779929940722488,
+                          5.412078667735197,
+                          -0.3986291035459005,
+                          -0.6873802910886612,
+                          -0.05997137651313672
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "135122079702": {
+                "type": "list",
+                "length": 254,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326290,
+                      "zeroed": null,
+                      "raw": null
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326377,
+                      "zeroed": null,
+                      "raw": null
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "zeroed",
+                      "raw"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326444,
+                      "zeroed": null,
+                      "raw": null
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "file": "transformed/gripper.npy",
+          "bytes": 368090,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 9,
+            "keys_first": [
+              "105422061350",
+              "104122063678",
+              "135122079702",
+              "036422060215",
+              "104422070044",
+              "104122061850",
+              "037522062165",
+              "104422070042",
+              "f0461559"
+            ],
+            "examples": {
+              "105422061350": {
+                "type": "dict",
+                "length": 270,
+                "keys_first": [
+                  "1640002323648",
+                  "1640002323980",
+                  "1640002324049",
+                  "1640002324116",
+                  "1640002324183",
+                  "1640002324247",
+                  "1640002324312",
+                  "1640002324377",
+                  "1640002324443",
+                  "1640002324508"
+                ],
+                "examples": {
+                  "1640002323648": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "1640002323980": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "1640002324049": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "104122063678": {
+                "type": "dict",
+                "length": 263,
+                "keys_first": [
+                  "1640002324111",
+                  "1640002324244",
+                  "1640002324315",
+                  "1640002324384",
+                  "1640002324453",
+                  "1640002324521",
+                  "1640002324588",
+                  "1640002324655",
+                  "1640002324722",
+                  "1640002324790"
+                ],
+                "examples": {
+                  "1640002324111": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "1640002324244": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "1640002324315": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "135122079702": {
+                "type": "dict",
+                "length": 254,
+                "keys_first": [
+                  "1640002326290",
+                  "1640002326377",
+                  "1640002326444",
+                  "1640002326507",
+                  "1640002326570",
+                  "1640002326631",
+                  "1640002326693",
+                  "1640002326758",
+                  "1640002326825",
+                  "1640002326891"
+                ],
+                "examples": {
+                  "1640002326290": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "1640002326377": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  },
+                  "1640002326444": {
+                    "type": "dict",
+                    "length": 2,
+                    "keys_first": [
+                      "gripper_command",
+                      "gripper_info"
+                    ],
+                    "examples": {
+                      "gripper_command": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.0,
+                          100,
+                          10
+                        ]
+                      },
+                      "gripper_info": {
+                        "type": "list",
+                        "length": 3,
+                        "first_values": [
+                          0.01,
+                          48,
+                          1
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "file": "transformed/high_freq_data.npy",
+          "bytes": 280,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 0,
+            "keys_first": [],
+            "examples": {}
+          }
+        },
+        {
+          "file": "transformed/joint.npy",
+          "bytes": 288377,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 9,
+            "keys_first": [
+              "036422060215",
+              "037522062165",
+              "104122061850",
+              "104122063678",
+              "104422070042",
+              "104422070044",
+              "105422061350",
+              "135122079702",
+              "f0461559"
+            ],
+            "examples": {
+              "036422060215": {
+                "type": "dict",
+                "length": 231,
+                "keys_first": [
+                  "1640002326912",
+                  "1640002326992",
+                  "1640002327060",
+                  "1640002327127",
+                  "1640002327193",
+                  "1640002327258",
+                  "1640002327322",
+                  "1640002327387",
+                  "1640002327453",
+                  "1640002327519"
+                ],
+                "examples": {
+                  "1640002326912": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.03644248843193054,
+                      0.35039159655570984,
+                      0.00037408762727864087,
+                      -1.7408684492111206,
+                      0.015937628224492073,
+                      1.791770339012146,
+                      0.8380984663963318,
+                      0.022126395255327225,
+                      0.26136425137519836,
+                      0.001387303345836699,
+                      0.1995055377483368,
+                      -0.029241586104035378,
+                      0.004086654167622328,
+                      -0.03911719098687172
+                    ]
+                  },
+                  "1640002326992": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.03644248843193054,
+                      0.35039159655570984,
+                      0.00037408762727864087,
+                      -1.7408684492111206,
+                      0.015937628224492073,
+                      1.791770339012146,
+                      0.8380984663963318,
+                      0.022126395255327225,
+                      0.26136425137519836,
+                      0.001387303345836699,
+                      0.1995055377483368,
+                      -0.029241586104035378,
+                      0.004086654167622328,
+                      -0.03911719098687172
+                    ]
+                  },
+                  "1640002327060": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.03644248843193054,
+                      0.35039159655570984,
+                      0.00037408762727864087,
+                      -1.7408684492111206,
+                      0.015937628224492073,
+                      1.791770339012146,
+                      0.8380984663963318,
+                      0.022126395255327225,
+                      0.26136425137519836,
+                      0.001387303345836699,
+                      0.1995055377483368,
+                      -0.029241586104035378,
+                      0.004086654167622328,
+                      -0.03911719098687172
+                    ]
+                  }
+                }
+              },
+              "037522062165": {
+                "type": "dict",
+                "length": 219,
+                "keys_first": [
+                  "1640002327858",
+                  "1640002327940",
+                  "1640002328010",
+                  "1640002328079",
+                  "1640002328148",
+                  "1640002328214",
+                  "1640002328284",
+                  "1640002328351",
+                  "1640002328420",
+                  "1640002328488"
+                ],
+                "examples": {
+                  "1640002327858": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.05015081539750099,
+                      0.43666502833366394,
+                      0.0003276110510341823,
+                      -1.6988950967788696,
+                      -0.0018654882442206144,
+                      1.816449522972107,
+                      0.8164808750152588,
+                      0.006198406685143709,
+                      0.030077451840043068,
+                      0.00010029188706539571,
+                      0.00281664845533669,
+                      -0.009279100224375725,
+                      0.017662178725004196,
+                      -0.013275607489049435
+                    ]
+                  },
+                  "1640002327940": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.05084708705544472,
+                      0.44197210669517517,
+                      0.000316379388095811,
+                      -1.6995223760604858,
+                      -0.0035401415079832077,
+                      1.8213196992874146,
+                      0.8151080012321472,
+                      0.005023520439863205,
+                      0.038929905742406845,
+                      0.0018384798895567656,
+                      -0.012521873228251934,
+                      -0.018327835947275162,
+                      0.06577791273593903,
+                      -0.01049957424402237
+                    ]
+                  },
+                  "1640002328010": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.051136553287506104,
+                      0.44568267464637756,
+                      0.00031898156157694757,
+                      -1.700289249420166,
+                      -0.004581400193274021,
+                      1.8255690336227417,
+                      0.812823474407196,
+                      -0.004123260732740164,
+                      0.024412553757429123,
+                      -0.0011685444042086601,
+                      -0.010400551371276379,
+                      -0.00040059132152237,
+                      0.05238901823759079,
+                      -0.019850943237543106
+                    ]
+                  }
+                }
+              },
+              "104122061850": {
+                "type": "dict",
+                "length": 223,
+                "keys_first": [
+                  "1640002327544",
+                  "1640002327635",
+                  "1640002327712",
+                  "1640002327784",
+                  "1640002327855",
+                  "1640002327925",
+                  "1640002327994",
+                  "1640002328064",
+                  "1640002328133",
+                  "1640002328199"
+                ],
+                "examples": {
+                  "1640002327544": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.0476505346596241,
+                      0.4225274622440338,
+                      0.0003539439057931304,
+                      -1.7016905546188354,
+                      -0.0010651079937815666,
+                      1.8082764148712158,
+                      0.8223123550415039,
+                      0.009652665816247463,
+                      0.09703081846237183,
+                      0.0007301200530491769,
+                      0.0005016113864257932,
+                      -0.007924540899693966,
+                      0.07743045687675476,
+                      -0.019768904894590378
+                    ]
+                  },
+                  "1640002327635": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.04952397570014,
+                      0.4343959093093872,
+                      0.0003531741676852107,
+                      -1.7004457712173462,
+                      -0.0015801329864189029,
+                      1.816412091255188,
+                      0.8177846670150757,
+                      0.006387066561728716,
+                      0.0432807095348835,
+                      0.0002594968245830387,
+                      0.02343086339533329,
+                      -0.007764208130538464,
+                      0.002312445780262351,
+                      -0.022346388548612595
+                    ]
+                  },
+                  "1640002327712": {
+                    "type": "ndarray",
+                    "shape": [
+                      14
+                    ],
+                    "dtype": "float64",
+                    "first_values": [
+                      0.04952397570014,
+                      0.4343959093093872,
+                      0.0003531741676852107,
+                      -1.7004457712173462,
+                      -0.0015801329864189029,
+                      1.816412091255188,
+                      0.8177846670150757,
+                      0.006387066561728716,
+                      0.0432807095348835,
+                      0.0002594968245830387,
+                      0.02343086339533329,
+                      -0.007764208130538464,
+                      0.002312445780262351,
+                      -0.022346388548612595
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "file": "transformed/tcp.npy",
+          "bytes": 324061,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 9,
+            "keys_first": [
+              "105422061350",
+              "104122063678",
+              "135122079702",
+              "036422060215",
+              "104422070044",
+              "104122061850",
+              "037522062165",
+              "104422070042",
+              "f0461559"
+            ],
+            "examples": {
+              "105422061350": {
+                "type": "list",
+                "length": 270,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002323648,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.055091803903760034,
+                          -0.17073466127973785,
+                          0.609252906064273,
+                          0.9512110552495249,
+                          -0.24654201873964512,
+                          -0.02952823593006304,
+                          0.1831465114320353
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          1.6072032368485614,
+                          -1.257052322703515,
+                          -2.9804014399894228,
+                          0.2869665031195904,
+                          -2.1248020734046555,
+                          1.3966838869606784
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002323980,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.05509281132008631,
+                          -0.17073579427150024,
+                          0.6092488714425143,
+                          0.951210292812664,
+                          -0.24654299625491763,
+                          -0.029531834932050582,
+                          0.18314857512533303
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          1.6083125791868114,
+                          -1.2454384736187263,
+                          -2.9791136689476496,
+                          0.2932736708965077,
+                          -2.1212953030304207,
+                          1.3964938884803244
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324049,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -0.05507986050851593,
+                          -0.1706568767562207,
+                          0.6092903233314556,
+                          0.9506904645937139,
+                          -0.24804883195295266,
+                          -0.028372726037981355,
+                          0.18399566819503532
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.5260364828526743,
+                          -1.9072132621354394,
+                          -3.3595024930436574,
+                          -0.04315173710754183,
+                          -1.6771325972780502,
+                          1.1420978010888188
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "104122063678": {
+                "type": "list",
+                "length": 263,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324111,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.006365394669759855,
+                          -0.06560437970867602,
+                          0.7596925397027422,
+                          0.028074952276799677,
+                          -0.11236424505439736,
+                          0.36050303900360836,
+                          0.9255396438603662
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          2.0937220982016473,
+                          -2.8612982779102683,
+                          -2.9453363275910593,
+                          0.8722532539192419,
+                          0.9275809925106981,
+                          -0.535619562146052
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324244,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.006015245114421308,
+                          -0.06556517816470231,
+                          0.7598156226654574,
+                          0.02038606372399115,
+                          -0.12332051902753872,
+                          0.3602313902603228,
+                          0.9244510822448824
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          3.910676952737357,
+                          -3.7587361129160763,
+                          -2.882277818144088,
+                          0.46510984360298024,
+                          0.5546222750609417,
+                          -0.3332571952136345
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324315,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.006015245114421308,
+                          -0.06556517816470231,
+                          0.7598156226654574,
+                          0.02038606372399115,
+                          -0.12332051902753872,
+                          0.3602313902603228,
+                          0.9244510822448824
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          3.910676952737357,
+                          -3.7587361129160763,
+                          -2.882277818144088,
+                          0.46510984360298024,
+                          0.5546222750609417,
+                          -0.3332571952136345
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "135122079702": {
+                "type": "list",
+                "length": 254,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326290,
+                      "tcp": null,
+                      "robot_ft": null
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326377,
+                      "tcp": null,
+                      "robot_ft": null
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326444,
+                      "tcp": null,
+                      "robot_ft": null
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "file": "transformed/tcp_base.npy",
+          "bytes": 387901,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 9,
+            "keys_first": [
+              "105422061350",
+              "104122063678",
+              "135122079702",
+              "036422060215",
+              "104422070044",
+              "104122061850",
+              "037522062165",
+              "104422070042",
+              "f0461559"
+            ],
+            "examples": {
+              "105422061350": {
+                "type": "list",
+                "length": 270,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002323648,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.4994475543498993,
+                          8.964206790551543e-05,
+                          0.298816055059433,
+                          0.0015087904143429242,
+                          0.0005598905804459374,
+                          -0.999998647578407,
+                          0.00033899171218084866
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -1.1315397024154663,
+                          -0.1253174990415573,
+                          3.427825689315796,
+                          0.5538784861564636,
+                          -2.489474296569824,
+                          -0.2087962031364441
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002323980,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.4994487762451172,
+                          9.099915041588247e-05,
+                          0.29881995916366577,
+                          0.001505015275940859,
+                          0.0005586450683421381,
+                          -0.9999986545440754,
+                          0.00033727547428036487
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          -1.1367727518081665,
+                          -0.11689301580190659,
+                          3.4215476512908936,
+                          0.5467236042022705,
+                          -2.488651990890503,
+                          -0.20929156243801117
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324049,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.4994092285633087,
+                          0.00013072261936031282,
+                          0.2987494468688965,
+                          0.0026594858448144654,
+                          -0.0006749450101225884,
+                          -0.9999957521992746,
+                          -0.0009834468372035743
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.09966886788606644,
+                          -0.10825865715742111,
+                          3.8959953784942627,
+                          0.6893300414085388,
+                          -1.893751621246338,
+                          -0.23990018665790558
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "104122063678": {
+                "type": "list",
+                "length": 263,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324111,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.49923011660575867,
+                          0.0002601433952804655,
+                          0.29860982298851013,
+                          0.011428140337308379,
+                          -0.00624886699058087,
+                          -0.9998873163508527,
+                          -0.007463502559454033
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          1.3810855150222778,
+                          -0.19473890960216522,
+                          4.3932204246521,
+                          0.7368803024291992,
+                          -1.1629542112350464,
+                          -0.11254099011421204
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324244,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.4989158511161804,
+                          0.0003656518820207566,
+                          0.2984383702278137,
+                          0.024469402254824867,
+                          -0.009268019531117323,
+                          -0.9996211455894788,
+                          -0.008539171952888554
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          3.1633849143981934,
+                          0.23276498913764954,
+                          5.260022163391113,
+                          0.3826907277107239,
+                          -0.6957113742828369,
+                          -0.06728211790323257
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002324315,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.4989158511161804,
+                          0.0003656518820207566,
+                          0.2984383702278137,
+                          0.024469402254824867,
+                          -0.009268019531117323,
+                          -0.9996211455894788,
+                          -0.008539171952888554
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          3.1633849143981934,
+                          0.23276498913764954,
+                          5.260022163391113,
+                          0.3826907277107239,
+                          -0.6957113742828369,
+                          -0.06728211790323257
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "135122079702": {
+                "type": "list",
+                "length": 254,
+                "first_values": [
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326290,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.553170382976532,
+                          0.02056628093123436,
+                          0.2705969214439392,
+                          0.13547310041484842,
+                          -0.020605007534883615,
+                          -0.990566647796167,
+                          -0.000434743993936547
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          2.5086143016815186,
+                          0.5267372727394104,
+                          4.376758098602295,
+                          0.02028260938823223,
+                          -1.3413642644882202,
+                          -0.1365886926651001
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326377,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.553170382976532,
+                          0.02056628093123436,
+                          0.2705969214439392,
+                          0.13547310041484842,
+                          -0.020605007534883615,
+                          -0.990566647796167,
+                          -0.000434743993936547
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          2.5086143016815186,
+                          0.5267372727394104,
+                          4.376758098602295,
+                          0.02028260938823223,
+                          -1.3413642644882202,
+                          -0.1365886926651001
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "dict",
+                    "length": 3,
+                    "keys_first": [
+                      "timestamp",
+                      "tcp",
+                      "robot_ft"
+                    ],
+                    "examples": {
+                      "timestamp": 1640002326444,
+                      "tcp": {
+                        "type": "ndarray",
+                        "shape": [
+                          7
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          0.5591537356376648,
+                          0.022339778020977974,
+                          0.2673383951187134,
+                          0.13753203560062424,
+                          -0.01992799018540623,
+                          -0.990296596779468,
+                          0.0006817607517466829
+                        ]
+                      },
+                      "robot_ft": {
+                        "type": "ndarray",
+                        "shape": [
+                          6
+                        ],
+                        "dtype": "float64",
+                        "first_values": [
+                          2.2978882789611816,
+                          0.4934632182121277,
+                          5.281894207000732,
+                          -0.4336828589439392,
+                          -1.5922585725784302,
+                          -0.008159780874848366
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "metadata": {
+        "finish_time": 1640002341257,
+        "rating": 9,
+        "calib_quality": 2,
+        "calib": 1640002326600,
+        "action": 1639120789274
+      }
+    },
+    {
+      "episode": "task_0001_user_0010_scene_0001_cfg_0005_human",
+      "entries": [
+        "audio_mixed",
+        "cam_036422060215",
+        "cam_037522062165",
+        "cam_104122061850",
+        "cam_104122063678",
+        "cam_104422070044",
+        "cam_104422071090",
+        "cam_105422061350",
+        "cam_f0461559",
+        "metadata.json"
+      ],
+      "npy": [
+        {
+          "file": "cam_036422060215/timestamps.npy",
+          "bytes": 1804,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          },
+          "payload_sample": {
+            "type": "dict",
+            "length": 2,
+            "keys_first": [
+              "color",
+              "depth"
+            ],
+            "examples": {
+              "color": {
+                "type": "list",
+                "length": 93,
+                "first_values": [
+                  1641974453808,
+                  1641974453937,
+                  1641974454005
+                ]
+              },
+              "depth": {
+                "type": "list",
+                "length": 93,
+                "first_values": [
+                  1641974453808,
+                  1641974453937,
+                  1641974454005
+                ]
+              }
+            }
+          },
+          "timestamp_stats": {
+            "color": {
+              "count": 93,
+              "median_delta_raw_units": 68.0,
+              "strictly_increasing": true
+            },
+            "depth": {
+              "count": 93,
+              "median_delta_raw_units": 68.0,
+              "strictly_increasing": true
+            }
+          }
+        }
+      ],
+      "metadata": {
+        "calib": 1641974450000,
+        "calib_quality": 0,
+        "start_time": 1641974456995,
+        "end_time": 1641974459401
+      }
+    }
+  ],
+  "robot_file_availability": {
+    "joint.npy": {
+      "present": 1317,
+      "missing_episodes": [
+        "task_0039_user_0007_scene_0005_cfg_0005",
+        "task_0043_user_0007_scene_0009_cfg_0005",
+        "task_0060_user_0007_scene_0008_cfg_0005",
+        "task_0106_user_0007_scene_0005_cfg_0005"
+      ]
+    },
+    "gripper.npy": {
+      "present": 1321,
+      "missing_episodes": []
+    },
+    "tcp.npy": {
+      "present": 1321,
+      "missing_episodes": []
+    },
+    "tcp_base.npy": {
+      "present": 1321,
+      "missing_episodes": []
+    }
+  }
+}

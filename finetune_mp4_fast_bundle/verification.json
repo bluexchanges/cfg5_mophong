@@ -1,0 +1,9 @@
+{
+  "cpu_test_suite_run": 27,
+  "passed": 22,
+  "skipped_cuda": 5,
+  "cuda_gate": "required_on_server",
+  "full_benchmark": "not_run",
+  "server_uploaded": false,
+  "server_job_changed": false
+}

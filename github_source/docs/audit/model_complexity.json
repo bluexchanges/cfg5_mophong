@@ -1,0 +1,140 @@
+{
+  "torch": "2.7.1+cpu",
+  "model_config": "F:\\cfg5_mophong\\local_source\\configs\\act\\rh20t_all8.json",
+  "model_config_hash": "8c0d868b8e49d9c50f9e72c3e3d6902e24aa16b2694b43d2bb02b6a7e1940b56",
+  "data_config_hash": "de250bbb344778b840d2850597f0a2b514b70ca2f4359ac9f7f37d007bdc1165",
+  "method": "FakeTensorMode + FlopCounterMode; multiply+add=2 FLOPs",
+  "limitations": "Major conv/matmul only; excludes optimizer, I/O, softmax, norms, elementwise ops. Not a GPU latency benchmark.",
+  "parameters": 83873929,
+  "trainable_parameters": 83873929,
+  "parameter_groups": {
+    "transformer": 55031680,
+    "encoder": 17332736,
+    "action_head": 4104,
+    "is_pad_head": 513,
+    "query_embed": 10240,
+    "input_proj": 262656,
+    "backbones": 11166912,
+    "input_proj_robot_state": 4608,
+    "cls_embed": 512,
+    "encoder_action_proj": 4608,
+    "encoder_joint_proj": 4608,
+    "latent_proj": 32832,
+    "latent_out_proj": 16896,
+    "additional_pos_embed": 1024
+  },
+  "passes": [
+    {
+      "mode": "inference",
+      "batch_size": 1,
+      "output_shape": [
+        1,
+        20,
+        8
+      ],
+      "forward_flops": 249723629568,
+      "backward_flops": 0,
+      "total_flops": 249723629568,
+      "operator_counts": {
+        "aten.addmm": 81972654080,
+        "aten.convolution": 136932229120,
+        "aten.bmm": 30818746368
+      }
+    },
+    {
+      "mode": "validation",
+      "batch_size": 1,
+      "output_shape": [
+        1,
+        20,
+        8
+      ],
+      "forward_flops": 250489098240,
+      "backward_flops": 0,
+      "total_flops": 250489098240,
+      "operator_counts": {
+        "aten.addmm": 82734157824,
+        "aten.baddbmm": 1982464,
+        "aten.bmm": 30820728832,
+        "aten.convolution": 136932229120
+      }
+    },
+    {
+      "mode": "train",
+      "batch_size": 1,
+      "output_shape": [
+        1,
+        20,
+        8
+      ],
+      "forward_flops": 250489098240,
+      "backward_flops": 492297076736,
+      "total_flops": 742786174976,
+      "operator_counts": {
+        "aten.addmm": 82734157824,
+        "aten.baddbmm": 1982464,
+        "aten.bmm": 92466151424,
+        "aten.convolution": 136932229120,
+        "aten.mm": 165457608704,
+        "aten.convolution_backward": 265194045440
+      }
+    },
+    {
+      "mode": "inference",
+      "batch_size": 8,
+      "output_shape": [
+        8,
+        20,
+        8
+      ],
+      "forward_flops": 1997789036544,
+      "backward_flops": 0,
+      "total_flops": 1997789036544,
+      "operator_counts": {
+        "aten.addmm": 655779758080,
+        "aten.convolution": 1095457832960,
+        "aten.bmm": 246549970944,
+        "aten.mm": 1474560
+      }
+    },
+    {
+      "mode": "validation",
+      "batch_size": 8,
+      "output_shape": [
+        8,
+        20,
+        8
+      ],
+      "forward_flops": 2003912785920,
+      "backward_flops": 0,
+      "total_flops": 2003912785920,
+      "operator_counts": {
+        "aten.addmm": 661594963968,
+        "aten.mm": 278298624,
+        "aten.baddbmm": 15859712,
+        "aten.bmm": 246565830656,
+        "aten.convolution": 1095457832960
+      }
+    },
+    {
+      "mode": "train",
+      "batch_size": 8,
+      "output_shape": [
+        8,
+        20,
+        8
+      ],
+      "forward_flops": 2003912785920,
+      "backward_flops": 3938376613888,
+      "total_flops": 5942289399808,
+      "operator_counts": {
+        "aten.addmm": 661594963968,
+        "aten.mm": 1323939168256,
+        "aten.baddbmm": 15859712,
+        "aten.bmm": 739729211392,
+        "aten.convolution": 1095457832960,
+        "aten.convolution_backward": 2121552363520
+      }
+    }
+  ]
+}

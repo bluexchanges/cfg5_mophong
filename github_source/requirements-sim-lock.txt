@@ -1,0 +1,12 @@
+# Verified Windows CPython 3.12.14; no Torch/model checkpoints.
+absl-py==2.5.0
+etils==1.14.0
+fsspec==2026.9.0
+glfw==2.10.2
+mujoco==3.14.0
+numpy==2.5.3
+opencv-python-headless==4.14.0.94
+PyOpenGL==3.1.10
+typing_extensions==4.16.0
+websockets==17.1
+zipp==4.1.0

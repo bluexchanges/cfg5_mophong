@@ -1,0 +1,179 @@
+{
+  "verified_at_utc": "2026-09-27T16:08:47.700536+00:00",
+  "config": "configs/mujoco/panda_three_pegs.json",
+  "alias": "configs/mujoco/precision_pick_place.json",
+  "alias_matches": true,
+  "config_hash": "3000c4a73e575cf2060fa3a44ce6546d3aa2d7e9ddf0f867481ac4813b62f44d",
+  "dimensions_m": {
+    "hole_floor_z_m": 0.004,
+    "hole_mouth_z_m": 0.016,
+    "upright_seated_center_z_m": 0.021500000000000002,
+    "upright_seated_top_z_m": 0.03900000000000001,
+    "upright_protrusion_m": 0.023000000000000003,
+    "radial_clearance_m": 0.0005
+  },
+  "unit_tests": {
+    "passed": 27,
+    "failed": 0,
+    "log": "docs/audit/placement_unit_tests.txt"
+  },
+  "controller_smoke": {
+    "mode": "scripted_controller_privileged_state",
+    "act_model_used": false,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "episodes": 3,
+    "successful_episodes": 3,
+    "success_rate": 1.0,
+    "config_hash": "3000c4a73e575cf2060fa3a44ce6546d3aa2d7e9ddf0f867481ac4813b62f44d",
+    "scope": "engineering smoke checks; not ACT or statistical generalization evidence"
+  },
+  "controller_metrics": [
+    {
+      "seed": 42,
+      "sim_time_s": 49.69999999997429,
+      "objects": [
+        {
+          "object": "peg_0",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.02299885793754023,
+          "protrusion_error_m": -1.1420624597725804e-06,
+          "bottom_height_error_m": -1.2607665013661742e-06,
+          "floor_support_force_n": 0.04904971284181635,
+          "tilt_deg": 0.0011336055162447375,
+          "stable_seconds": 34.33000000000174
+        },
+        {
+          "object": "peg_1",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.02299885863328332,
+          "protrusion_error_m": -1.1413667166844388e-06,
+          "bottom_height_error_m": -1.2666334909391605e-06,
+          "floor_support_force_n": 0.04904545565384225,
+          "tilt_deg": 0.0011962824300524647,
+          "stable_seconds": 17.45999999999993
+        },
+        {
+          "object": "peg_2",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.022998964292894823,
+          "protrusion_error_m": -1.0357071051798894e-06,
+          "bottom_height_error_m": -1.4006141555089266e-06,
+          "floor_support_force_n": 0.04904656234644843,
+          "tilt_deg": 0.0034852239889167263,
+          "stable_seconds": 0.5700000000000003
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "sim_time_s": 49.69999999997429,
+      "objects": [
+        {
+          "object": "peg_0",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.022998931172666527,
+          "protrusion_error_m": -1.0688273334759357e-06,
+          "bottom_height_error_m": -1.3532959766580574e-06,
+          "floor_support_force_n": 0.04905157083959117,
+          "tilt_deg": 0.0027168511914537068,
+          "stable_seconds": 34.32000000000174
+        },
+        {
+          "object": "peg_1",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.022998888293345628,
+          "protrusion_error_m": -1.1117066543754606e-06,
+          "bottom_height_error_m": -1.2994752075683527e-06,
+          "floor_support_force_n": 0.04904863345128067,
+          "tilt_deg": 0.0017932212977847296,
+          "stable_seconds": 17.44999999999993
+        },
+        {
+          "object": "peg_2",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.022998938689968704,
+          "protrusion_error_m": -1.0613100312993617e-06,
+          "bottom_height_error_m": -1.367304134820141e-06,
+          "floor_support_force_n": 0.04905196824539396,
+          "tilt_deg": 0.002922463222148276,
+          "stable_seconds": 0.5600000000000003
+        }
+      ]
+    },
+    {
+      "seed": 44,
+      "sim_time_s": 49.69999999997429,
+      "objects": [
+        {
+          "object": "peg_0",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.022998921376418062,
+          "protrusion_error_m": -1.078623581941135e-06,
+          "bottom_height_error_m": -1.3359855922535219e-06,
+          "floor_support_force_n": 0.04905659972887065,
+          "tilt_deg": 0.002457933709059863,
+          "stable_seconds": 34.37000000000173
+        },
+        {
+          "object": "peg_1",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.022998938718951818,
+          "protrusion_error_m": -1.0612810481848423e-06,
+          "bottom_height_error_m": -1.357301036078451e-06,
+          "floor_support_force_n": 0.049055823134270704,
+          "tilt_deg": 0.0028271895481764508,
+          "stable_seconds": 17.439999999999927
+        },
+        {
+          "object": "peg_2",
+          "task_success": true,
+          "expected_protrusion_m": 0.023000000000000003,
+          "protrusion_above_mouth_m": 0.02299888890312471,
+          "protrusion_error_m": -1.1110968752940653e-06,
+          "bottom_height_error_m": -1.3012084358237155e-06,
+          "floor_support_force_n": 0.049049124287799034,
+          "tilt_deg": 0.0018155994809523847,
+          "stable_seconds": 0.5200000000000002
+        }
+      ]
+    }
+  ],
+  "camera_check": {
+    "report": "docs/audit/placement_camera_check.json",
+    "headless_render_passed": true,
+    "policy_camera_count": 8,
+    "max_projection_error_pixels": 0.22121576325449502
+  },
+  "act_model_used": false,
+  "scope": "Geometry/contact regression and three-seed engineering smoke only; no training or ACT evaluation.",
+  "sha256": {
+    "configs/mujoco/cfg5_camera_rig.json": "d823bd8c166c632900cd41a9850360192d93b41519ebf9f9d7f9b01c71c0270c",
+    "configs/mujoco/panda_three_pegs.json": "4ee8a2caab7e2958e2c0b2af1679b7d643e19e86bc823b09b1b6d6c951c3ae74",
+    "configs/mujoco/precision_pick_place.json": "b62d49075be43b6d1eee0b1d6194c5140c56e847573be1b05300a2b009ba1083",
+    "src/simulation/__init__.py": "fbee6791e64a45efd058191f4c01acc824be67ff47bbb29f2a26358fbb825adc",
+    "src/simulation/camera_rig.py": "e3b39dd01b643f1c5d8aea5bfa0c95af00e33e8fe160853bec95c3d80df8456b",
+    "src/simulation/config_validation.py": "21397e89967dc4faa82894e8ba5f964ec19310bcfac99381af9a7ca6fb15170c",
+    "src/simulation/panda_controller.py": "94aca7e5e98ed50866225412659b9cd604fa6882bb5b865f3d766c7129272d1b",
+    "src/simulation/panda_demo.py": "6b22eb131063d87e94fd4202c2a98d1ec39a3956ead607880d240edddf29497b",
+    "src/simulation/panda_env.py": "086d664ff140e83eb1aeb5bf0167d50bd77da629ffb4a09630d3858b872a3a3f",
+    "src/simulation/panda_evaluator.py": "9fc6777221de5f5710b754e98b596cfcd0e19c36509c413572bdd26435a73f11",
+    "src/simulation/panda_observation.py": "6a3917dccf4dbf4803c88b068c4345691a65806b7f6f946fbdae29c3aa1aba6a",
+    "src/simulation/scene_builder.py": "06ef8beebfe3ba5a384c1ce806484a36a78c49f44a4e32575f7f977e711360ff",
+    "src/simulation/task_geometry.py": "1fe2e09c45e0986782846d64f796c9e474ee19a264b860ba2fd5e5538a9ff3c3",
+    "tests/test_data_pipeline.py": "7fde93240db20f31a3c7a0247152a90c11a2e61f9ce0455ef85295f893145752",
+    "tests/test_placement_logic.py": "3ef06bc3761de43427b4b566febf878fa1dee293104b488699996362e631c89e",
+    "tests/test_simulation.py": "849dff214b1078f7984dd3d2e18a21e6c6d8cd42d645133c470c2f8fb0a3b572"
+  }
+}

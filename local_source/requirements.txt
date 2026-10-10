@@ -1,0 +1,4 @@
+# Lượt 3: dữ liệu + MuJoCo/controller, chưa gồm Torch/training.
+-r requirements-sim-lock.txt
+
+# Optional ACT integration: see requirements-act-lock.txt and docs/ACT_SETUP_VI.md.

@@ -1,0 +1,16 @@
+[
+  {
+    "file": "references\\papers\\2304.13705v1.pdf",
+    "original_path": "D:\\Download\\2304.13705v1.pdf",
+    "sha256": "2e2fe25860f5f9cee9e655a2714e9f2264a7a5078bcd267c16d3f39af461345a",
+    "pages": 18,
+    "text_file": "references\\extracted\\2304.13705v1.txt"
+  },
+  {
+    "file": "references\\papers\\RH20T_paper_compressed (1).pdf",
+    "original_path": "D:\\Download\\RH20T_paper_compressed (1).pdf",
+    "sha256": "b1030bb17e18e09a29327cf05fd24ed2d74acf5809419840fe21c388cd5170cc",
+    "pages": 15,
+    "text_file": "references\\extracted\\RH20T_paper_compressed (1).txt"
+  }
+]

@@ -1,0 +1,360 @@
+{
+  "schema_version": 2,
+  "task": "three_color_matched_pegs",
+  "placement_goal": "bottom_seated_with_protrusion",
+  "height_reference": "peg_top_relative_to_hole_mouth",
+  "protrusion_target_rule": "peg_length_m - hole_depth_m",
+  "protrusion_tolerance_m": 0.0005,
+  "units": {
+    "length": "metre",
+    "time": "second",
+    "force": "newton",
+    "angles": "radian_except_keys_ending_deg"
+  },
+  "robot_xml": "mujoco/models/franka_emika_panda/panda.xml",
+  "scene_xml": "/home/user08/cfg5-pretrain/edabk-physical-ai-robot/04-Src/software/cfg5_act/outputs/epoch5_transfer_probe_14120/pick_place_000461/scene.xml",
+  "camera_rig": "configs/mujoco/cfg5_camera_rig.json",
+  "data_config": "configs/data/cfg5_base8.json",
+  "timestep_s": 0.001,
+  "control_hz": 10,
+  "evaluation_hz": 100,
+  "solver_iterations": 100,
+  "table_surface_z_m": 0.0,
+  "table_center_xy_m": [
+    0.45,
+    0.0
+  ],
+  "table_half_size_m": [
+    0.4,
+    0.4,
+    0.025
+  ],
+  "home_joints_rad": [
+    0.0,
+    -0.4,
+    0.0,
+    -2.2,
+    0.0,
+    1.8,
+    0.7853981634
+  ],
+  "tcp_in_hand_pos_m": [
+    0.0,
+    0.0,
+    0.1034
+  ],
+  "tcp_in_hand_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "tcp_mapping_note": "Virtual aligned TCP at Panda grasp centre, axes of Menagerie hand. Matches the policy base/xyz/wxyz convention; physical RH20T factory EE offset not independently calibrated.",
+  "workspace_min_m": [
+    0.22,
+    -0.28,
+    0.012
+  ],
+  "workspace_max_m": [
+    0.72,
+    0.28,
+    0.65
+  ],
+  "gripper_width_range_m": [
+    0.0,
+    0.08
+  ],
+  "gripper_force_limit_n": 20.0,
+  "finger_friction": [
+    1.2,
+    0.01,
+    0.0001
+  ],
+  "gravity_compensation": true,
+  "peg_radius_m": 0.003,
+  "peg_length_m": 0.035,
+  "peg_mass_kg": 0.005,
+  "peg_initial_xy_m": [
+    [
+      0.363855,
+      -0.075335
+    ],
+    [
+      0.364335,
+      0.004031
+    ],
+    [
+      0.357774,
+      0.075812
+    ]
+  ],
+  "peg_colors_rgba": [
+    [
+      0.9017,
+      0.6156,
+      0.1028,
+      1.0
+    ],
+    [
+      0.0641,
+      0.7695,
+      0.7903,
+      1.0
+    ],
+    [
+      0.6692,
+      0.221,
+      0.7312,
+      1.0
+    ]
+  ],
+  "initial_xy_jitter_m": 0.001,
+  "mold_center_xy_m": [
+    0.533598,
+    -0.002738
+  ],
+  "hole_offsets_xy_m": [
+    [
+      0,
+      -0.075
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0.075
+    ]
+  ],
+  "hole_radius_m": 0.003685,
+  "hole_depth_m": 0.012,
+  "hole_wall_segments": 32,
+  "mold_cell_half_xy_m": [
+    0.02,
+    0.0375
+  ],
+  "mold_floor_thickness_m": 0.004,
+  "contact_solref": [
+    0.003,
+    1.0
+  ],
+  "contact_solimp": [
+    0.95,
+    0.99,
+    0.0001
+  ],
+  "placement_margin_m": 0.0,
+  "drop_table_height_tolerance_m": 0.001,
+  "max_bottom_gap_m": 0.0005,
+  "max_floor_penetration_m": 0.0001,
+  "min_floor_support_force_n": 0.001,
+  "placement_notes_vi": "Mục tiêu độ nhô = chiều cao vật - độ sâu lỗ: 35 - 12 = 23 mm. protrusion_tolerance_m=0.0005 nghĩa là độ nhô thực tế 22.5..23.5 mm. Không chấm theo độ nhô một mình: phải đúng lỗ, đứng trong giới hạn góc nghiêng, chạm đáy có lực đỡ và không chạm robot. max_bottom_gap_m và max_floor_penetration_m là kiểm tra đáy riêng, không phải độ nhô mục tiêu.",
+  "tilt_tolerance_deg": 3.0,
+  "stable_linear_speed_m_s": 0.005,
+  "stable_angular_speed_rad_s": 0.1,
+  "stable_seconds": 0.5,
+  "lift_height_m": 0.02,
+  "grasp_contact_force_n": 0.005,
+  "grasp_hold_seconds": 0.1,
+  "release_clearance_m": 0.006,
+  "episode_seconds": 70.0,
+  "reset_settle_seconds": 0.25,
+  "controller": {
+    "ik_iterations": 80,
+    "ik_damping": 0.002,
+    "ik_position_tolerance_m": 5e-05,
+    "ik_rotation_tolerance_rad": 0.0005,
+    "ik_max_joint_delta_rad": 0.12,
+    "max_joint_speed_rad_s": 1.0,
+    "max_translation_per_step_m": 0.025
+  },
+  "demo": {
+    "seed": 42,
+    "down_quaternion_wxyz": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "grasp_height_above_surface_m": 0.026,
+    "hover_z_m": 0.16,
+    "open_width_m": 0.04,
+    "closed_width_m": 0.001,
+    "move_speed_m_s": 0.08,
+    "insertion_speed_m_s": 0.008,
+    "insertion_entry_clearance_m": 0.004,
+    "waypoint_settle_seconds": 0.3,
+    "grasp_seconds": 0.5,
+    "release_seconds": 0.6
+  },
+  "render": {
+    "width": 640,
+    "height": 360,
+    "preview_width": 1280,
+    "preview_height": 720,
+    "video_fps": 10
+  },
+  "table_rgba": [
+    0.7697,
+    0.7797,
+    0.8206,
+    1.0
+  ],
+  "table_pattern": "solid",
+  "table_pattern_rgb2": [
+    0.5616,
+    0.5689,
+    0.5988
+  ],
+  "floor_rgba": [
+    0.1659,
+    0.1541,
+    0.2625,
+    1.0
+  ],
+  "lighting": {
+    "head_ambient_rgb": [
+      0.1185,
+      0.1328,
+      0.147
+    ],
+    "head_diffuse_rgb": [
+      0.1849,
+      0.1991,
+      0.2134
+    ],
+    "main_diffuse_rgb": [
+      0.2513,
+      0.2655,
+      0.2798
+    ],
+    "fill_diffuse_rgb": [
+      0.2745,
+      0.1991,
+      0.1238
+    ],
+    "fill_pos_m": [
+      0.808,
+      -0.5131,
+      1.4473
+    ]
+  },
+  "distractors": [
+    {
+      "shape": "box",
+      "xy_m": [
+        0.51032,
+        0.21784
+      ],
+      "size_m": [
+        0.01155,
+        0.01155,
+        0.01053
+      ],
+      "rgba": [
+        0.3483,
+        0.5901,
+        0.5708,
+        1.0
+      ],
+      "yaw_deg": -41.96
+    },
+    {
+      "shape": "sphere",
+      "xy_m": [
+        0.28368,
+        0.27004
+      ],
+      "size_m": [
+        0.01425,
+        0.01425,
+        0.01098
+      ],
+      "rgba": [
+        0.7086,
+        0.5846,
+        0.1771,
+        1.0
+      ],
+      "yaw_deg": -36.01
+    },
+    {
+      "shape": "box",
+      "xy_m": [
+        0.46579,
+        -0.30928
+      ],
+      "size_m": [
+        0.01176,
+        0.01176,
+        0.01495
+      ],
+      "rgba": [
+        0.207,
+        0.253,
+        0.299,
+        1.0
+      ],
+      "yaw_deg": 74.95
+    },
+    {
+      "shape": "box",
+      "xy_m": [
+        0.56042,
+        -0.24552
+      ],
+      "size_m": [
+        0.01607,
+        0.01607,
+        0.01365
+      ],
+      "rgba": [
+        0.1478,
+        0.1806,
+        0.2134,
+        1.0
+      ],
+      "yaw_deg": -73.02
+    },
+    {
+      "shape": "box",
+      "xy_m": [
+        0.30993,
+        -0.30463
+      ],
+      "size_m": [
+        0.01434,
+        0.01434,
+        0.00624
+      ],
+      "rgba": [
+        0.8891,
+        0.7335,
+        0.2223,
+        1.0
+      ],
+      "yaw_deg": 15.86
+    },
+    {
+      "shape": "cylinder",
+      "xy_m": [
+        0.39245,
+        0.25504
+      ],
+      "size_m": [
+        0.01502,
+        0.01502,
+        0.01743
+      ],
+      "rgba": [
+        0.4287,
+        0.7265,
+        0.7026,
+        1.0
+      ],
+      "yaw_deg": 86.49
+    }
+  ],
+  "table_texrepeat": 6.72
+}

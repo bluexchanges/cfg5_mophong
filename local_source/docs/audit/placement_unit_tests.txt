@@ -1,0 +1,32 @@
+test_causal_sampling_no_future (test_data_pipeline.DataPipelineTests.test_causal_sampling_no_future) ... ok
+test_chunks_never_cross_gap (test_data_pipeline.DataPipelineTests.test_chunks_never_cross_gap) ... ok
+test_gap_starts_new_segment (test_data_pipeline.DataPipelineTests.test_gap_starts_new_segment) ... ok
+test_preprocess_future_mask_rgb_and_train_stats (test_data_pipeline.DataPipelineTests.test_preprocess_future_mask_rgb_and_train_stats) ... ok
+test_quaternion_sign_and_zero (test_data_pipeline.DataPipelineTests.test_quaternion_sign_and_zero) ... ok
+test_split_determinism_leakage_and_stats_contract (test_data_pipeline.DataPipelineTests.test_split_determinism_leakage_and_stats_contract) ... ok
+test_two_wrist_cameras_move_six_fixed_do_not (test_data_pipeline.DataPipelineTests.test_two_wrist_cameras_move_six_fixed_do_not) ... ok
+test_video_count_mismatch_rejected (test_data_pipeline.DataPipelineTests.test_video_count_mismatch_rejected) ... ok
+test_config_rejects_impossible_geometry_and_thresholds (test_placement_logic.PlacementLogicTests.test_config_rejects_impossible_geometry_and_thresholds) ... ok
+test_explicit_25_minus_10_and_35_minus_12 (test_placement_logic.PlacementLogicTests.test_explicit_25_minus_10_and_35_minus_12) ... ok
+test_fallen_object_at_correct_top_height_still_fails (test_placement_logic.PlacementLogicTests.test_fallen_object_at_correct_top_height_still_fails) ... ok
+test_floating_inside_height_tolerance_fails_without_support (test_placement_logic.PlacementLogicTests.test_floating_inside_height_tolerance_fails_without_support) ... ok
+test_floor_bounds_follow_offsets_in_both_axes (test_placement_logic.PlacementLogicTests.test_floor_bounds_follow_offsets_in_both_axes) ... ok
+test_invalid_axis_or_nonfinite_is_rejected (test_placement_logic.PlacementLogicTests.test_invalid_axis_or_nonfinite_is_rejected) ... ok
+test_legacy_file_is_alias_not_second_geometry (test_placement_logic.PlacementLogicTests.test_legacy_file_is_alias_not_second_geometry) ... ok
+test_negative_penetration_limit_is_separate (test_placement_logic.PlacementLogicTests.test_negative_penetration_limit_is_separate) ... ok
+test_protrusion_tolerance_is_error_around_target (test_placement_logic.PlacementLogicTests.test_protrusion_tolerance_is_error_around_target) ... ok
+test_stability_counts_elapsed_intervals_not_first_sample (test_placement_logic.PlacementLogicTests.test_stability_counts_elapsed_intervals_not_first_sample) ... ok
+test_tilted_protruding_part_is_not_required_inside_aperture (test_placement_logic.PlacementLogicTests.test_tilted_protruding_part_is_not_required_inside_aperture) ... ok
+test_tipped_or_wrong_hole_never_passes (test_placement_logic.PlacementLogicTests.test_tipped_or_wrong_hole_never_passes) ... ok
+test_weak_robot_contact_is_still_not_released (test_placement_logic.PlacementLogicTests.test_weak_robot_contact_is_still_not_released) ... ok
+test_action_validation (test_simulation.SimulationTests.test_action_validation) ... ok
+test_camera_mounts_follow_actual_kinematics (test_simulation.SimulationTests.test_camera_mounts_follow_actual_kinematics) ... ok
+test_evaluator_geometry_and_history (test_simulation.SimulationTests.test_evaluator_geometry_and_history) ... ok
+test_holes_are_physical_cavities (test_simulation.SimulationTests.test_holes_are_physical_cavities) ... ok
+test_model_names_limits_reset_and_close (test_simulation.SimulationTests.test_model_names_limits_reset_and_close) ... ok
+test_robot_moves_and_gripper_opens_closes (test_simulation.SimulationTests.test_robot_moves_and_gripper_opens_closes) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 1.051s
+
+OK

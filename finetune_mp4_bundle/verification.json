@@ -1,0 +1,20 @@
+{
+  "cpu_fixture_tests_run": 33,
+  "tests_passed": 30,
+  "skipped_cuda_only": 3,
+  "bash_syntax": "passed",
+  "server_upload": "not_done_ssh_auth_unavailable",
+  "server_training": "not_run",
+  "full_dataset_benchmark": "not_run",
+  "checks": [
+    "MP4/NPY image + state/target/pad equality",
+    "episode sharding no lost/duplicate sample",
+    "two spawned persistent workers epoch-order resume",
+    "uint8 cache/cap",
+    "raw/numeric mutation and decode failure refusal",
+    "reduced real ACT optimizer step",
+    "locked split prepare/check/resume with two processes",
+    "installer version/checksum/path guards",
+    "NPY trainer/checkpoint/CUDA-prefetch regression"
+  ]
+}

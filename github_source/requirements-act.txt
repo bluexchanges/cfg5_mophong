@@ -1,0 +1,7 @@
+# CPU model integration check; CUDA training environment is a later decision.
+# Install torch/torchvision from the official CPU index first (see ACT_SETUP_VI.md).
+-r requirements-sim-lock.txt
+torch==2.7.1
+torchvision==0.22.1
+einops==0.8.1
+packaging==25.0

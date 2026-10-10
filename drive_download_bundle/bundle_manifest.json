@@ -1,0 +1,9 @@
+{
+  "created_date": "2026-10-08",
+  "purpose": "Google Drive folder download using existing rclone remote; four concurrent files",
+  "files_sha256": {
+    "download_drive.py": "8ba678675c5f5f700384439681e47a83ede0166f78eb3c7e453c36c5426b35f8",
+    "HUONG_DAN_VI.md": "207ebaaa9fe2fb0ea1712ad3362cd99321ff8ec27758af0f3edaafd9c14fb100"
+  },
+  "verification": "10 fixture tests passed on Linux WSL; no real Google Drive download or cluster benchmark"
+}

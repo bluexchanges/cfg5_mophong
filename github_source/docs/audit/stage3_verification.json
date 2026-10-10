@@ -1,0 +1,256 @@
+{
+  "unit_tests_passed": 14,
+  "unit_tests_returncode": 0,
+  "unit_test_output": "test_causal_sampling_no_future (test_data_pipeline.DataPipelineTests.test_causal_sampling_no_future) ... ok\ntest_chunks_never_cross_gap (test_data_pipeline.DataPipelineTests.test_chunks_never_cross_gap) ... ok\ntest_gap_starts_new_segment (test_data_pipeline.DataPipelineTests.test_gap_starts_new_segment) ... ok\ntest_preprocess_future_mask_rgb_and_train_stats (test_data_pipeline.DataPipelineTests.test_preprocess_future_mask_rgb_and_train_stats) ... ok\ntest_quaternion_sign_and_zero (test_data_pipeline.DataPipelineTests.test_quaternion_sign_and_zero) ... ok\ntest_split_determinism_leakage_and_stats_contract (test_data_pipeline.DataPipelineTests.test_split_determinism_leakage_and_stats_contract) ... ok\ntest_two_wrist_cameras_move_six_fixed_do_not (test_data_pipeline.DataPipelineTests.test_two_wrist_cameras_move_six_fixed_do_not) ... ok\ntest_video_count_mismatch_rejected (test_data_pipeline.DataPipelineTests.test_video_count_mismatch_rejected) ... ok\ntest_action_validation (test_simulation.SimulationTests.test_action_validation) ... ok\ntest_camera_mounts_follow_actual_kinematics (test_simulation.SimulationTests.test_camera_mounts_follow_actual_kinematics) ... ok\ntest_evaluator_geometry_and_history (test_simulation.SimulationTests.test_evaluator_geometry_and_history) ... ok\ntest_holes_are_physical_cavities (test_simulation.SimulationTests.test_holes_are_physical_cavities) ... ok\ntest_model_names_limits_reset_and_close (test_simulation.SimulationTests.test_model_names_limits_reset_and_close) ... ok\ntest_robot_moves_and_gripper_opens_closes (test_simulation.SimulationTests.test_robot_moves_and_gripper_opens_closes) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 1.941s\n\nOK\n",
+  "python_files_parsed": 34,
+  "upstream_source_sha256_matches": 51,
+  "panda_asset_sha256_matches": 71,
+  "panda_asset_bytes": 34320467,
+  "relative_document_links_checked": 21,
+  "viewer_launch_sync_close_smoke_seconds": 2,
+  "example_api_run": true,
+  "camera_check": {
+    "mujoco_version": "3.14.0",
+    "python": "3.12.14",
+    "config_hash": "9922d6f175a034f5f1357972ac7341be57bf81031b6b8ed070d05723bbdd5afa",
+    "nq": 30,
+    "nv": 27,
+    "actuators": 8,
+    "policy_cameras": [
+      "cam_036422060215",
+      "cam_037522062165",
+      "cam_104122061850",
+      "cam_104122063678",
+      "cam_104422070042",
+      "cam_104422070044",
+      "cam_105422061350",
+      "cam_135122079702"
+    ],
+    "debug_cameras": [
+      "overview",
+      "task_closeup"
+    ],
+    "rgb_shape": [
+      8,
+      360,
+      640,
+      3
+    ],
+    "rgb_dtype": "uint8",
+    "policy_images_shape": [
+      8,
+      3,
+      360,
+      640
+    ],
+    "projection_checks": [
+      {
+        "camera": "cam_036422060215",
+        "expected_uv": [
+          337.37860107421875,
+          192.67842590332032
+        ],
+        "rendered_uv": [
+          337.40909090909093,
+          192.5909090909091
+        ],
+        "error_pixels": 0.09267590023924449
+      },
+      {
+        "camera": "cam_037522062165",
+        "expected_uv": [
+          336.3721179199219,
+          192.6571044921875
+        ],
+        "rendered_uv": [
+          336.40909090909093,
+          192.5909090909091
+        ],
+        "error_pixels": 0.07582105959760459
+      },
+      {
+        "camera": "cam_104122061850",
+        "expected_uv": [
+          338.48542724609376,
+          184.74160583496095
+        ],
+        "rendered_uv": [
+          338.5,
+          184.67391304347825
+        ],
+        "error_pixels": 0.06924362190939969
+      },
+      {
+        "camera": "cam_104122063678",
+        "expected_uv": [
+          334.7624523925781,
+          177.8520672607422
+        ],
+        "rendered_uv": [
+          334.5869565217391,
+          177.7173913043478
+        ],
+        "error_pixels": 0.22121576325449502
+      },
+      {
+        "camera": "cam_104422070042",
+        "expected_uv": [
+          342.12984252929687,
+          194.13709594726564
+        ],
+        "rendered_uv": [
+          342.0,
+          194.0
+        ],
+        "error_pixels": 0.18882367746357795
+      },
+      {
+        "camera": "cam_104422070044",
+        "expected_uv": [
+          342.3824145507813,
+          194.6954766845703
+        ],
+        "rendered_uv": [
+          342.40909090909093,
+          194.5909090909091
+        ],
+        "error_pixels": 0.10791667960404609
+      },
+      {
+        "camera": "cam_105422061350",
+        "expected_uv": [
+          334.9552917480469,
+          191.2210272216797
+        ],
+        "rendered_uv": [
+          334.9347826086956,
+          191.32608695652175
+        ],
+        "error_pixels": 0.10704285441827703
+      },
+      {
+        "camera": "cam_135122079702",
+        "expected_uv": [
+          344.17795532226563,
+          191.64402587890626
+        ],
+        "rendered_uv": [
+          344.2826086956522,
+          191.58695652173913
+        ],
+        "error_pixels": 0.11920251712382518
+      }
+    ],
+    "headless_render_passed": true,
+    "act_model_used": false
+  },
+  "controller_smoke": {
+    "mode": "scripted_controller_privileged_state",
+    "act_model_used": false,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "episodes": 3,
+    "successful_episodes": 3,
+    "success_rate": 1.0,
+    "config_hash": "9922d6f175a034f5f1357972ac7341be57bf81031b6b8ed070d05723bbdd5afa",
+    "scope": "engineering smoke checks; not ACT or statistical generalization evidence"
+  },
+  "seed42_metrics": {
+    "objects": [
+      {
+        "object": "peg_0",
+        "target_hole": 0,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.16948584926787932,
+        "stable_seconds": 34.34000000000174,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004827296964057523,
+        "tilt_deg": 0.0011336098345958935,
+        "bottom_height_error_m": -1.260766727474369e-06
+      },
+      {
+        "object": "peg_1",
+        "target_hole": 1,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.16933886329794415,
+        "stable_seconds": 17.46999999999993,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004919408223357927,
+        "tilt_deg": 0.0011962819075493185,
+        "bottom_height_error_m": -1.2666334635808366e-06
+      },
+      {
+        "object": "peg_2",
+        "target_hole": 2,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.17086280578328464,
+        "stable_seconds": 0.5800000000000003,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004920073247221911,
+        "tilt_deg": 0.003485222822960131,
+        "bottom_height_error_m": -1.4006140944596707e-06
+      }
+    ],
+    "grasp_success": true,
+    "lift_success": true,
+    "place_success": true,
+    "task_success": true,
+    "episode_length": 497,
+    "object_dropped": false
+  },
+  "video": {
+    "path": "outputs/three_pegs_demo/controller_demo.mp4",
+    "frames": 497,
+    "fps": 10.0,
+    "seconds": 49.7,
+    "decoded_sample_frames": [
+      0,
+      248,
+      496
+    ]
+  },
+  "act_model_used": false,
+  "training_run": false
+}

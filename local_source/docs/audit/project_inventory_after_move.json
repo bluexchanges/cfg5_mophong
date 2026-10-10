@@ -1,0 +1,156 @@
+{
+  "generated_utc": "2026-09-28T03:27:29.271999+00:00",
+  "dataset_root": "D:\\Download\\mophong_RH20T\\RH20T_cfg5",
+  "scope": "Directory inventory and bounded samples; not a complete integrity or synchronization audit.",
+  "episode_directories": 2515,
+  "kinds": {
+    "human": 1194,
+    "robot": 1321
+  },
+  "task_count": 104,
+  "users": {
+    "0010": 902,
+    "0014": 87,
+    "0020": 78,
+    "0062": 1,
+    "0007": 1447
+  },
+  "configs": {
+    "0005": 2515
+  },
+  "unexpected_directories": [],
+  "calibration_directory_exists": true,
+  "trusted_object_payloads": false,
+  "samples": [
+    {
+      "episode": "task_0001_user_0014_scene_0001_cfg_0005_human_2",
+      "entries": [
+        "audio_mixed",
+        "cam_036422060215",
+        "cam_037522062165",
+        "cam_104122061850",
+        "cam_104122063678",
+        "cam_104422070044",
+        "cam_104422071090",
+        "cam_105422061350",
+        "cam_f0461559",
+        "metadata.json",
+        "transformed"
+      ],
+      "npy": [
+        {
+          "file": "cam_036422060215/timestamps.npy",
+          "bytes": 2268,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        }
+      ],
+      "metadata": {
+        "calib": 1641974450000,
+        "calib_quality": 0,
+        "start_time": 1642850868544,
+        "end_time": 1642850872125
+      }
+    },
+    {
+      "episode": "task_0001_user_0010_scene_0001_cfg_0005_human",
+      "entries": [
+        "audio_mixed",
+        "cam_036422060215",
+        "cam_037522062165",
+        "cam_104122061850",
+        "cam_104122063678",
+        "cam_104422070044",
+        "cam_104422071090",
+        "cam_105422061350",
+        "cam_f0461559",
+        "metadata.json"
+      ],
+      "npy": [
+        {
+          "file": "cam_036422060215/timestamps.npy",
+          "bytes": 1804,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        }
+      ],
+      "metadata": {
+        "calib": 1641974450000,
+        "calib_quality": 0,
+        "start_time": 1641974456995,
+        "end_time": 1641974459401
+      }
+    }
+  ],
+  "robot_file_availability": {
+    "joint.npy": {
+      "present": 1317,
+      "missing_episodes": [
+        "task_0001_user_0014_scene_0001_cfg_0005_human_2",
+        "task_0039_user_0007_scene_0005_cfg_0005",
+        "task_0043_user_0007_scene_0009_cfg_0005",
+        "task_0050_user_0007_scene_0005_cfg_0005_human_2",
+        "task_0062_user_0007_scene_0001_cfg_0005_human_2",
+        "task_0106_user_0007_scene_0005_cfg_0005",
+        "task_0060_user_0007_scene_0008_cfg_0005"
+      ]
+    },
+    "gripper.npy": {
+      "present": 1321,
+      "missing_episodes": [
+        "task_0001_user_0014_scene_0001_cfg_0005_human_2",
+        "task_0050_user_0007_scene_0005_cfg_0005_human_2",
+        "task_0062_user_0007_scene_0001_cfg_0005_human_2"
+      ]
+    },
+    "tcp.npy": {
+      "present": 1321,
+      "missing_episodes": [
+        "task_0001_user_0014_scene_0001_cfg_0005_human_2",
+        "task_0050_user_0007_scene_0005_cfg_0005_human_2",
+        "task_0062_user_0007_scene_0001_cfg_0005_human_2"
+      ]
+    },
+    "tcp_base.npy": {
+      "present": 1321,
+      "missing_episodes": [
+        "task_0001_user_0014_scene_0001_cfg_0005_human_2",
+        "task_0050_user_0007_scene_0005_cfg_0005_human_2",
+        "task_0062_user_0007_scene_0001_cfg_0005_human_2"
+      ]
+    }
+  },
+  "file_inventory": {
+    "files": 56202,
+    "bytes": 92876723799,
+    "extensions": {
+      ".npy": 31773,
+      ".txt": 6,
+      ".png": 55,
+      ".json": 2515,
+      ".wav": 2513,
+      ".mp4": 19340
+    },
+    "selected_names": {
+      "tcp.npy": 1325,
+      "color.mp4": 19340,
+      "gripper.npy": 1321,
+      "joint.npy": 1317,
+      "tcp_base.npy": 1321
+    }
+  }
+}

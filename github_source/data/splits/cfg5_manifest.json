@@ -1,0 +1,5318 @@
+{
+  "schema_version": 1,
+  "config_hash": "e751a61fec977943e6a507c145a71ef31f0dea4fa3e1270bb39afe6d18bd2383",
+  "config": {
+    "schema_version": 1,
+    "dataset_root": "RH20T_cfg5",
+    "task_ids": [
+      4,
+      8,
+      13,
+      14,
+      17
+    ],
+    "min_rating": 2,
+    "camera_serials": [
+      "036422060215",
+      "037522062165",
+      "104122061850",
+      "104122063678",
+      "104422070042",
+      "104422070044",
+      "105422061350",
+      "135122079702"
+    ],
+    "state_camera_serial": "037522062165",
+    "in_hand_serials": [
+      "104422070042",
+      "135122079702"
+    ],
+    "require_all_cameras": true,
+    "image_width": 640,
+    "image_height": 360,
+    "control_hz": 10,
+    "max_observation_age_ms": 150,
+    "max_state_age_ms": 150,
+    "min_segment_steps": 3,
+    "chunk_size": 20,
+    "representation": "rh20t_aligned_tcp_base_wxyz_gripper_m",
+    "gripper_scale_to_m": 0.001,
+    "gripper_valid_range_m": [
+      0.0,
+      0.085
+    ],
+    "quaternion_norm_tolerance": 0.05,
+    "split_group_fields": [
+      "task",
+      "user",
+      "calib"
+    ],
+    "split_ratios": [
+      0.8,
+      0.1,
+      0.1
+    ],
+    "seed": 42,
+    "normalization_std_floor": 0.0001,
+    "image_normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "image_normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "episodes": [
+    {
+      "episode": "task_0004_user_0010_scene_0003_cfg_0005",
+      "task": 4,
+      "user": 10,
+      "scene": 3,
+      "calib": "1640071679624",
+      "rating": 3,
+      "source_fingerprint": "40f0c904d7e1774f120342376ad1d6579950a79563c6e4a47911cff59ce98f4c",
+      "quality": {
+        "steps": 153,
+        "segments": 14,
+        "grid_candidates": 404,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 115,
+        "segment_lengths": [
+          5,
+          15,
+          9,
+          11,
+          12,
+          10,
+          4,
+          12,
+          29,
+          11,
+          12,
+          11,
+          8,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 614,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "037522062165": {
+            "frames": 577,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 604,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 647,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 424,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 363,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 79.0
+          },
+          "105422061350": {
+            "frames": 602,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "135122079702": {
+            "frames": 631,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0010_scene_0004_cfg_0005",
+      "task": 4,
+      "user": 10,
+      "scene": 4,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "6ea76bd5daf60d6ecbbcab71858da50e10a0deecdd13f20c8b6d492e046482d2",
+      "quality": {
+        "steps": 143,
+        "segments": 13,
+        "grid_candidates": 362,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 143,
+        "max_state_age_ms": 105,
+        "segment_lengths": [
+          3,
+          3,
+          3,
+          20,
+          35,
+          19,
+          12,
+          3,
+          4,
+          3,
+          3,
+          23,
+          12
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 467,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "037522062165": {
+            "frames": 474,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 487,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 549,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 343,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 290,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 78.0
+          },
+          "105422061350": {
+            "frames": 520,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 569,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0010_scene_0006_cfg_0005",
+      "task": 4,
+      "user": 10,
+      "scene": 6,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "bd2517ab00ddec32dd5e5b2cf864083a06a2116dd338978135a6274a6a408cad",
+      "quality": {
+        "steps": 50,
+        "segments": 12,
+        "grid_candidates": 469,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 150,
+        "max_state_age_ms": 100,
+        "segment_lengths": [
+          3,
+          7,
+          3,
+          3,
+          3,
+          3,
+          4,
+          7,
+          3,
+          7,
+          3,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 743,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "037522062165": {
+            "frames": 731,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122061850": {
+            "frames": 735,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122063678": {
+            "frames": 815,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070042": {
+            "frames": 240,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 298,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.0
+          },
+          "105422061350": {
+            "frames": 800,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "135122079702": {
+            "frames": 816,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0010_scene_0007_cfg_0005",
+      "task": 4,
+      "user": 10,
+      "scene": 7,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "1088dffc8905539615a61024ed595d42ad8a7aaf3b3360b56906c2e54d54f0be",
+      "quality": {
+        "steps": 17,
+        "segments": 2,
+        "grid_candidates": 92,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 102,
+        "max_state_age_ms": 87,
+        "segment_lengths": [
+          12,
+          5
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 675,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 680,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122061850": {
+            "frames": 727,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104122063678": {
+            "frames": 773,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104422070042": {
+            "frames": 388,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 297,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "105422061350": {
+            "frames": 761,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "135122079702": {
+            "frames": 176,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0010_scene_0009_cfg_0005",
+      "task": 4,
+      "user": 10,
+      "scene": 9,
+      "calib": "1640071679624",
+      "rating": 7,
+      "source_fingerprint": "0655877b6076474257af7360ea02d6f90a69fbb85ba5364c5ef00134e0ad0dd0",
+      "quality": {
+        "steps": 114,
+        "segments": 7,
+        "grid_candidates": 243,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 146,
+        "max_state_age_ms": 118,
+        "segment_lengths": [
+          17,
+          35,
+          5,
+          16,
+          16,
+          7,
+          18
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 841,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 783,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 842,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122063678": {
+            "frames": 878,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 402,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070044": {
+            "frames": 494,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 80.0
+          },
+          "105422061350": {
+            "frames": 891,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 592,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0002_cfg_0005",
+      "task": 4,
+      "user": 14,
+      "scene": 2,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "ae70c406869c21cc736aa5746579c80020bac26399c6c751a1a517da8619db05",
+      "quality": {
+        "steps": 91,
+        "segments": 13,
+        "grid_candidates": 341,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 146,
+        "max_state_age_ms": 129,
+        "segment_lengths": [
+          6,
+          18,
+          4,
+          6,
+          9,
+          5,
+          4,
+          8,
+          9,
+          12,
+          4,
+          3,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 460,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "037522062165": {
+            "frames": 452,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 453,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 526,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 284,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 209,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 80.0
+          },
+          "105422061350": {
+            "frames": 487,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 555,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0003_cfg_0005",
+      "task": 4,
+      "user": 14,
+      "scene": 3,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "038dd07686dc38d678ad2f286411cd775adf6d2e0c592f65f05095d1930a07ac",
+      "quality": {
+        "steps": 86,
+        "segments": 13,
+        "grid_candidates": 364,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 123,
+        "segment_lengths": [
+          8,
+          14,
+          4,
+          3,
+          14,
+          3,
+          3,
+          4,
+          3,
+          9,
+          9,
+          8,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 469,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "037522062165": {
+            "frames": 440,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.0
+          },
+          "104122061850": {
+            "frames": 464,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 543,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 317,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 162,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 98.0
+          },
+          "105422061350": {
+            "frames": 517,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "135122079702": {
+            "frames": 528,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0005_cfg_0005",
+      "task": 4,
+      "user": 14,
+      "scene": 5,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "fe1a62c861c511a8fb93ea2e648a665a3713ab8cdd42619622c98b7865ca95f0",
+      "quality": {
+        "steps": 73,
+        "segments": 9,
+        "grid_candidates": 265,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 110,
+        "segment_lengths": [
+          3,
+          5,
+          12,
+          3,
+          10,
+          10,
+          7,
+          8,
+          15
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 400,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "037522062165": {
+            "frames": 369,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 384,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 444,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 237,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 137,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 106.5
+          },
+          "105422061350": {
+            "frames": 421,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "135122079702": {
+            "frames": 445,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0006_cfg_0005",
+      "task": 4,
+      "user": 14,
+      "scene": 6,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "c23d2015e7d6aadda36745b6268b59df974ca8fab29fa3ab5e4e457a8d3cd5ce",
+      "quality": {
+        "steps": 94,
+        "segments": 12,
+        "grid_candidates": 245,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 111,
+        "segment_lengths": [
+          10,
+          7,
+          11,
+          3,
+          8,
+          5,
+          5,
+          3,
+          23,
+          4,
+          12,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 355,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 354,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 324,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 391,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 235,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 142,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 83.0
+          },
+          "105422061350": {
+            "frames": 375,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 389,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0007_cfg_0005",
+      "task": 4,
+      "user": 14,
+      "scene": 7,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "be735d7dbb96eadcad124f6dae5eded2dcebfc4968e48b4af283efb91e3452b4",
+      "quality": {
+        "steps": 48,
+        "segments": 9,
+        "grid_candidates": 231,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 146,
+        "max_state_age_ms": 81,
+        "segment_lengths": [
+          3,
+          8,
+          3,
+          3,
+          5,
+          6,
+          9,
+          3,
+          8
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 354,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "037522062165": {
+            "frames": 303,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 310,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 380,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 198,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 121,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 81.0
+          },
+          "105422061350": {
+            "frames": 336,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 418,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0008_cfg_0005",
+      "task": 4,
+      "user": 14,
+      "scene": 8,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "7864f2d7af462f86741bb4ad2f7af6a1c2ad272e2af3bad9670fa276d41c9bb5",
+      "quality": {
+        "steps": 89,
+        "segments": 14,
+        "grid_candidates": 311,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 143,
+        "max_state_age_ms": 109,
+        "segment_lengths": [
+          4,
+          4,
+          10,
+          12,
+          4,
+          9,
+          12,
+          3,
+          8,
+          3,
+          3,
+          6,
+          8,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 430,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 385,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 83.0
+          },
+          "104122061850": {
+            "frames": 425,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 447,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 324,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 144,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 83.0
+          },
+          "105422061350": {
+            "frames": 446,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 492,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0010_cfg_0005",
+      "task": 4,
+      "user": 14,
+      "scene": 10,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "2308eee80d6ae96d6e84b902acfb9ebdf1b26d7d57d27a9e0c8114348813437e",
+      "quality": {
+        "steps": 39,
+        "segments": 6,
+        "grid_candidates": 202,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 101,
+        "segment_lengths": [
+          10,
+          11,
+          3,
+          3,
+          4,
+          8
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 299,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 293,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122061850": {
+            "frames": 293,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 323,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 166,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 112,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 78.0
+          },
+          "105422061350": {
+            "frames": 312,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 338,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0002_cfg_0005",
+      "task": 8,
+      "user": 7,
+      "scene": 2,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "493b92b71a559fb4eb76fee8d09287fbb7a0c281cf08104e87098ada3c393336",
+      "quality": {
+        "steps": 137,
+        "segments": 10,
+        "grid_candidates": 314,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 148,
+        "max_state_age_ms": 112,
+        "segment_lengths": [
+          12,
+          14,
+          12,
+          4,
+          9,
+          26,
+          27,
+          5,
+          5,
+          23
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 422,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 402,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 426,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 450,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 284,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 269,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "105422061350": {
+            "frames": 452,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "135122079702": {
+            "frames": 492,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0004_cfg_0005",
+      "task": 8,
+      "user": 7,
+      "scene": 4,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "5f81a9970cefb25694bc399d80bcaa90918f50ea34b47ed7057aba599bdd1964",
+      "quality": {
+        "steps": 125,
+        "segments": 8,
+        "grid_candidates": 312,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 143,
+        "max_state_age_ms": 108,
+        "segment_lengths": [
+          25,
+          4,
+          3,
+          29,
+          19,
+          27,
+          13,
+          5
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 438,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 441,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122061850": {
+            "frames": 413,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 469,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 231,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 263,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.0
+          },
+          "105422061350": {
+            "frames": 454,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 475,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0005_cfg_0005",
+      "task": 8,
+      "user": 7,
+      "scene": 5,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "a5498cfb87b690f81325798ff5829369066698bd8b35a42eb0fc087322fc207a",
+      "quality": {
+        "steps": 99,
+        "segments": 8,
+        "grid_candidates": 264,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 144,
+        "max_state_age_ms": 107,
+        "segment_lengths": [
+          29,
+          4,
+          6,
+          5,
+          4,
+          15,
+          4,
+          32
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 357,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 359,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 395,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122063678": {
+            "frames": 397,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.0
+          },
+          "104422070042": {
+            "frames": 228,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 186,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 93.0
+          },
+          "105422061350": {
+            "frames": 414,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 412,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0006_cfg_0005",
+      "task": 8,
+      "user": 7,
+      "scene": 6,
+      "calib": "1641974450000",
+      "rating": 8,
+      "source_fingerprint": "b5ab993c801c9190185cd40959a0a72f4d6d5bea8e6852beb6c438bb99c0aafd",
+      "quality": {
+        "steps": 150,
+        "segments": 13,
+        "grid_candidates": 380,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 140,
+        "max_state_age_ms": 104,
+        "segment_lengths": [
+          23,
+          17,
+          21,
+          15,
+          21,
+          3,
+          8,
+          3,
+          13,
+          7,
+          5,
+          10,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 552,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 514,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 525,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 590,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 277,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 309,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 78.0
+          },
+          "105422061350": {
+            "frames": 544,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 559,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0007_cfg_0005",
+      "task": 8,
+      "user": 7,
+      "scene": 7,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "70811064a65628873a25116d972fa3899d1cef0f19821b99e11a6274f2d5e2cf",
+      "quality": {
+        "steps": 109,
+        "segments": 11,
+        "grid_candidates": 272,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 144,
+        "max_state_age_ms": 106,
+        "segment_lengths": [
+          11,
+          5,
+          18,
+          3,
+          13,
+          15,
+          7,
+          4,
+          14,
+          15,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 377,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 341,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 379,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 417,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 242,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 252,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "105422061350": {
+            "frames": 389,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 394,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 82.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0008_cfg_0005",
+      "task": 8,
+      "user": 7,
+      "scene": 8,
+      "calib": "1641974450000",
+      "rating": 8,
+      "source_fingerprint": "44515c84c1eeb618aaaf6f23f0d086863a69a5e8d1e1844d96e039d77641bcc6",
+      "quality": {
+        "steps": 118,
+        "segments": 11,
+        "grid_candidates": 318,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 142,
+        "max_state_age_ms": 106,
+        "segment_lengths": [
+          11,
+          22,
+          16,
+          3,
+          7,
+          5,
+          3,
+          12,
+          4,
+          31,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 435,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 441,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122061850": {
+            "frames": 401,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122063678": {
+            "frames": 463,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 287,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104422070044": {
+            "frames": 280,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "105422061350": {
+            "frames": 466,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "135122079702": {
+            "frames": 483,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0009_cfg_0005",
+      "task": 8,
+      "user": 7,
+      "scene": 9,
+      "calib": "1641974450000",
+      "rating": 8,
+      "source_fingerprint": "f9bf1ce4de464bde2e8931f66765464062157bda9f567efaa1c8e148168e2e30",
+      "quality": {
+        "steps": 139,
+        "segments": 9,
+        "grid_candidates": 283,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 127,
+        "segment_lengths": [
+          4,
+          25,
+          30,
+          24,
+          20,
+          4,
+          12,
+          15,
+          5
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 378,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "037522062165": {
+            "frames": 377,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 393,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 437,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 243,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 79.5
+          },
+          "104422070044": {
+            "frames": 265,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "105422061350": {
+            "frames": 454,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 432,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0001_cfg_0005",
+      "task": 8,
+      "user": 10,
+      "scene": 1,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "e55b01f6a193a14634d1903adba11dbceaaf70ea257ff5841cc3253a25b1ce20",
+      "quality": {
+        "steps": 209,
+        "segments": 24,
+        "grid_candidates": 694,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 150,
+        "max_state_age_ms": 121,
+        "segment_lengths": [
+          17,
+          10,
+          10,
+          10,
+          3,
+          5,
+          11,
+          19,
+          10,
+          3,
+          3,
+          13,
+          20,
+          8,
+          4,
+          3,
+          6,
+          9,
+          11,
+          4,
+          12,
+          11,
+          3,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 936,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "037522062165": {
+            "frames": 834,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 81.0
+          },
+          "104122061850": {
+            "frames": 852,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 82.0
+          },
+          "104122063678": {
+            "frames": 984,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 634,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 538,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 79.0
+          },
+          "105422061350": {
+            "frames": 972,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "135122079702": {
+            "frames": 986,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0002_cfg_0005",
+      "task": 8,
+      "user": 10,
+      "scene": 2,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "21c97d03303d7f5b90b5f2b92368dd45517677da1f589dc5eaebe9728eda9a61",
+      "quality": {
+        "steps": 126,
+        "segments": 16,
+        "grid_candidates": 352,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 107,
+        "segment_lengths": [
+          5,
+          5,
+          12,
+          3,
+          14,
+          4,
+          12,
+          6,
+          8,
+          3,
+          9,
+          18,
+          3,
+          13,
+          3,
+          8
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 466,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "037522062165": {
+            "frames": 451,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 461,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 82.0
+          },
+          "104122063678": {
+            "frames": 525,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 347,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 297,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "105422061350": {
+            "frames": 498,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "135122079702": {
+            "frames": 517,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.5
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0003_cfg_0005",
+      "task": 8,
+      "user": 10,
+      "scene": 3,
+      "calib": "1640071679624",
+      "rating": 7,
+      "source_fingerprint": "99262fc0adf1ee515608904e64530bd8e81057c2bc5862665412c9a1c17be2c0",
+      "quality": {
+        "steps": 313,
+        "segments": 26,
+        "grid_candidates": 802,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 144,
+        "max_state_age_ms": 110,
+        "segment_lengths": [
+          32,
+          3,
+          5,
+          10,
+          3,
+          30,
+          16,
+          6,
+          16,
+          24,
+          13,
+          18,
+          5,
+          7,
+          9,
+          6,
+          14,
+          5,
+          17,
+          11,
+          3,
+          3,
+          12,
+          11,
+          22,
+          12
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 1064,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 1001,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.0
+          },
+          "104122061850": {
+            "frames": 985,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122063678": {
+            "frames": 1067,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 739,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 687,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "105422061350": {
+            "frames": 1066,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 1174,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0005_cfg_0005",
+      "task": 8,
+      "user": 10,
+      "scene": 5,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "6b8f219750d9790304407ef5f314f4a0717825747a42dbbf39f3fb68c2b1297c",
+      "quality": {
+        "steps": 183,
+        "segments": 18,
+        "grid_candidates": 463,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 142,
+        "max_state_age_ms": 111,
+        "segment_lengths": [
+          4,
+          7,
+          9,
+          11,
+          14,
+          7,
+          14,
+          3,
+          4,
+          3,
+          13,
+          18,
+          6,
+          6,
+          8,
+          19,
+          24,
+          13
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 624,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 595,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122061850": {
+            "frames": 585,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 648,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 394,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "104422070044": {
+            "frames": 437,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "105422061350": {
+            "frames": 587,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "135122079702": {
+            "frames": 671,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0008_cfg_0005",
+      "task": 8,
+      "user": 10,
+      "scene": 8,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "9f12419464318d6efda2bdbbdec8c4c308178be03d3be8138e5bbbdd5116c607",
+      "quality": {
+        "steps": 123,
+        "segments": 10,
+        "grid_candidates": 355,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 146,
+        "max_state_age_ms": 117,
+        "segment_lengths": [
+          11,
+          24,
+          15,
+          11,
+          8,
+          12,
+          5,
+          3,
+          19,
+          15
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 497,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 419,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 80.0
+          },
+          "104122061850": {
+            "frames": 465,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 540,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 277,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 354,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "105422061350": {
+            "frames": 505,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "135122079702": {
+            "frames": 539,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0009_cfg_0005",
+      "task": 8,
+      "user": 10,
+      "scene": 9,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "fb8ab28c87ccb67b15243dabdf771e36b23746283a2ac4cc473bd5034f2e61c2",
+      "quality": {
+        "steps": 143,
+        "segments": 16,
+        "grid_candidates": 473,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 141,
+        "max_state_age_ms": 115,
+        "segment_lengths": [
+          3,
+          8,
+          15,
+          11,
+          10,
+          13,
+          11,
+          5,
+          13,
+          4,
+          11,
+          5,
+          4,
+          15,
+          4,
+          11
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 656,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 630,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122061850": {
+            "frames": 630,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 656,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 409,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 342,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "105422061350": {
+            "frames": 618,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "135122079702": {
+            "frames": 696,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0010_cfg_0005",
+      "task": 8,
+      "user": 10,
+      "scene": 10,
+      "calib": "1640071679624",
+      "rating": 7,
+      "source_fingerprint": "0023e745728f71ae62019001973d8156d1d9153a27370faee778da800c044a26",
+      "quality": {
+        "steps": 145,
+        "segments": 18,
+        "grid_candidates": 437,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 150,
+        "max_state_age_ms": 108,
+        "segment_lengths": [
+          4,
+          3,
+          25,
+          4,
+          8,
+          8,
+          8,
+          4,
+          8,
+          10,
+          8,
+          12,
+          4,
+          3,
+          3,
+          3,
+          14,
+          16
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 634,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "037522062165": {
+            "frames": 627,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 674,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 716,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 397,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 403,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "105422061350": {
+            "frames": 682,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 727,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0001_cfg_0005",
+      "task": 13,
+      "user": 7,
+      "scene": 1,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "67cb78575a343d7b30c9cec42793205eb111aae184b1c552c11095134580cca5",
+      "quality": {
+        "steps": 119,
+        "segments": 15,
+        "grid_candidates": 308,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 146,
+        "max_state_age_ms": 111,
+        "segment_lengths": [
+          15,
+          3,
+          7,
+          8,
+          3,
+          6,
+          3,
+          5,
+          29,
+          12,
+          4,
+          5,
+          5,
+          11,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 435,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "037522062165": {
+            "frames": 403,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 78.0
+          },
+          "104122061850": {
+            "frames": 403,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122063678": {
+            "frames": 480,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 262,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070044": {
+            "frames": 246,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 78.0
+          },
+          "105422061350": {
+            "frames": 454,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "135122079702": {
+            "frames": 424,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 85.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0007_cfg_0005",
+      "task": 13,
+      "user": 7,
+      "scene": 7,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "884f7b1c3ebcd28ee63f92ad0a674e8ffaefa5c94e0d0059b88ec65efa8050c2",
+      "quality": {
+        "steps": 76,
+        "segments": 11,
+        "grid_candidates": 247,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 106,
+        "segment_lengths": [
+          13,
+          5,
+          8,
+          10,
+          11,
+          3,
+          3,
+          4,
+          13,
+          3,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 348,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 344,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 341,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 400,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104422070042": {
+            "frames": 157,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 82.0
+          },
+          "104422070044": {
+            "frames": 216,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "105422061350": {
+            "frames": 371,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.5
+          },
+          "135122079702": {
+            "frames": 409,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0010_cfg_0005",
+      "task": 13,
+      "user": 7,
+      "scene": 10,
+      "calib": "1641974450000",
+      "rating": 8,
+      "source_fingerprint": "f297fbb9d7062e9a7d553efadd65e427e6aba60a48225a3d15d57e33dd4acdd1",
+      "quality": {
+        "steps": 130,
+        "segments": 7,
+        "grid_candidates": 301,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 130,
+        "max_state_age_ms": 104,
+        "segment_lengths": [
+          17,
+          5,
+          30,
+          7,
+          28,
+          28,
+          15
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 430,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 405,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 421,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 464,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104422070042": {
+            "frames": 314,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 250,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 94.0
+          },
+          "105422061350": {
+            "frames": 434,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 492,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0001_cfg_0005",
+      "task": 13,
+      "user": 10,
+      "scene": 1,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "1771b80be2f82cc766dc1969e8bf2feb200a459f4dbd4474f4026162ba142863",
+      "quality": {
+        "steps": 29,
+        "segments": 4,
+        "grid_candidates": 104,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 128,
+        "max_state_age_ms": 101,
+        "segment_lengths": [
+          4,
+          16,
+          4,
+          5
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 711,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 683,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122061850": {
+            "frames": 678,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122063678": {
+            "frames": 710,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 226,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 298,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 78.0
+          },
+          "105422061350": {
+            "frames": 716,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "135122079702": {
+            "frames": 175,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0002_cfg_0005",
+      "task": 13,
+      "user": 10,
+      "scene": 2,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "6c37491d5589ef53bc7635ea5cedb714e07a44ebedda8e248581f90c8ebd9fed",
+      "quality": {
+        "steps": 99,
+        "segments": 17,
+        "grid_candidates": 490,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 148,
+        "max_state_age_ms": 110,
+        "segment_lengths": [
+          7,
+          17,
+          7,
+          3,
+          12,
+          3,
+          5,
+          3,
+          4,
+          4,
+          3,
+          3,
+          8,
+          7,
+          6,
+          3,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 686,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "037522062165": {
+            "frames": 655,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 703,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 712,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 323,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 275,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 84.0
+          },
+          "105422061350": {
+            "frames": 729,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "135122079702": {
+            "frames": 739,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0003_cfg_0005",
+      "task": 13,
+      "user": 10,
+      "scene": 3,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "706adf8f3d20cdf21c21af7d9a23b79e50154ba37b43c8febd056b735eb07b11",
+      "quality": {
+        "steps": 66,
+        "segments": 14,
+        "grid_candidates": 377,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 147,
+        "max_state_age_ms": 114,
+        "segment_lengths": [
+          5,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          12,
+          8,
+          4,
+          3,
+          6,
+          6
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 697,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 622,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 604,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 686,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070042": {
+            "frames": 302,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 241,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 87.5
+          },
+          "105422061350": {
+            "frames": 685,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "135122079702": {
+            "frames": 699,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0004_cfg_0005",
+      "task": 13,
+      "user": 10,
+      "scene": 4,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "4896417fb858571df2264e7299709ae8003a10e0f381af3654c2e1ef25d4fd4f",
+      "quality": {
+        "steps": 27,
+        "segments": 5,
+        "grid_candidates": 209,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 105,
+        "segment_lengths": [
+          3,
+          3,
+          5,
+          8,
+          8
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 827,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 822,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122061850": {
+            "frames": 773,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 833,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 321,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070044": {
+            "frames": 301,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 81.0
+          },
+          "105422061350": {
+            "frames": 866,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "135122079702": {
+            "frames": 332,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0007_cfg_0005",
+      "task": 13,
+      "user": 10,
+      "scene": 7,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "40a6ada1d6988d949475255b4020be247b12737dc5b2c218034b8ac74cf409ef",
+      "quality": {
+        "steps": 85,
+        "segments": 18,
+        "grid_candidates": 684,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 139,
+        "max_state_age_ms": 114,
+        "segment_lengths": [
+          6,
+          3,
+          5,
+          3,
+          3,
+          3,
+          6,
+          5,
+          6,
+          9,
+          3,
+          6,
+          3,
+          5,
+          4,
+          3,
+          8,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 883,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "037522062165": {
+            "frames": 866,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 794,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 81.0
+          },
+          "104122063678": {
+            "frames": 965,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.5
+          },
+          "104422070042": {
+            "frames": 397,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 317,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 86.0
+          },
+          "105422061350": {
+            "frames": 949,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 980,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0008_cfg_0005",
+      "task": 13,
+      "user": 10,
+      "scene": 8,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "9413fa6d25ff84663ea41480f69ab86d526bb97f4a0075dfeb4078b8f66497f8",
+      "quality": {
+        "steps": 41,
+        "segments": 9,
+        "grid_candidates": 431,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 108,
+        "segment_lengths": [
+          4,
+          7,
+          4,
+          3,
+          5,
+          7,
+          4,
+          4,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 643,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 570,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 79.0
+          },
+          "104122061850": {
+            "frames": 651,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122063678": {
+            "frames": 739,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 234,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "104422070044": {
+            "frames": 227,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 83.0
+          },
+          "105422061350": {
+            "frames": 659,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "135122079702": {
+            "frames": 760,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0009_cfg_0005",
+      "task": 13,
+      "user": 10,
+      "scene": 9,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "63cb6ce93c69fc3c2e496cfe9e45f2c090cc85311976723943d99b9935a5b9ed",
+      "quality": {
+        "steps": 62,
+        "segments": 14,
+        "grid_candidates": 489,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 150,
+        "max_state_age_ms": 107,
+        "segment_lengths": [
+          3,
+          3,
+          8,
+          3,
+          6,
+          4,
+          5,
+          3,
+          7,
+          5,
+          6,
+          3,
+          3,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 699,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "037522062165": {
+            "frames": 653,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 646,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.0
+          },
+          "104122063678": {
+            "frames": 742,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104422070042": {
+            "frames": 282,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070044": {
+            "frames": 279,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 79.0
+          },
+          "105422061350": {
+            "frames": 747,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "135122079702": {
+            "frames": 753,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0001_cfg_0005",
+      "task": 14,
+      "user": 7,
+      "scene": 1,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "a1d9d29021ecf72c5df9bdbb005b6cedffad9ada8a877f3a15eaa517fcbbce58",
+      "quality": {
+        "steps": 114,
+        "segments": 11,
+        "grid_candidates": 250,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 148,
+        "max_state_age_ms": 109,
+        "segment_lengths": [
+          9,
+          8,
+          32,
+          4,
+          15,
+          7,
+          15,
+          6,
+          9,
+          4,
+          5
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 366,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "037522062165": {
+            "frames": 350,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 352,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 390,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 291,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 179,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 96.0
+          },
+          "105422061350": {
+            "frames": 379,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 413,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0004_cfg_0005",
+      "task": 14,
+      "user": 7,
+      "scene": 4,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "1cc4ff7273e55f00ea0a690239783f753b1d7494b7bf60eccbb0f16c21d0f26b",
+      "quality": {
+        "steps": 124,
+        "segments": 10,
+        "grid_candidates": 268,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 147,
+        "max_state_age_ms": 102,
+        "segment_lengths": [
+          10,
+          3,
+          36,
+          10,
+          8,
+          11,
+          15,
+          6,
+          18,
+          7
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 381,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "037522062165": {
+            "frames": 385,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 391,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 420,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104422070042": {
+            "frames": 254,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070044": {
+            "frames": 214,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.0
+          },
+          "105422061350": {
+            "frames": 397,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "135122079702": {
+            "frames": 437,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0006_cfg_0005",
+      "task": 14,
+      "user": 7,
+      "scene": 6,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "0d680a8047388789aa89a8d7768e20955d9607704c9029424fb093ec134ddeee",
+      "quality": {
+        "steps": 123,
+        "segments": 9,
+        "grid_candidates": 260,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 118,
+        "max_state_age_ms": 108,
+        "segment_lengths": [
+          24,
+          36,
+          15,
+          3,
+          7,
+          3,
+          9,
+          14,
+          12
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 365,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 405,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 357,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122063678": {
+            "frames": 409,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 283,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 252,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "105422061350": {
+            "frames": 395,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "135122079702": {
+            "frames": 451,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0007_cfg_0005",
+      "task": 14,
+      "user": 7,
+      "scene": 7,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "11a9067052ab5d29c40da30ccc48d81ae9d52df23076a1fa556a3f3aa33c562c",
+      "quality": {
+        "steps": 91,
+        "segments": 9,
+        "grid_candidates": 229,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 146,
+        "max_state_age_ms": 111,
+        "segment_lengths": [
+          3,
+          4,
+          3,
+          24,
+          19,
+          8,
+          9,
+          12,
+          9
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 341,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 305,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 344,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 379,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 218,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 224,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "105422061350": {
+            "frames": 339,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "135122079702": {
+            "frames": 376,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0010_cfg_0005",
+      "task": 14,
+      "user": 7,
+      "scene": 10,
+      "calib": "1641974450000",
+      "rating": 9,
+      "source_fingerprint": "aef7e3edd42832d7a47183cce209b33139ab43e0ec16bfd750b2c34ef3de4927",
+      "quality": {
+        "steps": 74,
+        "segments": 10,
+        "grid_candidates": 197,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 108,
+        "segment_lengths": [
+          10,
+          7,
+          5,
+          13,
+          8,
+          14,
+          6,
+          3,
+          3,
+          5
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 300,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "037522062165": {
+            "frames": 267,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122061850": {
+            "frames": 301,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 348,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 176,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 191,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "105422061350": {
+            "frames": 344,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "135122079702": {
+            "frames": 356,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0002_cfg_0005",
+      "task": 14,
+      "user": 10,
+      "scene": 2,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "92f0dfdd659da425e86402eb154c9c04398b44e64ab63fe0267c6e921c996d44",
+      "quality": {
+        "steps": 26,
+        "segments": 6,
+        "grid_candidates": 261,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 147,
+        "max_state_age_ms": 110,
+        "segment_lengths": [
+          7,
+          3,
+          4,
+          3,
+          6,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 413,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 381,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122061850": {
+            "frames": 392,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "104122063678": {
+            "frames": 426,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104422070042": {
+            "frames": 163,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 131,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 81.0
+          },
+          "105422061350": {
+            "frames": 434,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "135122079702": {
+            "frames": 450,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0004_cfg_0005",
+      "task": 14,
+      "user": 10,
+      "scene": 4,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "4bf252f326247bf51bc4615cb06d3e0c2231029e4aeb4cd1c8624eccfff44aee",
+      "quality": {
+        "steps": 76,
+        "segments": 13,
+        "grid_candidates": 343,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 141,
+        "max_state_age_ms": 104,
+        "segment_lengths": [
+          10,
+          3,
+          6,
+          8,
+          3,
+          12,
+          3,
+          3,
+          11,
+          6,
+          4,
+          3,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 499,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.5
+          },
+          "037522062165": {
+            "frames": 495,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122061850": {
+            "frames": 518,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 75.0
+          },
+          "104122063678": {
+            "frames": 559,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 232,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 199,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 79.0
+          },
+          "105422061350": {
+            "frames": 537,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 549,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0005_cfg_0005",
+      "task": 14,
+      "user": 10,
+      "scene": 5,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "5e41538a9a4ee2eeb0d45167462cf62ac428e05532a65192b50a34275f5a9a91",
+      "quality": {
+        "steps": 56,
+        "segments": 10,
+        "grid_candidates": 358,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 141,
+        "max_state_age_ms": 75,
+        "segment_lengths": [
+          10,
+          3,
+          3,
+          3,
+          5,
+          11,
+          3,
+          8,
+          4,
+          6
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 549,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 521,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 550,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 583,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 217,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 203,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 80.0
+          },
+          "105422061350": {
+            "frames": 572,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 603,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0006_cfg_0005",
+      "task": 14,
+      "user": 10,
+      "scene": 6,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "481d1cb99f4ebdba82deba86cbc18a41faa42f0fd85ce0cfe62020c2c4d12492",
+      "quality": {
+        "steps": 56,
+        "segments": 12,
+        "grid_candidates": 261,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 149,
+        "max_state_age_ms": 108,
+        "segment_lengths": [
+          3,
+          7,
+          3,
+          4,
+          6,
+          5,
+          6,
+          3,
+          3,
+          8,
+          4,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 401,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 395,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 431,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 454,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 189,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 180,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "105422061350": {
+            "frames": 426,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 464,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0008_cfg_0005",
+      "task": 14,
+      "user": 10,
+      "scene": 8,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "02a7ffd1ddfa71e0201e6f50b5c5f599109c22333e6a8a690ec2649f4b8f320f",
+      "quality": {
+        "steps": 58,
+        "segments": 12,
+        "grid_candidates": 318,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 140,
+        "max_state_age_ms": 112,
+        "segment_lengths": [
+          4,
+          3,
+          4,
+          8,
+          4,
+          5,
+          8,
+          4,
+          5,
+          6,
+          4,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 502,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "037522062165": {
+            "frames": 486,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 483,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 541,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104422070042": {
+            "frames": 214,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104422070044": {
+            "frames": 189,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 83.5
+          },
+          "105422061350": {
+            "frames": 519,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 548,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0009_cfg_0005",
+      "task": 14,
+      "user": 10,
+      "scene": 9,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "91648a1c0d1c19129c730c5a1d4600267042dfd8475dceb6834e5fb4e47a2bbb",
+      "quality": {
+        "steps": 83,
+        "segments": 14,
+        "grid_candidates": 382,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 150,
+        "max_state_age_ms": 112,
+        "segment_lengths": [
+          13,
+          12,
+          7,
+          3,
+          3,
+          8,
+          5,
+          3,
+          3,
+          6,
+          6,
+          3,
+          4,
+          7
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 605,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 556,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 556,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.0
+          },
+          "104122063678": {
+            "frames": 642,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104422070042": {
+            "frames": 279,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 74.5
+          },
+          "104422070044": {
+            "frames": 197,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 87.0
+          },
+          "105422061350": {
+            "frames": 635,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "135122079702": {
+            "frames": 668,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0010_cfg_0005",
+      "task": 14,
+      "user": 10,
+      "scene": 10,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "669e9e53f9fe28e4525d2aaaf5ce12b7fb4021e68188d517fa7e50e8f3205bf1",
+      "quality": {
+        "steps": 63,
+        "segments": 13,
+        "grid_candidates": 392,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 148,
+        "max_state_age_ms": 110,
+        "segment_lengths": [
+          5,
+          3,
+          6,
+          6,
+          3,
+          3,
+          3,
+          3,
+          11,
+          5,
+          5,
+          7,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 628,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 550,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 546,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 604,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 212,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 176,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 105.0
+          },
+          "105422061350": {
+            "frames": 594,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 638,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0001_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 1,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "d0b4ad3289a7bdb2476c9416cbab285d4290640e7a866b6c75cb616d4776aa6a",
+      "quality": {
+        "steps": 47,
+        "segments": 10,
+        "grid_candidates": 408,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 150,
+        "max_state_age_ms": 70,
+        "segment_lengths": [
+          5,
+          3,
+          4,
+          10,
+          4,
+          3,
+          5,
+          7,
+          3,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 634,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 596,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122061850": {
+            "frames": 612,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122063678": {
+            "frames": 666,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "104422070042": {
+            "frames": 236,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 230,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "105422061350": {
+            "frames": 651,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "135122079702": {
+            "frames": 678,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0002_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 2,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "2556ecb12d7196900c4ce9f8e3b891d1d418eb642def14b6edba580fc8e673f1",
+      "quality": {
+        "steps": 64,
+        "segments": 12,
+        "grid_candidates": 339,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 141,
+        "max_state_age_ms": 110,
+        "segment_lengths": [
+          6,
+          6,
+          3,
+          4,
+          4,
+          21,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 522,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 532,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122061850": {
+            "frames": 508,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122063678": {
+            "frames": 568,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104422070042": {
+            "frames": 234,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 226,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "105422061350": {
+            "frames": 563,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "135122079702": {
+            "frames": 557,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0003_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 3,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "18fe60fd9ba7f2c7d7d2572c6afa480b2b367d39d8881f6aafd902b26ec174d9",
+      "quality": {
+        "steps": 50,
+        "segments": 10,
+        "grid_candidates": 345,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 143,
+        "max_state_age_ms": 105,
+        "segment_lengths": [
+          7,
+          5,
+          13,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          6
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 546,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 503,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122061850": {
+            "frames": 490,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122063678": {
+            "frames": 544,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104422070042": {
+            "frames": 231,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 174,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "105422061350": {
+            "frames": 541,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 548,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0005_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 5,
+      "calib": "1640071679624",
+      "rating": 7,
+      "source_fingerprint": "94e563ce5467ef6b1a4480f2c39ffbe622514ed992dac3261a3988a44706886e",
+      "quality": {
+        "steps": 89,
+        "segments": 14,
+        "grid_candidates": 529,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 146,
+        "max_state_age_ms": 101,
+        "segment_lengths": [
+          7,
+          8,
+          12,
+          3,
+          5,
+          3,
+          12,
+          8,
+          6,
+          4,
+          6,
+          7,
+          4,
+          4
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 802,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 784,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 767,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122063678": {
+            "frames": 843,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104422070042": {
+            "frames": 357,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 341,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 76.0
+          },
+          "105422061350": {
+            "frames": 797,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 905,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0006_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 6,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "dba2a156663acfce473cd3a0dc89d8414830fa6d31f83d43501f88d98b05522b",
+      "quality": {
+        "steps": 128,
+        "segments": 17,
+        "grid_candidates": 493,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 150,
+        "max_state_age_ms": 95,
+        "segment_lengths": [
+          7,
+          3,
+          7,
+          6,
+          3,
+          4,
+          4,
+          9,
+          3,
+          9,
+          26,
+          6,
+          3,
+          5,
+          11,
+          16,
+          6
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 730,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 707,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122061850": {
+            "frames": 711,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122063678": {
+            "frames": 764,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 309,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 326,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 77.0
+          },
+          "105422061350": {
+            "frames": 751,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 792,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0007_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 7,
+      "calib": "1640071679624",
+      "rating": 7,
+      "source_fingerprint": "3db2dadfcb17f5246eebf6ac2db730790809c5ad5e86db6ca4a1f8cbf487de6d",
+      "quality": {
+        "steps": 56,
+        "segments": 9,
+        "grid_candidates": 472,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 146,
+        "max_state_age_ms": 108,
+        "segment_lengths": [
+          8,
+          17,
+          5,
+          4,
+          6,
+          3,
+          6,
+          4,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 700,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 668,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122061850": {
+            "frames": 697,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122063678": {
+            "frames": 753,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104422070042": {
+            "frames": 290,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 241,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 83.0
+          },
+          "105422061350": {
+            "frames": 740,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "135122079702": {
+            "frames": 737,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0008_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 8,
+      "calib": "1640071679624",
+      "rating": 5,
+      "source_fingerprint": "4739acbcbdd4d08b86b9700d4eb5b567804d6a912ca8354b284a5918d5073cbf",
+      "quality": {
+        "steps": 106,
+        "segments": 19,
+        "grid_candidates": 861,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 143,
+        "max_state_age_ms": 111,
+        "segment_lengths": [
+          4,
+          5,
+          7,
+          6,
+          8,
+          5,
+          6,
+          5,
+          7,
+          6,
+          7,
+          3,
+          4,
+          9,
+          5,
+          4,
+          4,
+          6,
+          5
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 1242,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 1191,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122061850": {
+            "frames": 1240,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122063678": {
+            "frames": 1333,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "104422070042": {
+            "frames": 531,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          },
+          "104422070044": {
+            "frames": 416,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 79.0
+          },
+          "105422061350": {
+            "frames": 1280,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 1371,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0009_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 9,
+      "calib": "1640071679624",
+      "rating": 8,
+      "source_fingerprint": "b1636564da28f0324f2f2b73e532ba4d2d9c5bb88609945e410de97ce4193797",
+      "quality": {
+        "steps": 70,
+        "segments": 16,
+        "grid_candidates": 477,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 148,
+        "max_state_age_ms": 105,
+        "segment_lengths": [
+          5,
+          4,
+          3,
+          4,
+          6,
+          3,
+          7,
+          3,
+          6,
+          4,
+          7,
+          5,
+          3,
+          3,
+          4,
+          3
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 695,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "037522062165": {
+            "frames": 677,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122061850": {
+            "frames": 676,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 73.0
+          },
+          "104122063678": {
+            "frames": 746,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 69.0
+          },
+          "104422070042": {
+            "frames": 219,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 82.0
+          },
+          "104422070044": {
+            "frames": 249,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 78.5
+          },
+          "105422061350": {
+            "frames": 712,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "135122079702": {
+            "frames": 743,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0010_cfg_0005",
+      "task": 17,
+      "user": 10,
+      "scene": 10,
+      "calib": "1640071679624",
+      "rating": 9,
+      "source_fingerprint": "08b3df77898f414acd885185492dc650c8418606d3e4ed468a964f87ab633263",
+      "quality": {
+        "steps": 69,
+        "segments": 12,
+        "grid_candidates": 390,
+        "rejected_state_records": 0,
+        "max_camera_age_ms": 145,
+        "max_state_age_ms": 99,
+        "segment_lengths": [
+          6,
+          6,
+          3,
+          12,
+          5,
+          8,
+          4,
+          3,
+          3,
+          6,
+          4,
+          9
+        ],
+        "videos": {
+          "036422060215": {
+            "frames": 585,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 70.0
+          },
+          "037522062165": {
+            "frames": 562,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "104122061850": {
+            "frames": 601,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104122063678": {
+            "frames": 635,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 71.0
+          },
+          "104422070042": {
+            "frames": 208,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 68.0
+          },
+          "104422070044": {
+            "frames": 248,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 79.0
+          },
+          "105422061350": {
+            "frames": 616,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 72.0
+          },
+          "135122079702": {
+            "frames": 643,
+            "container_fps": 25.0,
+            "width": 640,
+            "height": 360,
+            "median_timestamp_dt_ms": 67.0
+          }
+        }
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "episode": "task_0004_user_0010_scene_0001_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0010_scene_0002_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0010_scene_0005_cfg_0005",
+      "reason": "Thiếu RGB camera 036422060215"
+    },
+    {
+      "episode": "task_0004_user_0010_scene_0008_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070044"
+    },
+    {
+      "episode": "task_0004_user_0010_scene_0010_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0001_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0004_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0009_cfg_0005",
+      "reason": "Không có khoảng thời gian giao đủ dài cho 8 camera/state"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0001_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0002_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0003_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0004_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0005_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0006_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0007_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0008_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0004_user_0020_scene_0009_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0001_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0003_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0010_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0004_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0006_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0008_user_0010_scene_0007_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0002_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070044"
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0003_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070044"
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0004_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0005_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0006_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0008_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0013_user_0007_scene_0009_cfg_0005",
+      "reason": "rating dưới ngưỡng"
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0005_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0006_cfg_0005",
+      "reason": "Thiếu RGB camera 135122079702"
+    },
+    {
+      "episode": "task_0013_user_0010_scene_0010_cfg_0005",
+      "reason": "rating dưới ngưỡng"
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0002_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0003_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070044"
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0005_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070044"
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0008_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0014_user_0007_scene_0009_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0001_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0003_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070044"
+    },
+    {
+      "episode": "task_0014_user_0010_scene_0007_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    },
+    {
+      "episode": "task_0017_user_0010_scene_0004_cfg_0005",
+      "reason": "Thiếu RGB camera 104422070042"
+    }
+  ],
+  "skipped_counts": {
+    "task_not_selected": 1222,
+    "human_or_alternate_name": 1194
+  },
+  "manifest_hash": "5eb62fd272c77f2a9af5e919fcd83bac48d86696c8458253cb80ceb6e5775dac"
+}

@@ -1,0 +1,9 @@
+{
+  "config_hash": "a4c13b24e31c60fa68b3af3f4578165df06c0d68b490e1fa459511c044278590",
+  "source_commit": "c96a32d28fb5da84da38c1da4d749e7a13212855",
+  "source_xml_sha256": "96ad67da03710f17f798c9478fd9e9efdf24a3bf8359f05e456dd9fb158ea273",
+  "camera_rig_sha256": "d6cfe913273d53935e5c470109beffe799b19be4b58602fffb3cb2d5aeb0c8e5",
+  "generator_sha256": "06ef8beebfe3ba5a384c1ce806484a36a78c49f44a4e32575f7f977e711360ff",
+  "generated_xml_sha256": "d21279a017c9cf13091de0173435a082559d8151665bb5790e34eea33c15234e",
+  "note": "Generated derivative; source Panda XML unchanged. Virtual TCP mapping is explicit in config."
+}

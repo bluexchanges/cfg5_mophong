@@ -1,0 +1,103 @@
+{
+  "config_hash": "e751a61fec977943e6a507c145a71ef31f0dea4fa3e1270bb39afe6d18bd2383",
+  "split_hash": "092a30ed20e959274dcbbd024940134e98f6cfe89d87722ffafa33a560c089fa",
+  "source_split": "train",
+  "episodes": [
+    "task_0004_user_0014_scene_0002_cfg_0005"
+  ],
+  "missing_train_episodes": [
+    "task_0004_user_0014_scene_0003_cfg_0005",
+    "task_0004_user_0014_scene_0005_cfg_0005",
+    "task_0004_user_0014_scene_0006_cfg_0005",
+    "task_0004_user_0014_scene_0007_cfg_0005",
+    "task_0004_user_0014_scene_0008_cfg_0005",
+    "task_0004_user_0014_scene_0010_cfg_0005",
+    "task_0008_user_0007_scene_0002_cfg_0005",
+    "task_0008_user_0007_scene_0004_cfg_0005",
+    "task_0008_user_0007_scene_0005_cfg_0005",
+    "task_0008_user_0007_scene_0006_cfg_0005",
+    "task_0008_user_0007_scene_0007_cfg_0005",
+    "task_0008_user_0007_scene_0008_cfg_0005",
+    "task_0008_user_0007_scene_0009_cfg_0005",
+    "task_0008_user_0010_scene_0001_cfg_0005",
+    "task_0008_user_0010_scene_0002_cfg_0005",
+    "task_0008_user_0010_scene_0003_cfg_0005",
+    "task_0008_user_0010_scene_0005_cfg_0005",
+    "task_0008_user_0010_scene_0008_cfg_0005",
+    "task_0008_user_0010_scene_0009_cfg_0005",
+    "task_0008_user_0010_scene_0010_cfg_0005",
+    "task_0013_user_0007_scene_0001_cfg_0005",
+    "task_0013_user_0007_scene_0007_cfg_0005",
+    "task_0013_user_0007_scene_0010_cfg_0005",
+    "task_0013_user_0010_scene_0001_cfg_0005",
+    "task_0013_user_0010_scene_0002_cfg_0005",
+    "task_0013_user_0010_scene_0003_cfg_0005",
+    "task_0013_user_0010_scene_0004_cfg_0005",
+    "task_0013_user_0010_scene_0007_cfg_0005",
+    "task_0013_user_0010_scene_0008_cfg_0005",
+    "task_0013_user_0010_scene_0009_cfg_0005",
+    "task_0014_user_0010_scene_0002_cfg_0005",
+    "task_0014_user_0010_scene_0004_cfg_0005",
+    "task_0014_user_0010_scene_0005_cfg_0005",
+    "task_0014_user_0010_scene_0006_cfg_0005",
+    "task_0014_user_0010_scene_0008_cfg_0005",
+    "task_0014_user_0010_scene_0009_cfg_0005",
+    "task_0014_user_0010_scene_0010_cfg_0005",
+    "task_0017_user_0010_scene_0001_cfg_0005",
+    "task_0017_user_0010_scene_0002_cfg_0005",
+    "task_0017_user_0010_scene_0003_cfg_0005",
+    "task_0017_user_0010_scene_0005_cfg_0005",
+    "task_0017_user_0010_scene_0006_cfg_0005",
+    "task_0017_user_0010_scene_0007_cfg_0005",
+    "task_0017_user_0010_scene_0008_cfg_0005",
+    "task_0017_user_0010_scene_0009_cfg_0005",
+    "task_0017_user_0010_scene_0010_cfg_0005"
+  ],
+  "smoke_only": true,
+  "state": {
+    "mean": [
+      0.5171873271465302,
+      -0.015321569770094356,
+      0.30227669328451157,
+      0.015701444426667877,
+      0.015288496550056152,
+      -0.9990143328905106,
+      0.006586392850294942,
+      0.0
+    ],
+    "std": [
+      0.030801018344661493,
+      0.026870583377305343,
+      0.0062766332628335884,
+      0.024228716342800737,
+      0.026641151439587556,
+      0.0017045413178841972,
+      0.012125232224437095,
+      0.0001
+    ],
+    "count": 8
+  },
+  "action": {
+    "mean": [
+      0.5112596104542414,
+      -0.010150029784805762,
+      0.3010688175757726,
+      0.011038632073905319,
+      0.010161751832735414,
+      -0.9993423720200857,
+      0.004252923002544169,
+      0.0
+    ],
+    "std": [
+      0.026509321717143194,
+      0.02312664737993178,
+      0.005402037695196934,
+      0.020852756075553768,
+      0.02292889711854507,
+      0.0014670355860027246,
+      0.010435723936190258,
+      0.0001
+    ],
+    "count": 6
+  }
+}

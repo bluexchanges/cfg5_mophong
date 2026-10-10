@@ -1,0 +1,48 @@
+# Dữ liệu gốc ở nguyên vị trí
+/RH20T_cfg5/
+/data/raw/
+/data/interim/
+/data/processed/*
+!/data/processed/README.md
+
+# Kết quả lớn; các báo cáo nhỏ đã kiểm chứng nằm ở docs/audit/
+/outputs/*
+!/outputs/README.md
+*.ckpt
+*.pth
+*.pt
+*.mp4
+*.avi
+
+# Môi trường và cache
+/.venv/*
+!/.venv/README.md
+/.venv-data/*
+!/.venv-data/README.md
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+/tmp/*
+!/tmp/README.md
+/mujoco/models/franka_emika_panda/assets/
+
+# Tài liệu và quy tắc làm việc riêng, không thuộc bản mã nguồn chia sẻ
+/AGENTS.md
+/.agents/
+/.codex/
+/references/requests/
+/references/papers/*.pdf
+
+# Gói chuyển máy và thư mục staging
+/zip/
+/*.zip
+/*.tar
+/*.tar.gz
+
+# Văn bản trích xuất có thể tái tạo từ PDF; giữ PDF, notes, manifest và source
+/references/extracted/
+Thumbs.db
+.DS_Store

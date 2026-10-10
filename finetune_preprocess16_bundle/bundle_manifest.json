@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "scripts/preprocess_finetune_parallel.py",
+      "normalized_sha256": "74f7aed3edc14687e1dabc08a53b12cccf81f307a75010f4006985f1abb1a3b3"
+    },
+    {
+      "path": "scripts/slurm/check_pick_place_preprocess16.sbatch",
+      "normalized_sha256": "22d167320160d7b53582186eaf863ed87bc2731dc433e14ba2ce7abd1cd6c58e"
+    },
+    {
+      "path": "scripts/slurm/preprocess_pick_place16.sbatch",
+      "normalized_sha256": "6d1f712b9b729d0e08e2f40fff32723292859094dc152039c88b0954ed22f5ac"
+    },
+    {
+      "path": "docs/PREPROCESS16_VI.md",
+      "normalized_sha256": "af23974194efcffaf49c3396521b3ecc13a1ff7217dccf4acaa1b015a7541a7d"
+    },
+    {
+      "path": "tests/test_parallel_finetune_preprocess.py",
+      "normalized_sha256": "8179ef3ec1fd0c65d6f63f4c8d2913f5564698c0765d14af07fbff579e039e19"
+    }
+  ],
+  "prerequisites": [
+    {
+      "path": "src/data/common.py",
+      "normalized_sha256": "a2093d3de94dd7eda2855859f541cef2db36cd46f1bd3c4d12ca75a77d062bd6"
+    },
+    {
+      "path": "src/data/sim_demos.py",
+      "normalized_sha256": "3003af53b9c0f8ef1b7f4ca42cdf3b5ffa8256436940dd68ce66abf0c11d56cf"
+    },
+    {
+      "path": "src/data/splits.py",
+      "normalized_sha256": "8efe181ca40899239523bc5193f9b7b18b941dab53e5981e03ea35c32acb9801"
+    },
+    {
+      "path": "scripts/prepare_finetune_data.py",
+      "normalized_sha256": "9c7895111e97484b41214a13d208ae62f5329128f53d73bd1fd067720de94300"
+    }
+  ]
+}

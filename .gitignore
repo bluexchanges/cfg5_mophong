@@ -1,0 +1,67 @@
+
+# cfg5_mophong GitHub export
+# Dependencies and temporary files
+.venv/
+.venv-data/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+/.tmp_plot_check/
+/local_source/tmp/
+/local_source/references/extracted/
+
+# Raw datasets and generated training payloads
+RH20T_cfg5/
+/local_source/data/raw/
+/local_source/data/interim/
+/local_source/data/processed/
+/local_source/data/features/
+/local_source/data/cache/
+/local_source/output/
+/local_source/outputs/*
+/finetune_preprocess16_bundle/data/
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.sqlite
+*.db
+*.mp4
+*.avi
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Existing clones of the old repository are not source for the new repository
+/checkpoint_upload_repo/
+/github_upload_source1/
+
+# Personal instructions and transient credentials
+AGENTS.md
+/local_source/references/requests/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Selected model weights, stored in Git LFS
+!/local_source/outputs/
+/local_source/outputs/*
+!/local_source/outputs/backbones/
+/local_source/outputs/backbones/*
+!/local_source/outputs/backbones/mcr_resnet50.pth
+!/local_source/outputs/backbones/mcr_resnet50.provenance.json
+!/epoch5_transfer_probe_14120/frozen_checkpoint.pt
+!/checkpoints/before_test_20261007_142338/best.pt

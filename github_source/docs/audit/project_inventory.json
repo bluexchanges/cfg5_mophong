@@ -1,0 +1,256 @@
+{
+  "generated_utc": "2026-09-27T16:28:37.133444+00:00",
+  "dataset_root": "D:\\Download\\mophong_RH20T\\RH20T_cfg5",
+  "scope": "Directory inventory and bounded samples; not a complete integrity or synchronization audit.",
+  "episode_directories": 2512,
+  "kinds": {
+    "robot": 1321,
+    "human": 1191
+  },
+  "task_count": 104,
+  "users": {
+    "0007": 1445,
+    "0010": 902,
+    "0014": 86,
+    "0020": 78,
+    "0062": 1
+  },
+  "configs": {
+    "0005": 2512
+  },
+  "unexpected_directories": [
+    "task_0001_user_0014_scene_0001_cfg_0005_human_2",
+    "task_0050_user_0007_scene_0005_cfg_0005_human_2",
+    "task_0062_user_0007_scene_0001_cfg_0005_human_2"
+  ],
+  "calibration_directory_exists": true,
+  "trusted_object_payloads": false,
+  "samples": [
+    {
+      "episode": "task_0001_user_0007_scene_0001_cfg_0005",
+      "entries": [
+        "audio_mixed",
+        "cam_036422060215",
+        "cam_037522062165",
+        "cam_104122061850",
+        "cam_104122063678",
+        "cam_104422070042",
+        "cam_104422070044",
+        "cam_105422061350",
+        "cam_135122079702",
+        "cam_f0461559",
+        "metadata.json",
+        "pedal_command",
+        "robot_command",
+        "transformed"
+      ],
+      "npy": [
+        {
+          "file": "cam_036422060215/timestamps.npy",
+          "bytes": 4012,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        },
+        {
+          "file": "robot_command/tcpcommand_timestamp.npy",
+          "bytes": 10840608,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "<f8",
+            "fortran_order": false,
+            "shape": [
+              193580,
+              7
+            ]
+          }
+        },
+        {
+          "file": "transformed/force_torque.npy",
+          "bytes": 323327,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        },
+        {
+          "file": "transformed/force_torque_base.npy",
+          "bytes": 323327,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        },
+        {
+          "file": "transformed/gripper.npy",
+          "bytes": 368090,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        },
+        {
+          "file": "transformed/high_freq_data.npy",
+          "bytes": 280,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        },
+        {
+          "file": "transformed/joint.npy",
+          "bytes": 288377,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        },
+        {
+          "file": "transformed/tcp.npy",
+          "bytes": 324061,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        },
+        {
+          "file": "transformed/tcp_base.npy",
+          "bytes": 387901,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        }
+      ],
+      "metadata": {
+        "finish_time": 1640002341257,
+        "rating": 9,
+        "calib_quality": 2,
+        "calib": 1640002326600,
+        "action": 1639120789274
+      }
+    },
+    {
+      "episode": "task_0001_user_0010_scene_0001_cfg_0005_human",
+      "entries": [
+        "audio_mixed",
+        "cam_036422060215",
+        "cam_037522062165",
+        "cam_104122061850",
+        "cam_104122063678",
+        "cam_104422070044",
+        "cam_104422071090",
+        "cam_105422061350",
+        "cam_f0461559",
+        "metadata.json"
+      ],
+      "npy": [
+        {
+          "file": "cam_036422060215/timestamps.npy",
+          "bytes": 1804,
+          "header": {
+            "version": [
+              1,
+              0
+            ],
+            "descr": "|O",
+            "fortran_order": false,
+            "shape": []
+          }
+        }
+      ],
+      "metadata": {
+        "calib": 1641974450000,
+        "calib_quality": 0,
+        "start_time": 1641974456995,
+        "end_time": 1641974459401
+      }
+    }
+  ],
+  "robot_file_availability": {
+    "joint.npy": {
+      "present": 1317,
+      "missing_episodes": [
+        "task_0039_user_0007_scene_0005_cfg_0005",
+        "task_0043_user_0007_scene_0009_cfg_0005",
+        "task_0060_user_0007_scene_0008_cfg_0005",
+        "task_0106_user_0007_scene_0005_cfg_0005"
+      ]
+    },
+    "gripper.npy": {
+      "present": 1321,
+      "missing_episodes": []
+    },
+    "tcp.npy": {
+      "present": 1321,
+      "missing_episodes": []
+    },
+    "tcp_base.npy": {
+      "present": 1321,
+      "missing_episodes": []
+    }
+  },
+  "file_inventory": {
+    "files": 56202,
+    "bytes": 92876723799,
+    "extensions": {
+      ".npy": 31773,
+      ".txt": 6,
+      ".png": 55,
+      ".json": 2515,
+      ".wav": 2513,
+      ".mp4": 19340
+    },
+    "selected_names": {
+      "tcp.npy": 1325,
+      "color.mp4": 19340,
+      "gripper.npy": 1321,
+      "joint.npy": 1317,
+      "tcp_base.npy": 1321
+    }
+  }
+}

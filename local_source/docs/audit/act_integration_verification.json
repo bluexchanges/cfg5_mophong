@@ -1,0 +1,64 @@
+{
+  "verified_at_utc": "2026-09-27T17:18:36.998113+00:00",
+  "source_repository": "rh20t/act_baseline",
+  "source_commit": "107ce1287a46be3a1a7ea954f8bbdec3bb103288",
+  "downloaded_source_files": 26,
+  "downloaded_source_bytes": 103547,
+  "original_reference_snapshot_files_unchanged": 51,
+  "unit_tests": {
+    "passed": 35,
+    "failed": 0,
+    "log": "docs/audit/act_unit_tests.txt",
+    "command": ".venv-data/Scripts/python.exe -X utf8 -m unittest discover -s tests -v"
+  },
+  "pip_check": "No broken requirements found.",
+  "model_check": "docs/audit/act_integration_check.json",
+  "data_review": {
+    "accepted_episodes": 57,
+    "rejected_episodes": 42,
+    "split_counts": {
+      "train": 47,
+      "val": 5,
+      "test": 5
+    },
+    "accepted_per_task": {
+      "4": 12,
+      "8": 14,
+      "13": 10,
+      "14": 12,
+      "17": 9
+    },
+    "timeline_steps": 5473,
+    "potential_samples": 4789,
+    "samples_with_full_chunk": 275,
+    "estimated_images_bytes": 30263500800,
+    "manifest_hash": "5eb62fd272c77f2a9af5e919fcd83bac48d86696c8458253cb80ceb6e5775dac",
+    "decoded_in_this_command": false
+  },
+  "selection_cli_preserves_original_split_ids_when_all_selected": true,
+  "processed_preview": {
+    "episode": "task_0004_user_0014_scene_0002_cfg_0005",
+    "steps_saved": 8,
+    "index": 0,
+    "valid_future_actions": 5,
+    "page": "outputs/processed_preview_train/index.html"
+  },
+  "full_preprocessing_run": false,
+  "pretraining_run": false,
+  "target_demonstrations_collected": false,
+  "act_optimizer_steps": 0,
+  "source_sha256": {
+    "src/models/rh20t_act.py": "ac11cec1d4a72f33cd93cee4eab1b01ea04737eb7bffe5adb46970c6b30e4abd",
+    "src/models/__init__.py": "87d9e8d8fb7b564ab1641b05b3af6b3c6c5c3a83ec6ab46d5874b48f3233490a",
+    "configs/act/rh20t_base8.json": "b237f23a99c1e191f35647378eda6d83ac9a75113c4f5421f9b496b01c3b89c0",
+    "src/data/selection.py": "c36e93e883c98a249992f93d4715d6547120451c0e0c2a4e84f0923be56b3d97",
+    "requirements-act-lock.txt": "980acfecda363742c1838921a8c3681654d23a2fef4b5bfeba63778e9a1641de",
+    "scripts/download_act_baseline.py": "3a9ccf6abd722645140ae595283c4d417a3f0c8c999945ea60f49a717af75a67",
+    "scripts/check_act.py": "14d786e3e67f0c74278e6a1b4d322a4ff80bf901a03ce3eefcaf39d842ec3966",
+    "scripts/review_cfg5.py": "c89803b3da96836a668aa1e5c7070bf92e195b67d89a09c2e89ab29ba09ac3f0",
+    "scripts/select_cfg5.py": "a690d14090083211856e04f69dcbce66c99241f92cfcba99888bae05acffbab8",
+    "scripts/inspect_processed.py": "a62c10f37d6692495bd90ba74221163f2a6f08fe7b9db3b2a97e363659bc5376",
+    "tests/test_act_integration.py": "4c0b40c63ac91a69bf692d1e06680395aff00e34edf6a9406f6bd8a5346dd7e7",
+    "tests/test_data_selection.py": "68d01ece384e597f9c9f49fdae527643941f4900947c1720d58292a5cd4be98d"
+  }
+}

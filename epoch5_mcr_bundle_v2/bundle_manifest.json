@@ -1,0 +1,778 @@
+{
+  "schema_version": 1,
+  "prerequisites": [
+    "src/data/common.py",
+    "src/data/act_dataset.py",
+    "src/data/sim_demos.py",
+    "src/data/mp4_dataset.py",
+    "src/data/splits.py",
+    "src/data/geometry.py",
+    "src/models/rh20t_act.py",
+    "src/training/pretrain.py",
+    "scripts/_bootstrap.py",
+    "third_party/rh20t_act/models/detr/models/detr_vae.py",
+    "configs/data/cfg5_all8.json"
+  ],
+  "files": [
+    {
+      "path": "configs/mujoco/cfg5_camera_rig.json",
+      "text": true,
+      "sha256": "d6cfe913273d53935e5c470109beffe799b19be4b58602fffb3cb2d5aeb0c8e5",
+      "normalized_sha256": "d6cfe913273d53935e5c470109beffe799b19be4b58602fffb3cb2d5aeb0c8e5",
+      "bytes": 18840,
+      "install_if_missing": false
+    },
+    {
+      "path": "docs/EPOCH5_MCR_VI.md",
+      "text": true,
+      "sha256": "ef62e350c868e01cbb12edcdf154762dc64e858c5b390e41c9693f240228f9aa",
+      "normalized_sha256": "ef62e350c868e01cbb12edcdf154762dc64e858c5b390e41c9693f240228f9aa",
+      "bytes": 14654,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/CHANGELOG.md",
+      "text": true,
+      "sha256": "164a6ec704aa1714b1311f8b1538e20b4223b6ef08b7d3cb03edc26192892f67",
+      "normalized_sha256": "164a6ec704aa1714b1311f8b1538e20b4223b6ef08b7d3cb03edc26192892f67",
+      "bytes": 235,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/LICENSE",
+      "text": true,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "normalized_sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "bytes": 10173,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/README.md",
+      "text": true,
+      "sha256": "e12684556d0154bdf2a9e77e7009ed680cd06ca89904f9e6303050f9fe59300c",
+      "normalized_sha256": "e12684556d0154bdf2a9e77e7009ed680cd06ca89904f9e6303050f9fe59300c",
+      "bytes": 2908,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/finger_0.obj",
+      "text": false,
+      "sha256": "215098c0fcdf7192f6c503a37cf49e3efecf8a9e1320f02b17c5584d89cc5b2c",
+      "normalized_sha256": "215098c0fcdf7192f6c503a37cf49e3efecf8a9e1320f02b17c5584d89cc5b2c",
+      "bytes": 87872,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/finger_1.obj",
+      "text": false,
+      "sha256": "cf239e9aca26bba09dbbf1c544c47d87cfc9a2f0637c8bb786af750b6d4eca44",
+      "normalized_sha256": "cf239e9aca26bba09dbbf1c544c47d87cfc9a2f0637c8bb786af750b6d4eca44",
+      "bytes": 64651,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/hand.stl",
+      "text": false,
+      "sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "normalized_sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "bytes": 10084,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/hand_0.obj",
+      "text": false,
+      "sha256": "b94aab901086f85df04c019b30f43bf9aa23a7ad0443ec80a8c14662a41cabd2",
+      "normalized_sha256": "b94aab901086f85df04c019b30f43bf9aa23a7ad0443ec80a8c14662a41cabd2",
+      "bytes": 9091,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/hand_1.obj",
+      "text": false,
+      "sha256": "cd76f7494bb314406a1819c46eb826ee254894f87235714f604a470653d9badb",
+      "normalized_sha256": "cd76f7494bb314406a1819c46eb826ee254894f87235714f604a470653d9badb",
+      "bytes": 121863,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/hand_2.obj",
+      "text": false,
+      "sha256": "e0f44a71712afa5b98eb20355eff17763d3e2e19f459b2bef19abed3727e64b3",
+      "normalized_sha256": "e0f44a71712afa5b98eb20355eff17763d3e2e19f459b2bef19abed3727e64b3",
+      "bytes": 596001,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/hand_3.obj",
+      "text": false,
+      "sha256": "a431a06d99e88a1b322b3122a01424ee7704daeaad0bc343b90b9604f014ad0c",
+      "normalized_sha256": "a431a06d99e88a1b322b3122a01424ee7704daeaad0bc343b90b9604f014ad0c",
+      "bytes": 902145,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/hand_4.obj",
+      "text": false,
+      "sha256": "21f96ef6a8de082e41b1ea9834f1043de359e5d60305541bcb63539581f53bff",
+      "normalized_sha256": "21f96ef6a8de082e41b1ea9834f1043de359e5d60305541bcb63539581f53bff",
+      "bytes": 151988,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0.stl",
+      "text": false,
+      "sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "normalized_sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "bytes": 10084,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_0.obj",
+      "text": false,
+      "sha256": "6b9f41a4c203540daaeb7a33cc3d0d6c6a32dc8bba187074eeaf97b3e36b3f9c",
+      "normalized_sha256": "6b9f41a4c203540daaeb7a33cc3d0d6c6a32dc8bba187074eeaf97b3e36b3f9c",
+      "bytes": 296497,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_1.obj",
+      "text": false,
+      "sha256": "57673d2ee2a9db2e10c8986ae57c56a7c39c012b60fd26d7d8549553b664a5ed",
+      "normalized_sha256": "57673d2ee2a9db2e10c8986ae57c56a7c39c012b60fd26d7d8549553b664a5ed",
+      "bytes": 103978,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_10.obj",
+      "text": false,
+      "sha256": "c9198b9d8534d628d097b0f2b239bb30343353182df098ce0d9db6bc13326848",
+      "normalized_sha256": "c9198b9d8534d628d097b0f2b239bb30343353182df098ce0d9db6bc13326848",
+      "bytes": 343308,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_11.obj",
+      "text": false,
+      "sha256": "f0adec78d6677b7799d25121981270e8bfe119b5c18d08a91ee37a54ad75f65c",
+      "normalized_sha256": "f0adec78d6677b7799d25121981270e8bfe119b5c18d08a91ee37a54ad75f65c",
+      "bytes": 22295,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_2.obj",
+      "text": false,
+      "sha256": "1ca435a2a87a9608a146a47955724d43dd7ce10fc3dd3018800aa98f8ba86e05",
+      "normalized_sha256": "1ca435a2a87a9608a146a47955724d43dd7ce10fc3dd3018800aa98f8ba86e05",
+      "bytes": 590892,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_3.obj",
+      "text": false,
+      "sha256": "3e9c6334d2b3b47944af3458ee5f20519abc20fe7ee23063bb53405ccab28046",
+      "normalized_sha256": "3e9c6334d2b3b47944af3458ee5f20519abc20fe7ee23063bb53405ccab28046",
+      "bytes": 47588,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_4.obj",
+      "text": false,
+      "sha256": "215d25789704936120f119c0bc1cc7f68516dd3f8f1df61457b71acac3873f26",
+      "normalized_sha256": "215d25789704936120f119c0bc1cc7f68516dd3f8f1df61457b71acac3873f26",
+      "bytes": 211200,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_5.obj",
+      "text": false,
+      "sha256": "9361b104e93743045107aa5b15fb1a0835ba9c1f355aae71f56403cf6a9c33f6",
+      "normalized_sha256": "9361b104e93743045107aa5b15fb1a0835ba9c1f355aae71f56403cf6a9c33f6",
+      "bytes": 17023,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_7.obj",
+      "text": false,
+      "sha256": "2dc0b8ebbbc80e4c065d71e195adbc384f673438641fac82b07b801b4d2837cb",
+      "normalized_sha256": "2dc0b8ebbbc80e4c065d71e195adbc384f673438641fac82b07b801b4d2837cb",
+      "bytes": 30699,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_8.obj",
+      "text": false,
+      "sha256": "3b8c436999db5586b8eb47bed2b0aa7de6993868b2681b4c04246eeac42fdb7a",
+      "normalized_sha256": "3b8c436999db5586b8eb47bed2b0aa7de6993868b2681b4c04246eeac42fdb7a",
+      "bytes": 3263194,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link0_9.obj",
+      "text": false,
+      "sha256": "45178f97d2b5da6bce11f610212c4ef7d08c73db33a4fc38e1b7f66b93d023f5",
+      "normalized_sha256": "45178f97d2b5da6bce11f610212c4ef7d08c73db33a4fc38e1b7f66b93d023f5",
+      "bytes": 105629,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link1.obj",
+      "text": false,
+      "sha256": "51091e776b16babdbe2f3849b5c041f921d1f11dd94ac19a0f1c81abf496fbae",
+      "normalized_sha256": "51091e776b16babdbe2f3849b5c041f921d1f11dd94ac19a0f1c81abf496fbae",
+      "bytes": 3274995,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link1.stl",
+      "text": false,
+      "sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "normalized_sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "bytes": 15084,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link2.obj",
+      "text": false,
+      "sha256": "5c9f8e715de52c3eb71b475de35993b3b96081e02abea9f28c414768877fc59b",
+      "normalized_sha256": "5c9f8e715de52c3eb71b475de35993b3b96081e02abea9f28c414768877fc59b",
+      "bytes": 3295608,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link2.stl",
+      "text": false,
+      "sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "normalized_sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "bytes": 15084,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link3.stl",
+      "text": false,
+      "sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "normalized_sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "bytes": 15084,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link3_0.obj",
+      "text": false,
+      "sha256": "ce2da87f51708e11b189249d41401065dabe89a06e251185a06cef4d5ff27178",
+      "normalized_sha256": "ce2da87f51708e11b189249d41401065dabe89a06e251185a06cef4d5ff27178",
+      "bytes": 3046804,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link3_1.obj",
+      "text": false,
+      "sha256": "2880b7753a7173f38fa87ee21da4dfc7fa7be46fbe07bac5aef9e128513cb118",
+      "normalized_sha256": "2880b7753a7173f38fa87ee21da4dfc7fa7be46fbe07bac5aef9e128513cb118",
+      "bytes": 65260,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link3_2.obj",
+      "text": false,
+      "sha256": "670cff81ae84693769ca4ae658c154cf909d81167e7c8d22b70ea977f2504efa",
+      "normalized_sha256": "670cff81ae84693769ca4ae658c154cf909d81167e7c8d22b70ea977f2504efa",
+      "bytes": 83591,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link3_3.obj",
+      "text": false,
+      "sha256": "30ede0c812efd0e0b767d134a4eae0b84e0fa407bb6325a5a555e0569b3a3ffd",
+      "normalized_sha256": "30ede0c812efd0e0b767d134a4eae0b84e0fa407bb6325a5a555e0569b3a3ffd",
+      "bytes": 457684,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link4.stl",
+      "text": false,
+      "sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "normalized_sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "bytes": 15084,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link4_0.obj",
+      "text": false,
+      "sha256": "443bf6d178177cf347951ecf107ccd10ca444e605e375b67304579e5f948806f",
+      "normalized_sha256": "443bf6d178177cf347951ecf107ccd10ca444e605e375b67304579e5f948806f",
+      "bytes": 83486,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link4_1.obj",
+      "text": false,
+      "sha256": "ca935ec7cc8b3f0e86aa079c76b0b3bf593b1e9830bab0fa7131ac51577c74f0",
+      "normalized_sha256": "ca935ec7cc8b3f0e86aa079c76b0b3bf593b1e9830bab0fa7131ac51577c74f0",
+      "bytes": 3148001,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link4_2.obj",
+      "text": false,
+      "sha256": "c89caf26d379c35bb9e191ee2d91d09ab29ecc792b48d8bc10b39e5b38222175",
+      "normalized_sha256": "c89caf26d379c35bb9e191ee2d91d09ab29ecc792b48d8bc10b39e5b38222175",
+      "bytes": 455522,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link4_3.obj",
+      "text": false,
+      "sha256": "1495d17f45bdb230cf58b0beef9da4e8c9cfe76a3d2d38da89017efe5e093136",
+      "normalized_sha256": "1495d17f45bdb230cf58b0beef9da4e8c9cfe76a3d2d38da89017efe5e093136",
+      "bytes": 67497,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link5_0.obj",
+      "text": false,
+      "sha256": "a3238b8f2af0f2eb66d9fe63dc5d41ac52d5d38507241b5ed10e3cb019ab3e71",
+      "normalized_sha256": "a3238b8f2af0f2eb66d9fe63dc5d41ac52d5d38507241b5ed10e3cb019ab3e71",
+      "bytes": 824158,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link5_1.obj",
+      "text": false,
+      "sha256": "9d994bbf83ec241e301b5197a6846da13f2a4a0582edb2c0f76962c5549649d6",
+      "normalized_sha256": "9d994bbf83ec241e301b5197a6846da13f2a4a0582edb2c0f76962c5549649d6",
+      "bytes": 63174,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link5_2.obj",
+      "text": false,
+      "sha256": "83b4ffe9f772cd7fe182e98640650eebc899aaf01842656574b0416c90dd40a4",
+      "normalized_sha256": "83b4ffe9f772cd7fe182e98640650eebc899aaf01842656574b0416c90dd40a4",
+      "bytes": 3856621,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link5_collision_0.obj",
+      "text": false,
+      "sha256": "3e5aa75fb13f193555c3dfb999df91d81df25006a5c3af5338297d78137c129b",
+      "normalized_sha256": "3e5aa75fb13f193555c3dfb999df91d81df25006a5c3af5338297d78137c129b",
+      "bytes": 3861,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link5_collision_1.obj",
+      "text": false,
+      "sha256": "87cd8f621071df010f774cbde789282b8463840dfe704f8bdfa2e29be0142e15",
+      "normalized_sha256": "87cd8f621071df010f774cbde789282b8463840dfe704f8bdfa2e29be0142e15",
+      "bytes": 2412,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link5_collision_2.obj",
+      "text": false,
+      "sha256": "823ab6c8f7b1d79e0844fa071d82a03499ff68e34fddb1ba3451032c22736040",
+      "normalized_sha256": "823ab6c8f7b1d79e0844fa071d82a03499ff68e34fddb1ba3451032c22736040",
+      "bytes": 3786,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6.stl",
+      "text": false,
+      "sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "normalized_sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "bytes": 10084,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_0.obj",
+      "text": false,
+      "sha256": "0504c70ebf1b284ee8faae7dcb896b8830bc672a6552015dd5dbd121fa031fb9",
+      "normalized_sha256": "0504c70ebf1b284ee8faae7dcb896b8830bc672a6552015dd5dbd121fa031fb9",
+      "bytes": 157563,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_1.obj",
+      "text": false,
+      "sha256": "45f7ca77695198b6d86ec2417ad4e42e6275044f0f96266699ee8e1057757ac1",
+      "normalized_sha256": "45f7ca77695198b6d86ec2417ad4e42e6275044f0f96266699ee8e1057757ac1",
+      "bytes": 27106,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_10.obj",
+      "text": false,
+      "sha256": "365f26c21d10332cab8d8704645cb46930c30b3085956f2d097498c793f24db4",
+      "normalized_sha256": "365f26c21d10332cab8d8704645cb46930c30b3085956f2d097498c793f24db4",
+      "bytes": 368502,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_11.obj",
+      "text": false,
+      "sha256": "8ae61e08b3ad064f25bbf03b22e59cc15d65883b5a7ce92711aff29df2493901",
+      "normalized_sha256": "8ae61e08b3ad064f25bbf03b22e59cc15d65883b5a7ce92711aff29df2493901",
+      "bytes": 32653,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_12.obj",
+      "text": false,
+      "sha256": "f28d1bfd62b0244ffd19fb35fe9edefdf583d3c9167db944e87185d919e1d021",
+      "normalized_sha256": "f28d1bfd62b0244ffd19fb35fe9edefdf583d3c9167db944e87185d919e1d021",
+      "bytes": 3894,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_13.obj",
+      "text": false,
+      "sha256": "0a55fa92dccb261d07200e6565fca4c850fd17f0c1ecf38821c0b97d51796c7d",
+      "normalized_sha256": "0a55fa92dccb261d07200e6565fca4c850fd17f0c1ecf38821c0b97d51796c7d",
+      "bytes": 3798,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_14.obj",
+      "text": false,
+      "sha256": "750ae3ee4781e62e3a045c662195247b03f6642b05aa93104f08258e5f6eba26",
+      "normalized_sha256": "750ae3ee4781e62e3a045c662195247b03f6642b05aa93104f08258e5f6eba26",
+      "bytes": 444469,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_15.obj",
+      "text": false,
+      "sha256": "5999c1c2497a004a7c4bbe034cdf13744f839d85ae7a11b1bc386c48a3e642e6",
+      "normalized_sha256": "5999c1c2497a004a7c4bbe034cdf13744f839d85ae7a11b1bc386c48a3e642e6",
+      "bytes": 668552,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_16.obj",
+      "text": false,
+      "sha256": "551d7a8b37c53e7a152d008b4e36992e5b5abe74a4be18b57ee6319c27def09f",
+      "normalized_sha256": "551d7a8b37c53e7a152d008b4e36992e5b5abe74a4be18b57ee6319c27def09f",
+      "bytes": 3675358,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_2.obj",
+      "text": false,
+      "sha256": "e54eee4d8232947ee8af65afd5a067e09dac2da6e7e585cb1dccb65496457da0",
+      "normalized_sha256": "e54eee4d8232947ee8af65afd5a067e09dac2da6e7e585cb1dccb65496457da0",
+      "bytes": 9916,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_3.obj",
+      "text": false,
+      "sha256": "d4f6a25ef32fa1fa4734146981994ee760232cb077c80fea6487d78a077c7f27",
+      "normalized_sha256": "d4f6a25ef32fa1fa4734146981994ee760232cb077c80fea6487d78a077c7f27",
+      "bytes": 11943,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_4.obj",
+      "text": false,
+      "sha256": "be353480fe71d46f7a96f0a3cbb7e112caaf8d88368826f321a36a253c8749b2",
+      "normalized_sha256": "be353480fe71d46f7a96f0a3cbb7e112caaf8d88368826f321a36a253c8749b2",
+      "bytes": 13846,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_5.obj",
+      "text": false,
+      "sha256": "7c87664623c3e1a6cb330db273227a69626dc5e53b4caff1d4ee7911eb3340c6",
+      "normalized_sha256": "7c87664623c3e1a6cb330db273227a69626dc5e53b4caff1d4ee7911eb3340c6",
+      "bytes": 11841,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_6.obj",
+      "text": false,
+      "sha256": "8fbc031e0d07b795ebf99115c75223141caaba317cab569159f3d477a7821681",
+      "normalized_sha256": "8fbc031e0d07b795ebf99115c75223141caaba317cab569159f3d477a7821681",
+      "bytes": 12597,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_7.obj",
+      "text": false,
+      "sha256": "7dc5ebb799fe281aab27d6e84e7a4efa0a8e42da2369ec83de3ea3f206f62d73",
+      "normalized_sha256": "7dc5ebb799fe281aab27d6e84e7a4efa0a8e42da2369ec83de3ea3f206f62d73",
+      "bytes": 4382,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_8.obj",
+      "text": false,
+      "sha256": "e3f77381817a341030f9dcc4c4aa7c559f80411b453fd87eb0fefecca82151bf",
+      "normalized_sha256": "e3f77381817a341030f9dcc4c4aa7c559f80411b453fd87eb0fefecca82151bf",
+      "bytes": 9131,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link6_9.obj",
+      "text": false,
+      "sha256": "25a56ea9b02a03b6cb5a81f31c54f54d0185e1a0b3937c37e4289d896e50215a",
+      "normalized_sha256": "25a56ea9b02a03b6cb5a81f31c54f54d0185e1a0b3937c37e4289d896e50215a",
+      "bytes": 17616,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7.stl",
+      "text": false,
+      "sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "normalized_sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "bytes": 10084,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7_0.obj",
+      "text": false,
+      "sha256": "04586b0bde011715cfc22072ac72fe0717eb4d4817bcf665987ce6cd88eb2b93",
+      "normalized_sha256": "04586b0bde011715cfc22072ac72fe0717eb4d4817bcf665987ce6cd88eb2b93",
+      "bytes": 1362355,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7_1.obj",
+      "text": false,
+      "sha256": "c3f72289f394c9d6749a4a327fb11f05b203c37c95032c92f28019b40ebe7e00",
+      "normalized_sha256": "c3f72289f394c9d6749a4a327fb11f05b203c37c95032c92f28019b40ebe7e00",
+      "bytes": 121358,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7_2.obj",
+      "text": false,
+      "sha256": "d2faecedb304d0989040d082410378dc949dbbda23bd18c05134f08aae984db5",
+      "normalized_sha256": "d2faecedb304d0989040d082410378dc949dbbda23bd18c05134f08aae984db5",
+      "bytes": 208907,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7_3.obj",
+      "text": false,
+      "sha256": "b62d87c4d4bdb7b281ed341d347c39dad0e50bf36aed8ac11d050073701d5f70",
+      "normalized_sha256": "b62d87c4d4bdb7b281ed341d347c39dad0e50bf36aed8ac11d050073701d5f70",
+      "bytes": 123684,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7_4.obj",
+      "text": false,
+      "sha256": "cb78ccb61fd4ad6c7bff4c4d2e6cb41e1964a5a3e1a28e67c0c6202371cfc018",
+      "normalized_sha256": "cb78ccb61fd4ad6c7bff4c4d2e6cb41e1964a5a3e1a28e67c0c6202371cfc018",
+      "bytes": 85732,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7_5.obj",
+      "text": false,
+      "sha256": "099071d3090b51471ba52f4f90814fd3089f4975d196e4d488117073d0bfe491",
+      "normalized_sha256": "099071d3090b51471ba52f4f90814fd3089f4975d196e4d488117073d0bfe491",
+      "bytes": 226402,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7_6.obj",
+      "text": false,
+      "sha256": "99469e2d95ab74ce0292f2f16954c87a8a7dc16652e62e970fe37c94330a81bb",
+      "normalized_sha256": "99469e2d95ab74ce0292f2f16954c87a8a7dc16652e62e970fe37c94330a81bb",
+      "bytes": 99900,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/assets/link7_7.obj",
+      "text": false,
+      "sha256": "426c3db8a19373f3dc73d4bec672e948121b2914c10e2e7b9c7ea80643a19e54",
+      "normalized_sha256": "426c3db8a19373f3dc73d4bec672e948121b2914c10e2e7b9c7ea80643a19e54",
+      "bytes": 792162,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/manifest.json",
+      "text": true,
+      "sha256": "f0e41bd56fe3a9942a1fe979090ef181d5e531e3fa39a696eca21824e4b68204",
+      "normalized_sha256": "f0e41bd56fe3a9942a1fe979090ef181d5e531e3fa39a696eca21824e4b68204",
+      "bytes": 22604,
+      "install_if_missing": false
+    },
+    {
+      "path": "mujoco/models/franka_emika_panda/panda.xml",
+      "text": true,
+      "sha256": "96ad67da03710f17f798c9478fd9e9efdf24a3bf8359f05e456dd9fb158ea273",
+      "normalized_sha256": "96ad67da03710f17f798c9478fd9e9efdf24a3bf8359f05e456dd9fb158ea273",
+      "bytes": 14438,
+      "install_if_missing": false
+    },
+    {
+      "path": "scripts/download_mcr.py",
+      "text": true,
+      "sha256": "733e1d42ebf453ee3bf556576d337840fffe3173008d0f9763bea3a69410fdd2",
+      "normalized_sha256": "733e1d42ebf453ee3bf556576d337840fffe3173008d0f9763bea3a69410fdd2",
+      "bytes": 2166,
+      "install_if_missing": false
+    },
+    {
+      "path": "scripts/prepare_mcr_cache.py",
+      "text": true,
+      "sha256": "6ffae10dc0c928d92a30db673b8188fae026d91e52a96bd6628a9110a80f7c55",
+      "normalized_sha256": "6ffae10dc0c928d92a30db673b8188fae026d91e52a96bd6628a9110a80f7c55",
+      "bytes": 7688,
+      "install_if_missing": false
+    },
+    {
+      "path": "scripts/probe_epoch5.py",
+      "text": true,
+      "sha256": "0f9ae5e244426538e7928056d72ca0bd7387464e5dd9e608d0f289cfcf852aff",
+      "normalized_sha256": "0f9ae5e244426538e7928056d72ca0bd7387464e5dd9e608d0f289cfcf852aff",
+      "bytes": 1621,
+      "install_if_missing": false
+    },
+    {
+      "path": "scripts/slurm/mcr_cache.sbatch",
+      "text": true,
+      "sha256": "7ecd33bfa9ea39ba7397de5e3eb4da71637fb6a6ec7255c3333334a5409833ea",
+      "normalized_sha256": "7ecd33bfa9ea39ba7397de5e3eb4da71637fb6a6ec7255c3333334a5409833ea",
+      "bytes": 1466,
+      "install_if_missing": false
+    },
+    {
+      "path": "scripts/slurm/mcr_train.sbatch",
+      "text": true,
+      "sha256": "354c3edc7ade6d2e196be42de0e5b1a2d0c88756bfb12f269f10ba6d59a016c6",
+      "normalized_sha256": "354c3edc7ade6d2e196be42de0e5b1a2d0c88756bfb12f269f10ba6d59a016c6",
+      "bytes": 1710,
+      "install_if_missing": false
+    },
+    {
+      "path": "scripts/slurm/probe_epoch5.sbatch",
+      "text": true,
+      "sha256": "a348c5bfad008fd53e946f7de423d305fe32141fd52dbf21954a09398c890864",
+      "normalized_sha256": "a348c5bfad008fd53e946f7de423d305fe32141fd52dbf21954a09398c890864",
+      "bytes": 1280,
+      "install_if_missing": false
+    },
+    {
+      "path": "scripts/train_mcr_act.py",
+      "text": true,
+      "sha256": "f5bf4e408aac97f7923b76a88ae898b0c7dcf7affa6386ad98ff2ad4dfadfcb2",
+      "normalized_sha256": "f5bf4e408aac97f7923b76a88ae898b0c7dcf7affa6386ad98ff2ad4dfadfcb2",
+      "bytes": 10492,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/data/feature_cache.py",
+      "text": true,
+      "sha256": "98a32c7e16ec3694a3ff795f5b3487550c2bc1dfc7dbf96e94ee2a8e50cd7d1b",
+      "normalized_sha256": "98a32c7e16ec3694a3ff795f5b3487550c2bc1dfc7dbf96e94ee2a8e50cd7d1b",
+      "bytes": 15273,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/evaluation/transfer_metrics.py",
+      "text": true,
+      "sha256": "4cfce6dee390081fe7405721bb0102fae647719692e00e49f507b10aa9d1bd21",
+      "normalized_sha256": "4cfce6dee390081fe7405721bb0102fae647719692e00e49f507b10aa9d1bd21",
+      "bytes": 3066,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/evaluation/transfer_probe.py",
+      "text": true,
+      "sha256": "608a0c02fe59260f0da36c59fa9a18ebae11241c9bc3b16396115513434a6cb8",
+      "normalized_sha256": "608a0c02fe59260f0da36c59fa9a18ebae11241c9bc3b16396115513434a6cb8",
+      "bytes": 17798,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/models/mcr_act.py",
+      "text": true,
+      "sha256": "12e8f4d747e340b7bc95ac53f427f7df551b5712ad7cd98babf92724e3df88d0",
+      "normalized_sha256": "12e8f4d747e340b7bc95ac53f427f7df551b5712ad7cd98babf92724e3df88d0",
+      "bytes": 8114,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/simulation/__init__.py",
+      "text": true,
+      "sha256": "fbee6791e64a45efd058191f4c01acc824be67ff47bbb29f2a26358fbb825adc",
+      "normalized_sha256": "fbee6791e64a45efd058191f4c01acc824be67ff47bbb29f2a26358fbb825adc",
+      "bytes": 83,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/simulation/config_validation.py",
+      "text": true,
+      "sha256": "21397e89967dc4faa82894e8ba5f964ec19310bcfac99381af9a7ca6fb15170c",
+      "normalized_sha256": "21397e89967dc4faa82894e8ba5f964ec19310bcfac99381af9a7ca6fb15170c",
+      "bytes": 6375,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/simulation/panda_controller.py",
+      "text": true,
+      "sha256": "94aca7e5e98ed50866225412659b9cd604fa6882bb5b865f3d766c7129272d1b",
+      "normalized_sha256": "94aca7e5e98ed50866225412659b9cd604fa6882bb5b865f3d766c7129272d1b",
+      "bytes": 3799,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/simulation/panda_env.py",
+      "text": true,
+      "sha256": "086d664ff140e83eb1aeb5bf0167d50bd77da629ffb4a09630d3858b872a3a3f",
+      "normalized_sha256": "086d664ff140e83eb1aeb5bf0167d50bd77da629ffb4a09630d3858b872a3a3f",
+      "bytes": 9805,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/simulation/panda_evaluator.py",
+      "text": true,
+      "sha256": "9fc6777221de5f5710b754e98b596cfcd0e19c36509c413572bdd26435a73f11",
+      "normalized_sha256": "9fc6777221de5f5710b754e98b596cfcd0e19c36509c413572bdd26435a73f11",
+      "bytes": 7094,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/simulation/panda_observation.py",
+      "text": true,
+      "sha256": "6a3917dccf4dbf4803c88b068c4345691a65806b7f6f946fbdae29c3aa1aba6a",
+      "normalized_sha256": "6a3917dccf4dbf4803c88b068c4345691a65806b7f6f946fbdae29c3aa1aba6a",
+      "bytes": 1561,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/simulation/scene_builder.py",
+      "text": true,
+      "sha256": "06ef8beebfe3ba5a384c1ce806484a36a78c49f44a4e32575f7f977e711360ff",
+      "normalized_sha256": "06ef8beebfe3ba5a384c1ce806484a36a78c49f44a4e32575f7f977e711360ff",
+      "bytes": 7522,
+      "install_if_missing": false
+    },
+    {
+      "path": "src/simulation/task_geometry.py",
+      "text": true,
+      "sha256": "1fe2e09c45e0986782846d64f796c9e474ee19a264b860ba2fd5e5538a9ff3c3",
+      "normalized_sha256": "1fe2e09c45e0986782846d64f796c9e474ee19a264b860ba2fd5e5538a9ff3c3",
+      "bytes": 833,
+      "install_if_missing": false
+    },
+    {
+      "path": "tests/test_sim_finetune_data.py",
+      "text": true,
+      "sha256": "a51f540091c3f1589473cae6f961ba4ba5820ff20d6f67d161588f9b908aef3f",
+      "normalized_sha256": "a51f540091c3f1589473cae6f961ba4ba5820ff20d6f67d161588f9b908aef3f",
+      "bytes": 16120,
+      "install_if_missing": true
+    },
+    {
+      "path": "tests/test_transfer_mcr.py",
+      "text": true,
+      "sha256": "9a807102e9d8cd55412bee3c706441536a77e308422d419c5ecf57c41b74844c",
+      "normalized_sha256": "9a807102e9d8cd55412bee3c706441536a77e308422d419c5ecf57c41b74844c",
+      "bytes": 11963,
+      "install_if_missing": false
+    }
+  ]
+}

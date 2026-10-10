@@ -1,0 +1,419 @@
+{
+  "sha": "742c753c0d4a5d87076c8f69e5628c79a8cc5488",
+  "url": "https://api.github.com/repos/tonyzhaozh/act/git/trees/742c753c0d4a5d87076c8f69e5628c79a8cc5488",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1e4c693a201f8c638b095566565f7399cc31adf",
+      "size": 1867,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/d1e4c693a201f8c638b095566565f7399cc31adf"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35e5f5e277714ec3b4b69ce573f1aa8a79bad787",
+      "size": 1069,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/35e5f5e277714ec3b4b69ce573f1aa8a79bad787"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c6f726dc91071e803002bf70b4a64cf812b0286",
+      "size": 3500,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/2c6f726dc91071e803002bf70b4a64cf812b0286"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62849da23548ac1b43390cb904f6d975d89098f4",
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/trees/62849da23548ac1b43390cb904f6d975d89098f4"
+    },
+    {
+      "path": "assets/bimanual_viperx_ee_insertion.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "700aaac5cde4f0f239417c23d252c440759f417f",
+      "size": 3589,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/700aaac5cde4f0f239417c23d252c440759f417f"
+    },
+    {
+      "path": "assets/bimanual_viperx_ee_transfer_cube.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25893842c9d743bf1a41150881792587b14a7912",
+      "size": 2313,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/25893842c9d743bf1a41150881792587b14a7912"
+    },
+    {
+      "path": "assets/bimanual_viperx_insertion.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f701d70a880f932ba99f0c5d0aa192f2bbf3a01a",
+      "size": 4261,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/f701d70a880f932ba99f0c5d0aa192f2bbf3a01a"
+    },
+    {
+      "path": "assets/bimanual_viperx_transfer_cube.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdc9e644d521ac14e105453f33612dc0477109e8",
+      "size": 2985,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/bdc9e644d521ac14e105453f33612dc0477109e8"
+    },
+    {
+      "path": "assets/scene.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae59450506ee7c97a582331636fb87346cbd5429",
+      "size": 1694,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/ae59450506ee7c97a582331636fb87346cbd5429"
+    },
+    {
+      "path": "assets/tabletop.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab35cdf76426b2dddc433afa11af96ebe0e07c17",
+      "size": 684,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/ab35cdf76426b2dddc433afa11af96ebe0e07c17"
+    },
+    {
+      "path": "assets/vx300s_10_custom_finger_left.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "534c7af9616a590dcc0027528205d07d17f95d4b",
+      "size": 83384,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/534c7af9616a590dcc0027528205d07d17f95d4b"
+    },
+    {
+      "path": "assets/vx300s_10_custom_finger_right.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6a492c2046d3850ce7c7d650e951701b93bb87d",
+      "size": 83384,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/d6a492c2046d3850ce7c7d650e951701b93bb87d"
+    },
+    {
+      "path": "assets/vx300s_10_gripper_finger.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6df86bef815342723e35f4aac53a0f276877bfb",
+      "size": 42884,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/d6df86bef815342723e35f4aac53a0f276877bfb"
+    },
+    {
+      "path": "assets/vx300s_11_ar_tag.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "193014b60c1cc7547a828d8549304acb1729ac8d",
+      "size": 3884,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/193014b60c1cc7547a828d8549304acb1729ac8d"
+    },
+    {
+      "path": "assets/vx300s_1_base.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a7efda2fe330aeadad63ee4ce29e996ebdf2195",
+      "size": 99984,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/5a7efda2fe330aeadad63ee4ce29e996ebdf2195"
+    },
+    {
+      "path": "assets/vx300s_2_shoulder.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc22aa7e51355a0a8d0439f85be356c6aa9e1c3c",
+      "size": 63884,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/dc22aa7e51355a0a8d0439f85be356c6aa9e1c3c"
+    },
+    {
+      "path": "assets/vx300s_3_upper_arm.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "111c586e18fb0f44cee7e4593d24c71382a6e9b4",
+      "size": 102984,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/111c586e18fb0f44cee7e4593d24c71382a6e9b4"
+    },
+    {
+      "path": "assets/vx300s_4_upper_forearm.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8170d21ce81cb22b5ecca8fdf974e860ae61302f",
+      "size": 49584,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/8170d21ce81cb22b5ecca8fdf974e860ae61302f"
+    },
+    {
+      "path": "assets/vx300s_5_lower_forearm.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39581f83a627bee69717fc8d969f1b6bc20196e2",
+      "size": 99884,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/39581f83a627bee69717fc8d969f1b6bc20196e2"
+    },
+    {
+      "path": "assets/vx300s_6_wrist.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab8423e99da86cb9e13c197f8137b670f789ea2a",
+      "size": 70784,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/ab8423e99da86cb9e13c197f8137b670f789ea2a"
+    },
+    {
+      "path": "assets/vx300s_7_gripper.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "043db9caeaa59dcb0a6bf570956b0904eb60ba63",
+      "size": 450084,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/043db9caeaa59dcb0a6bf570956b0904eb60ba63"
+    },
+    {
+      "path": "assets/vx300s_8_gripper_prop.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36099b4221155b491a2ad61fb799c7fd7d443b77",
+      "size": 31684,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/36099b4221155b491a2ad61fb799c7fd7d443b77"
+    },
+    {
+      "path": "assets/vx300s_9_gripper_bar.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eba3caa21990c28559553fe0003ae379514e7215",
+      "size": 379484,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/eba3caa21990c28559553fe0003ae379514e7215"
+    },
+    {
+      "path": "assets/vx300s_dependencies.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c75d3ad5c1938dbf0b4af8afb442ee940783b841",
+      "size": 1271,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/c75d3ad5c1938dbf0b4af8afb442ee940783b841"
+    },
+    {
+      "path": "assets/vx300s_left.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61e6219ea4f93448118d17fa80ab3945e992864c",
+      "size": 6500,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/61e6219ea4f93448118d17fa80ab3945e992864c"
+    },
+    {
+      "path": "assets/vx300s_right.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c6f007ce7141e8a11ac0c96ba6cc03722df0336",
+      "size": 6555,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/2c6f007ce7141e8a11ac0c96ba6cc03722df0336"
+    },
+    {
+      "path": "conda_env.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f44d6b09d93c47971cf7bef83488d68c2c3ba99",
+      "size": 390,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/0f44d6b09d93c47971cf7bef83488d68c2c3ba99"
+    },
+    {
+      "path": "constants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f445350a8f9e99b049a64b33225fb371e2374531",
+      "size": 4021,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/f445350a8f9e99b049a64b33225fb371e2374531"
+    },
+    {
+      "path": "detr",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2078ce683c0ecdbc9a84c0bf18cedc3ab738a82e",
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/trees/2078ce683c0ecdbc9a84c0bf18cedc3ab738a82e"
+    },
+    {
+      "path": "detr/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1395e94b016dd1b95b4c7e3ed493e1d0b342917",
+      "size": 11354,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/b1395e94b016dd1b95b4c7e3ed493e1d0b342917"
+    },
+    {
+      "path": "detr/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "500b1b8d01108f8ff99b2c505a58cdd43a546fee",
+      "size": 417,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/500b1b8d01108f8ff99b2c505a58cdd43a546fee"
+    },
+    {
+      "path": "detr/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c4a3390adb531ee0352b6fda205d945144f278f",
+      "size": 5492,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/3c4a3390adb531ee0352b6fda205d945144f278f"
+    },
+    {
+      "path": "detr/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5231c40be58417ccc8430fedb9c6c3297da338d7",
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/trees/5231c40be58417ccc8430fedb9c6c3297da338d7"
+    },
+    {
+      "path": "detr/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc78db109026821ecbf4f6586a6eddc6c277bf67",
+      "size": 278,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/cc78db109026821ecbf4f6586a6eddc6c277bf67"
+    },
+    {
+      "path": "detr/models/backbone.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f28637eabe0158225398faffa7b06b144efd93a7",
+      "size": 4583,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/f28637eabe0158225398faffa7b06b144efd93a7"
+    },
+    {
+      "path": "detr/models/detr_vae.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bccfca75e48e3e9aa179554710ee67536d2436a7",
+      "size": 12128,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/bccfca75e48e3e9aa179554710ee67536d2436a7"
+    },
+    {
+      "path": "detr/models/position_encoding.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "209d9171f4cf807685f6b4a729df987614bfc765",
+      "size": 3390,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/209d9171f4cf807685f6b4a729df987614bfc765"
+    },
+    {
+      "path": "detr/models/transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f38afd0eb2211b45a980278294a426b3fa82c96f",
+      "size": 12989,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/f38afd0eb2211b45a980278294a426b3fa82c96f"
+    },
+    {
+      "path": "detr/setup.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55d18c0db74e27a687b6d6e0fb236e1cbb801f20",
+      "size": 221,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/55d18c0db74e27a687b6d6e0fb236e1cbb801f20"
+    },
+    {
+      "path": "detr/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3a400d77529b20e72d91162b3cc542cbbce05b0",
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/trees/b3a400d77529b20e72d91162b3cc542cbbce05b0"
+    },
+    {
+      "path": "detr/util/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "168f9979a4623806934b0ff1102ac166704e7dec",
+      "size": 71,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/168f9979a4623806934b0ff1102ac166704e7dec"
+    },
+    {
+      "path": "detr/util/box_ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c088e5bacc88ff7217fc971f5db889f5bb45b39",
+      "size": 2561,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/9c088e5bacc88ff7217fc971f5db889f5bb45b39"
+    },
+    {
+      "path": "detr/util/misc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfa9fb5b8f9e44c98e42aa9bb7275f6fa151472d",
+      "size": 15356,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/dfa9fb5b8f9e44c98e42aa9bb7275f6fa151472d"
+    },
+    {
+      "path": "detr/util/plot_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f24bed0d3fe4624aeb231ddd02633f2e58e4bff",
+      "size": 4514,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/0f24bed0d3fe4624aeb231ddd02633f2e58e4bff"
+    },
+    {
+      "path": "ee_sim_env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01df233746433e5487dfb05a9aa09b3736ae9f2c",
+      "size": 12632,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/01df233746433e5487dfb05a9aa09b3736ae9f2c"
+    },
+    {
+      "path": "imitate_episodes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34f9a372909edc0414cdd88ac22c800cdf8ffd98",
+      "size": 17242,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/34f9a372909edc0414cdd88ac22c800cdf8ffd98"
+    },
+    {
+      "path": "policy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b091e5e0c4c73b0cce35a714ba3ccc26a242962",
+      "size": 3277,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/7b091e5e0c4c73b0cce35a714ba3ccc26a242962"
+    },
+    {
+      "path": "record_sim_episodes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "253fdea1c1ec95645cef7afce426712317eaa57a",
+      "size": 7398,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/253fdea1c1ec95645cef7afce426712317eaa57a"
+    },
+    {
+      "path": "scripted_policy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fd8f00078d750f07ba504fa1bd16b7c7103531d",
+      "size": 9492,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/4fd8f00078d750f07ba504fa1bd16b7c7103531d"
+    },
+    {
+      "path": "sim_env.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b79b935b17d5abe9bda9dc5e57b5ae6d1df83a3f",
+      "size": 12751,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/b79b935b17d5abe9bda9dc5e57b5ae6d1df83a3f"
+    },
+    {
+      "path": "utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d90b78241713ae602a37b73996b8faa35fd79d95",
+      "size": 6969,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/d90b78241713ae602a37b73996b8faa35fd79d95"
+    },
+    {
+      "path": "visualize_episodes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e55e47191ddccbca29c2baaee356e82eddc10ee",
+      "size": 5069,
+      "url": "https://api.github.com/repos/tonyzhaozh/act/git/blobs/4e55e47191ddccbca29c2baaee356e82eddc10ee"
+    }
+  ],
+  "truncated": false
+}

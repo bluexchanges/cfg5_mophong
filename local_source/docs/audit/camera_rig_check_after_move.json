@@ -1,0 +1,175 @@
+{
+  "calibration_id": "1640071679624",
+  "camera_count": 8,
+  "cameras": [
+    {
+      "serial": "036422060215",
+      "parent_frame": "robot_base",
+      "calibration_roundtrip_max_abs_error": 0.0,
+      "base_position_at_calibration_m": [
+        -0.08003605080420154,
+        0.4445253682270332,
+        0.7886772783832946
+      ]
+    },
+    {
+      "serial": "037522062165",
+      "parent_frame": "robot_base",
+      "calibration_roundtrip_max_abs_error": 0.0,
+      "base_position_at_calibration_m": [
+        0.8524528999572418,
+        0.2147270276746961,
+        0.8157609917052633
+      ]
+    },
+    {
+      "serial": "104122061850",
+      "parent_frame": "robot_base",
+      "calibration_roundtrip_max_abs_error": 0.0,
+      "base_position_at_calibration_m": [
+        0.8463434345748498,
+        -0.4316613644329627,
+        0.8141074054746956
+      ]
+    },
+    {
+      "serial": "104122063678",
+      "parent_frame": "robot_base",
+      "calibration_roundtrip_max_abs_error": 0.0,
+      "base_position_at_calibration_m": [
+        0.3138224183489041,
+        -0.539794575359936,
+        0.7986189581890015
+      ]
+    },
+    {
+      "serial": "104422070042",
+      "parent_frame": "rh20t_aligned_tcp",
+      "calibration_roundtrip_max_abs_error": 1.1102230246251565e-16,
+      "base_position_at_calibration_m": [
+        0.44960069854002277,
+        0.03305710967896766,
+        0.3887793543861881
+      ]
+    },
+    {
+      "serial": "104422070044",
+      "parent_frame": "robot_base",
+      "calibration_roundtrip_max_abs_error": 0.0,
+      "base_position_at_calibration_m": [
+        -0.09615880408433791,
+        -0.529662263366382,
+        1.0175065979423972
+      ]
+    },
+    {
+      "serial": "105422061350",
+      "parent_frame": "robot_base",
+      "calibration_roundtrip_max_abs_error": 0.0,
+      "base_position_at_calibration_m": [
+        0.3588434190155698,
+        0.4487054622946964,
+        0.7382589721810312
+      ]
+    },
+    {
+      "serial": "135122079702",
+      "parent_frame": "rh20t_aligned_tcp",
+      "calibration_roundtrip_max_abs_error": 1.1102230246251565e-16,
+      "base_position_at_calibration_m": [
+        0.5328345412057357,
+        0.04071068269102022,
+        0.39081878723011587
+      ]
+    }
+  ],
+  "fixed_camera_tcp_crosschecks_train_only": [
+    {
+      "episode": "task_0004_user_0014_scene_0002_cfg_0005",
+      "calibration": "1640071679624",
+      "serial": "036422060215",
+      "samples": 5,
+      "max_abs_matrix_error": 3.010319771235004e-11
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0002_cfg_0005",
+      "calibration": "1640071679624",
+      "serial": "037522062165",
+      "samples": 5,
+      "max_abs_matrix_error": 3.3383851238966145e-11
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0002_cfg_0005",
+      "calibration": "1640071679624",
+      "serial": "104122061850",
+      "samples": 5,
+      "max_abs_matrix_error": 3.735627085443838e-11
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0002_cfg_0005",
+      "calibration": "1640071679624",
+      "serial": "104122063678",
+      "samples": 5,
+      "max_abs_matrix_error": 3.317629504451247e-11
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0002_cfg_0005",
+      "calibration": "1640071679624",
+      "serial": "104422070044",
+      "samples": 5,
+      "max_abs_matrix_error": 2.948313815309689e-11
+    },
+    {
+      "episode": "task_0004_user_0014_scene_0002_cfg_0005",
+      "calibration": "1640071679624",
+      "serial": "105422061350",
+      "samples": 5,
+      "max_abs_matrix_error": 3.7673676678284806e-11
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0002_cfg_0005",
+      "calibration": "1641974450000",
+      "serial": "036422060215",
+      "samples": 5,
+      "max_abs_matrix_error": 3.4989899866388896e-11
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0002_cfg_0005",
+      "calibration": "1641974450000",
+      "serial": "037522062165",
+      "samples": 5,
+      "max_abs_matrix_error": 3.745093124507548e-11
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0002_cfg_0005",
+      "calibration": "1641974450000",
+      "serial": "104122061850",
+      "samples": 5,
+      "max_abs_matrix_error": 3.9478087465738554e-11
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0002_cfg_0005",
+      "calibration": "1641974450000",
+      "serial": "104122063678",
+      "samples": 5,
+      "max_abs_matrix_error": 4.463512892627364e-11
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0002_cfg_0005",
+      "calibration": "1641974450000",
+      "serial": "104422070044",
+      "samples": 5,
+      "max_abs_matrix_error": 3.657435465598269e-11
+    },
+    {
+      "episode": "task_0008_user_0007_scene_0002_cfg_0005",
+      "calibration": "1641974450000",
+      "serial": "105422061350",
+      "samples": 5,
+      "max_abs_matrix_error": 4.27657353974098e-11
+    }
+  ],
+  "mujoco_rendered": false,
+  "wrist_dynamic_dataset_extrinsics_verified": false,
+  "scope": "8 calibration roundtrips, 6 fixed/2 moving mount tests; fixed-camera TCP crosschecks on train only"
+}

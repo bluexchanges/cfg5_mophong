@@ -1,0 +1,189 @@
+{
+  "repository": "rh20t/act_baseline",
+  "commit": "107ce1287a46be3a1a7ea954f8bbdec3bb103288",
+  "weights_downloaded": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/.gitignore",
+      "bytes": 185,
+      "git_blob_sha": "e6946640c156956c45e71ba4e3c57a1b97fc009c",
+      "sha256": "c97897688ba64b8b01ae62c0e9a2776d071bb85d11ee61d0e290bd3673d432e3"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/LICENSE",
+      "bytes": 1062,
+      "git_blob_sha": "d72d607d586b380c93d34d930cc2c7fae9cc0eec",
+      "sha256": "ab1473bc4694810350ed29ca4dfc76587af3d5b58501c3028d4963bad7c85e5b"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/README.md",
+      "bytes": 2720,
+      "git_blob_sha": "b0585fc910354fb7bbe966a34edf30cfd4e8e892",
+      "sha256": "c64f5b91270599a43695a4ba7b150a6c0e050ee5bee618b0d228716166a07a40"
+    },
+    {
+      "path": "command_pretrain.sh",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/command_pretrain.sh",
+      "bytes": 234,
+      "git_blob_sha": "abdbc6b681f993884398e6d683df8ae337edf059",
+      "sha256": "50140b3208cab177292552e0721f221fb076d15d4a5c51fb79af18342bc7b252"
+    },
+    {
+      "path": "dataset/rh20t.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/dataset/rh20t.py",
+      "bytes": 12483,
+      "git_blob_sha": "cd8876b3ac9679308859d10cc0493c7648596747",
+      "sha256": "5e60b9b5d3da2ddd36189840cd8e9183961a05469189dcbc2338990d47822adb"
+    },
+    {
+      "path": "dataset/utils.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/dataset/utils.py",
+      "bytes": 549,
+      "git_blob_sha": "9568a155418e51e62202bae6880d44ec9c47b01f",
+      "sha256": "bd6014f04e2c9e42cb5fe09eb62764aca2bcaf16409b2eb2ac342edaa40bec7e"
+    },
+    {
+      "path": "models/detr/LICENSE",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/LICENSE",
+      "bytes": 11354,
+      "git_blob_sha": "b1395e94b016dd1b95b4c7e3ed493e1d0b342917",
+      "sha256": "b208c52b00a2df2c8f4c3298c34407bf2bfe409968213372251c91fcc737a1a5"
+    },
+    {
+      "path": "models/detr/README.md",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/README.md",
+      "bytes": 417,
+      "git_blob_sha": "500b1b8d01108f8ff99b2c505a58cdd43a546fee",
+      "sha256": "138b41d39a453f11ce56a6aa6dd47ec0afa3195e89f6d0da3daad9b5b0665f91"
+    },
+    {
+      "path": "models/detr/detr.egg-info/PKG-INFO",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/detr.egg-info/PKG-INFO",
+      "bytes": 510,
+      "git_blob_sha": "0f1054d2a28de0c5fc2542826512564b710a7bc4",
+      "sha256": "5308d0978d7bab7b4b2877663f91ca679cce87b4f59bc1db6387dfdbf2a52a6e"
+    },
+    {
+      "path": "models/detr/detr.egg-info/SOURCES.txt",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/detr.egg-info/SOURCES.txt",
+      "bytes": 310,
+      "git_blob_sha": "3040b8fa353ec9a7d2f0a15717ee71b34de67bb7",
+      "sha256": "deb1e144af4f5333a858b76f9653c0b6458c8cb2407ed819ac28724e710ecd09"
+    },
+    {
+      "path": "models/detr/detr.egg-info/dependency_links.txt",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/detr.egg-info/dependency_links.txt",
+      "bytes": 1,
+      "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "models/detr/detr.egg-info/top_level.txt",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/detr.egg-info/top_level.txt",
+      "bytes": 12,
+      "git_blob_sha": "c406055464420fa96c35835aa35153fb064acf68",
+      "sha256": "e104c6b3e081b16e5cd3606769d0f11e6c5fd71828431fc894edff0a9ca7e119"
+    },
+    {
+      "path": "models/detr/main.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/main.py",
+      "bytes": 5704,
+      "git_blob_sha": "3e53922996525490fa24585144872b4cc8f98098",
+      "sha256": "3a00a821a638a6aa95cdca7bf7d4af8b30aba9413a946b4bd8ccd3a5e0c9d30f"
+    },
+    {
+      "path": "models/detr/models/__init__.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/models/__init__.py",
+      "bytes": 278,
+      "git_blob_sha": "cc78db109026821ecbf4f6586a6eddc6c277bf67",
+      "sha256": "7ed43d119c4bef1c46df821cc3b4f256153fbe59717a2e9f1825abc2d3b3e778"
+    },
+    {
+      "path": "models/detr/models/backbone.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/models/backbone.py",
+      "bytes": 4551,
+      "git_blob_sha": "8528f454b2d88ddff80fb686934304626f1acb22",
+      "sha256": "c322956539f93b9f638eba13db12c388c433ab63c9cc22889c6e5c66962ef652"
+    },
+    {
+      "path": "models/detr/models/detr_vae.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/models/detr_vae.py",
+      "bytes": 12342,
+      "git_blob_sha": "0bf6412287df06f342d936f9b0c1c370fe692bb1",
+      "sha256": "50c5ebbea8d3bfc7dadde3d8c843665a976243f0f301b3c8f16b9f47b90e34d9"
+    },
+    {
+      "path": "models/detr/models/position_encoding.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/models/position_encoding.py",
+      "bytes": 3358,
+      "git_blob_sha": "db455d9c4136ff593ed8f8fd37f8f54e700c980d",
+      "sha256": "861e129d25aa3ca949e393086339b075b1e6704b574870ea0fb6e8cff7919bce"
+    },
+    {
+      "path": "models/detr/models/transformer.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/models/transformer.py",
+      "bytes": 12955,
+      "git_blob_sha": "f14278e6ac53ed4185f8eac763dbdd9be4f70442",
+      "sha256": "75f5c4082815186b3d1dd62db805426f0406a26bf6f01199d3dd7bf886e1eeda"
+    },
+    {
+      "path": "models/detr/setup.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/setup.py",
+      "bytes": 221,
+      "git_blob_sha": "55d18c0db74e27a687b6d6e0fb236e1cbb801f20",
+      "sha256": "96d9ab1a9911e640992121cf64a2d98c1894bf50e51589502388ecd08228f120"
+    },
+    {
+      "path": "models/detr/util/__init__.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/util/__init__.py",
+      "bytes": 71,
+      "git_blob_sha": "168f9979a4623806934b0ff1102ac166704e7dec",
+      "sha256": "9e535c45af09ac24ef8d5631a151f77febafe72a92ad6bfeb2d941f0c4a54e35"
+    },
+    {
+      "path": "models/detr/util/box_ops.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/util/box_ops.py",
+      "bytes": 2561,
+      "git_blob_sha": "9c088e5bacc88ff7217fc971f5db889f5bb45b39",
+      "sha256": "f0c1c3e27b0f69955e74b09b4ae1898e41e409d1af292c478ba8be71856112fc"
+    },
+    {
+      "path": "models/detr/util/misc.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/util/misc.py",
+      "bytes": 15356,
+      "git_blob_sha": "dfa9fb5b8f9e44c98e42aa9bb7275f6fa151472d",
+      "sha256": "b56dfabebf8eded2e7dbf359e167bd308d9c75ee0394f63a751cad9eee597f00"
+    },
+    {
+      "path": "models/detr/util/plot_utils.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/detr/util/plot_utils.py",
+      "bytes": 4514,
+      "git_blob_sha": "0f24bed0d3fe4624aeb231ddd02633f2e58e4bff",
+      "sha256": "45e371d165675185fce81142332da1408abc982585e24f7b084f6068fb51e529"
+    },
+    {
+      "path": "models/policy.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/models/policy.py",
+      "bytes": 2911,
+      "git_blob_sha": "81a62d08b67858fd2e08a9124205fce855b90628",
+      "sha256": "00cbb150190d2a11af5d546208130d100452cddb6c6dca039cf922112c88961f"
+    },
+    {
+      "path": "requirements.txt",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/requirements.txt",
+      "bytes": 55,
+      "git_blob_sha": "b41953e4f918ebbcee7ae9d12fd2984757b8b235",
+      "sha256": "065a92aefeea866e74e3f73a51108aacb05f399fbb25704c1ab8a5ee5bd12a82"
+    },
+    {
+      "path": "train.py",
+      "url": "https://raw.githubusercontent.com/rh20t/act_baseline/107ce1287a46be3a1a7ea954f8bbdec3bb103288/train.py",
+      "bytes": 8833,
+      "git_blob_sha": "d996153991f68a7ba31f25415f22d592ce9624eb",
+      "sha256": "985f63dcbd35d1c0b465b9d65671079309f19ae70274d1a62ec874ef5b259bb7"
+    }
+  ]
+}

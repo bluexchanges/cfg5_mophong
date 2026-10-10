@@ -1,0 +1,51 @@
+{
+  "scope": "Isolated upstream functions, synthetic data; no model execution or training.",
+  "rh20t_padding": {
+    "input_timestamps": [
+      1000,
+      1100,
+      1200
+    ],
+    "horizon": 4,
+    "generated_samples": 3,
+    "first_sample": [
+      1000,
+      1100,
+      1200,
+      1200
+    ],
+    "upstream_mask": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "correct_mask_for_first_sample": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "padding_bug_reproduced": true
+  },
+  "airexo_density": {
+    "timestamps": [
+      1000,
+      1050,
+      1100,
+      1150,
+      1200
+    ],
+    "frequency_hz": 10,
+    "eligible_start_indices": [
+      0,
+      1,
+      2
+    ],
+    "future_timestamps_from_first": [
+      1100,
+      1200
+    ],
+    "note": "Start indices remain dense at original timestamps; freq controls future spacing."
+  }
+}

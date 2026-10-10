@@ -1,0 +1,130 @@
+"""Pilot -> storage estimate -> resumable episode cache; train/val only."""
+import os
+for key in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "OPENCV_FFMPEG_THREADS"):
+    os.environ.setdefault(key, "1")
+import argparse
+from pathlib import Path
+import random
+import shutil
+import subprocess
+import time
+import _bootstrap
+import torch
+import cv2
+from src.data.common import ROOT, digest, outside_raw, read_json
+from src.data.feature_cache import (context, cache_contract, cache_episode, check_episode, FEATURE_SHAPE)
+from src.models.mcr_act import MCRACTPolicy, PREPROCESS
+from src.training.pretrain import write_json
+
+
+def home_usage():
+    result = subprocess.run(["du", "-s", "-B1", str(Path.home())], text=True, capture_output=True)
+    if result.returncode:
+        raise RuntimeError("Không đo được dung lượng home; dùng --home-used-gib với số đo thật")
+    return int(result.stdout.split()[0])
+
+
+def estimate(root, source, names, cfg, split, contract):
+    completed, pending_steps, total_steps = [], 0, 0
+    for ep in names:
+        steps = read_json(source / ep / "episode.json")["steps"]
+        total_steps += steps
+        if (root / ep).exists():
+            completed.append(check_episode(root / ep, cfg, split, contract))
+        else:
+            pending_steps += steps
+    per_step = 8 * 2048 * 7 * 7 + 8 * 2048 * 2
+    jpeg_per_step = (max(m["jpeg_file_bytes"] / m["steps"] for m in completed) * 1.5
+                     if completed else cfg["image_width"] * cfg["image_height"] * 3 * 8 * 1.2)
+    pending_bytes = int(pending_steps * (per_step + jpeg_per_step + 256) * 1.1 + 2**30)
+    return {"total_steps": total_steps, "pending_steps": pending_steps, "completed_episodes": len(completed),
+            "feature_payload_GiB": total_steps * per_step / 2**30,
+            "estimated_pending_GiB": pending_bytes / 2**30, "pending_bytes": pending_bytes,
+            "jpeg_estimate_basis": "max completed bytes/tick x1.5" if completed else "uncompressed upper estimate",
+            "quantization_max_absolute_error": max((m["quantization_max_absolute_error"] for m in completed), default=None)}
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("command", choices=("pilot", "build", "check", "estimate"))
+    p.add_argument("--base-config", default="configs/act/pick_place_finetune_mp4_w16.json")
+    p.add_argument("--cache-root", default="data/features/pick_place_mcr")
+    p.add_argument("--mcr-checkpoint", default="outputs/backbones/mcr_resnet50.pth")
+    p.add_argument("--batch-size", type=int, default=8)
+    p.add_argument("--decoder-workers", type=int, default=8)
+    p.add_argument("--pilot-episodes", type=int, default=3)
+    p.add_argument("--jpeg-quality", type=int, default=90)
+    p.add_argument("--home-quota-tb", type=float, default=1.8, help="Decimal TB; cluster soft quota")
+    p.add_argument("--home-used-gib", type=float)
+    p.add_argument("--device", choices=("cpu", "cuda"), default="cuda")
+    p.add_argument("--full-check", action="store_true")
+    args = p.parse_args()
+    if min(args.batch_size, args.decoder_workers, args.pilot_episodes) < 1 or args.decoder_workers > 16:
+        p.error("batch/pilot phải dương; decoder-workers 1..16")
+    if args.home_quota_tb <= 0 or (args.home_used_gib is not None and args.home_used_gib < 0):
+        p.error("Quota/usage không hợp lệ")
+    run, model, cfg, splits, stats = context(args.base_config)
+    root = outside_raw(ROOT / args.cache_root, cfg)
+    source = ROOT / run["processed_root"]
+    contract = cache_contract(cfg, splits, stats, args.jpeg_quality)
+    names = splits["splits"]["train"] + splits["splits"]["val"]
+    report = estimate(root, source, names, cfg, splits, contract)
+    print(report, flush=True)
+    if args.command == "estimate":
+        return
+    if args.command == "check":
+        for ep in names:
+            check_episode(root / ep, cfg, splits, contract, full=args.full_check)
+        print("MCR_CACHE_CHECK_OK", flush=True)
+        return
+    if args.command == "build" and report["completed_episodes"] < min(3, len(splits["splits"]["train"])):
+        raise ValueError("Chạy pilot tối thiểu 3 episode trước để đo JPEG/storage; không tạo cache full mù")
+    selected = (random.Random(42).sample(sorted(splits["splits"]["train"]), min(args.pilot_episodes, len(splits["splits"]["train"])))
+                if args.command == "pilot" else names)
+    selected_report = estimate(root, source, selected, cfg, splits, contract)
+    if torch.device(args.device).type == "cuda" and not torch.cuda.is_available():
+        raise RuntimeError("Không thấy CUDA; chạy bằng sbatch GPU")
+    used = int(args.home_used_gib * 2**30) if args.home_used_gib is not None else home_usage()
+    quota = int(args.home_quota_tb * 10**12)
+    root.mkdir(parents=True, exist_ok=True)
+    additional = selected_report["pending_bytes"]
+    free = shutil.disk_usage(root).free
+    if used + additional + 10 * 2**30 > quota or free < additional + 10 * 2**30:
+        raise OSError(f"Cache vượt ngân sách: home_used={used/2**30:.1f}GiB, thêm~{additional/2**30:.1f}GiB, quota={quota/2**30:.1f}GiB")
+    lock = root / ".cache.lock"
+    import fcntl
+    with lock.open("w") as handle:
+        fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        runtime = {"source_config": args.base_config, "source_root": str(source.resolve()),
+                   "contract": contract, "splits": splits, "stats": stats,
+                   "data_config": cfg, "source_model_config": model}
+        context_path = root / "context.json"
+        if context_path.exists() and read_json(context_path) != runtime:
+            raise ValueError("Cache context đã có và khác; dùng cache-root mới")
+        write_json(context_path, runtime)
+        model = {**model, "backbone": "mcr_resnet50", "backbone_weights_path": None,
+                 "lr_backbone": 0., "feature_preprocess": PREPROCESS}
+        policy = MCRACTPolicy(model, cfg, mcr_checkpoint=ROOT / args.mcr_checkpoint).to(args.device).eval().requires_grad_(False)
+        cv2.setNumThreads(1)
+        torch.set_num_threads(min(args.decoder_workers, 8))
+        started, added = time.perf_counter(), 0
+        for i, ep in enumerate(selected, 1):
+            meta, status = cache_episode(ep, source, root, cfg, splits, contract, policy, args.device,
+                                         backend=run.get("sample_backend", "npy"), batch_size=args.batch_size,
+                                         decoder_workers=args.decoder_workers, resume=True)
+            if status == "CACHED":
+                added += sum(p.stat().st_size for p in (root / ep).iterdir() if p.is_file())
+            if used + added + 10 * 2**30 > quota:
+                raise OSError("Đã chạm ngân sách home; dừng trước episode tiếp theo")
+            print(f"MCR_CACHE {i}/{len(selected)} {ep} {status} steps={meta['steps']} elapsed_s={time.perf_counter()-started:.1f} max_quant_error={meta['quantization_max_absolute_error']:.6f}", flush=True)
+        report = estimate(root, source, names, cfg, splits, contract)
+        write_json(root / "storage_report.json", {**report, "home_used_before_GiB": used / 2**30,
+                                                 "bytes_added": added, "quota_bytes": quota})
+        if args.command == "build":
+            write_json(root / "READY.json", {"contract_hash": digest(contract), "episodes": names,
+                                            "contains_test": False})
+        print("MCR_PILOT_OK" if args.command == "pilot" else "MCR_CACHE_READY", report, flush=True)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,31 @@
+{
+  "episode": "pick_place_000840",
+  "offline": {
+    "normalized_l1": 0.37433516557657387,
+    "normalized_mae_per_dimension": [
+      0.3926702785074527,
+      0.3285241419696906,
+      0.3866472208905048,
+      0.0789092380894937,
+      0.6909168634306636,
+      0.19831417498210432,
+      0.07008778260738793,
+      0.8486116241352933
+    ],
+    "position_mean_distance_mm": 66.5200579891625,
+    "position_mae_xyz_mm": [
+      27.492856825944497,
+      34.27414131562166,
+      36.14620444419593
+    ],
+    "gripper_mae_mm": 30.90358561658538,
+    "orientation_mean_angle_deg": 24.69028684952194,
+    "orientation_valid_targets": 9710,
+    "orientation_invalid_targets": 0,
+    "samples": 495,
+    "batches": 62,
+    "episodes": 1,
+    "valid_action_steps": 9710,
+    "valid_action_elements": 77680
+  }
+}

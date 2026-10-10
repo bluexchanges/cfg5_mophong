@@ -1,0 +1,16 @@
+{
+  "model_config": "configs/act/rh20t_all8.json",
+  "splits": "data/splits/cfg5_all_splits.json",
+  "locked_membership": "data/splits/cfg5_all_splits.json",
+  "stats": "data/splits/cfg5_all_normalization.json",
+  "processed_root": "data/processed/cfg5_all",
+  "output_dir": "outputs/act_pretrain",
+  "seed": 42,
+  "epochs": 10,
+  "batch_size": 1,
+  "num_workers": 0,
+  "save_every_epochs": 1,
+  "log_every_batches": 100,
+  "grad_clip_norm": 1.0,
+  "require_cuda_for_full_run": true
+}

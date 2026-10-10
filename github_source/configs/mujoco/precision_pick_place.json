@@ -1,0 +1,6 @@
+{
+  "schema_version": 2,
+  "config_type": "alias",
+  "active_config": "configs/mujoco/panda_three_pegs.json",
+  "description_vi": "Đường dẫn tương thích tới config 3 chốt đang chạy. Không chứa kích thước hộp hay tolerance cũ. Đọc bằng load_sim_config để resolve alias."
+}

@@ -1,0 +1,58 @@
+{
+  "python": "3.12.14",
+  "torch": "2.7.1+cpu",
+  "torchvision": "0.22.1+cpu",
+  "device": "cpu",
+  "cuda_available_in_this_build": false,
+  "seed": 42,
+  "upstream_commit": "107ce1287a46be3a1a7ea954f8bbdec3bb103288",
+  "config_hash": "ddd16575c306f1f26d143fd55d9325d9b03b3c44eb0ade68313ec7f2da4c3ae9",
+  "data_config_hash": "e751a61fec977943e6a507c145a71ef31f0dea4fa3e1270bb39afe6d18bd2383",
+  "split_hash": "092a30ed20e959274dcbbd024940134e98f6cfe89d87722ffafa33a560c089fa",
+  "sample_episode": "task_0004_user_0014_scene_0002_cfg_0005",
+  "sample_timestamp_ms": 1641472329100,
+  "samples_used": 1,
+  "full_model_parameters": 83873929,
+  "full_model_input_shape": [
+    1,
+    8,
+    3,
+    360,
+    640
+  ],
+  "full_model_output_shape": [
+    1,
+    20,
+    8
+  ],
+  "full_model_forward_finite": true,
+  "full_model_forward_seconds": 2.0995420000108425,
+  "backward_smoke_architecture": {
+    "hidden_dim": 64,
+    "dim_feedforward": 128,
+    "enc_layers": 1,
+    "dec_layers": 1,
+    "nheads": 4
+  },
+  "backward_smoke_image_shape": [
+    1,
+    8,
+    3,
+    64,
+    96
+  ],
+  "backward_finite": true,
+  "valid_action_steps": 5,
+  "valid_action_elements": 40,
+  "smoke_loss_only": {
+    "loss": 55.45047378540039,
+    "l1": 0.4999350607395172,
+    "kl": 5.495053768157959
+  },
+  "optimizer_steps": 0,
+  "training_run": false,
+  "act_pretrained_weights_loaded": false,
+  "backbone_pretrained_weights_loaded": false,
+  "simulation_policy_rollout": false,
+  "scope": "Full configured ACT inference on one actual train-smoke sample; reduced architecture/resolution backward regression, no optimization or pretraining."
+}

@@ -1,0 +1,45 @@
+{
+  "split": "val",
+  "episodes_available": 1,
+  "sample_count": 7,
+  "smoke_allowed": true,
+  "checks": [
+    {
+      "index": 0,
+      "episode": "task_0014_user_0007_scene_0001_cfg_0005",
+      "image_shape": [
+        8,
+        3,
+        360,
+        640
+      ],
+      "valid_actions": 7,
+      "timestamp_ms": 1642423330800
+    },
+    {
+      "index": 3,
+      "episode": "task_0014_user_0007_scene_0001_cfg_0005",
+      "image_shape": [
+        8,
+        3,
+        360,
+        640
+      ],
+      "valid_actions": 4,
+      "timestamp_ms": 1642423331100
+    },
+    {
+      "index": 6,
+      "episode": "task_0014_user_0007_scene_0001_cfg_0005",
+      "image_shape": [
+        8,
+        3,
+        360,
+        640
+      ],
+      "valid_actions": 1,
+      "timestamp_ms": 1642423331400
+    }
+  ],
+  "model_executed": false
+}

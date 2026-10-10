@@ -1,0 +1,45 @@
+{
+  "split": "train",
+  "episodes_available": 531,
+  "sample_count": 58313,
+  "smoke_allowed": false,
+  "checks": [
+    {
+      "index": 0,
+      "episode": "task_0001_user_0007_scene_0001_cfg_0005",
+      "image_shape": [
+        8,
+        3,
+        360,
+        640
+      ],
+      "valid_actions": 5,
+      "timestamp_ms": 1640002332500
+    },
+    {
+      "index": 29156,
+      "episode": "task_0041_user_0010_scene_0010_cfg_0005",
+      "image_shape": [
+        8,
+        3,
+        360,
+        640
+      ],
+      "valid_actions": 1,
+      "timestamp_ms": 1642235684800
+    },
+    {
+      "index": 58312,
+      "episode": "task_0225_user_0010_scene_0010_cfg_0005",
+      "image_shape": [
+        8,
+        3,
+        360,
+        640
+      ],
+      "valid_actions": 1,
+      "timestamp_ms": 1641542156000
+    }
+  ],
+  "model_executed": false
+}

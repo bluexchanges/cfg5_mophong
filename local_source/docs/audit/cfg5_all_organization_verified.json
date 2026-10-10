@@ -1,0 +1,15 @@
+{
+  "plan_hash": "42a62ec26a42504dd29c8dc33acda9e9cff18872257dccf2a74dd90e60f7cb90",
+  "verified_at_utc": "2026-09-28T03:35:43.692821+00:00",
+  "episode_count": 2515,
+  "category_counts": {
+    "training_data": 663,
+    "missing_data": 1852
+  },
+  "file_count": 56066,
+  "total_bytes": 92704220008,
+  "directory_identity_and_file_count_bytes_verified": true,
+  "remaining_root_episodes": 0,
+  "copy_operation_used": false,
+  "training_started": false
+}

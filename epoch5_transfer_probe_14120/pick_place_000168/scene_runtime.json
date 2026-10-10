@@ -1,0 +1,321 @@
+{
+  "schema_version": 2,
+  "task": "three_color_matched_pegs",
+  "placement_goal": "bottom_seated_with_protrusion",
+  "height_reference": "peg_top_relative_to_hole_mouth",
+  "protrusion_target_rule": "peg_length_m - hole_depth_m",
+  "protrusion_tolerance_m": 0.0005,
+  "units": {
+    "length": "metre",
+    "time": "second",
+    "force": "newton",
+    "angles": "radian_except_keys_ending_deg"
+  },
+  "robot_xml": "mujoco/models/franka_emika_panda/panda.xml",
+  "scene_xml": "/home/user08/cfg5-pretrain/edabk-physical-ai-robot/04-Src/software/cfg5_act/outputs/epoch5_transfer_probe_14120/pick_place_000168/scene.xml",
+  "camera_rig": "configs/mujoco/cfg5_camera_rig.json",
+  "data_config": "configs/data/cfg5_base8.json",
+  "timestep_s": 0.001,
+  "control_hz": 10,
+  "evaluation_hz": 100,
+  "solver_iterations": 100,
+  "table_surface_z_m": 0.0,
+  "table_center_xy_m": [
+    0.45,
+    0.0
+  ],
+  "table_half_size_m": [
+    0.4,
+    0.4,
+    0.025
+  ],
+  "home_joints_rad": [
+    0.0,
+    -0.4,
+    0.0,
+    -2.2,
+    0.0,
+    1.8,
+    0.7853981634
+  ],
+  "tcp_in_hand_pos_m": [
+    0.0,
+    0.0,
+    0.1034
+  ],
+  "tcp_in_hand_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "tcp_mapping_note": "Virtual aligned TCP at Panda grasp centre, axes of Menagerie hand. Matches the policy base/xyz/wxyz convention; physical RH20T factory EE offset not independently calibrated.",
+  "workspace_min_m": [
+    0.22,
+    -0.28,
+    0.012
+  ],
+  "workspace_max_m": [
+    0.72,
+    0.28,
+    0.65
+  ],
+  "gripper_width_range_m": [
+    0.0,
+    0.08
+  ],
+  "gripper_force_limit_n": 20.0,
+  "finger_friction": [
+    1.2,
+    0.01,
+    0.0001
+  ],
+  "gravity_compensation": true,
+  "peg_radius_m": 0.003,
+  "peg_length_m": 0.035,
+  "peg_mass_kg": 0.005,
+  "peg_initial_xy_m": [
+    [
+      0.361224,
+      -0.076826
+    ],
+    [
+      0.355114,
+      -9.3e-05
+    ],
+    [
+      0.355229,
+      0.074096
+    ]
+  ],
+  "peg_colors_rgba": [
+    [
+      0.9,
+      0.12,
+      0.1,
+      1.0
+    ],
+    [
+      0.65,
+      0.2,
+      0.72,
+      1.0
+    ],
+    [
+      0.1,
+      0.6,
+      0.24,
+      1.0
+    ]
+  ],
+  "initial_xy_jitter_m": 0.001,
+  "mold_center_xy_m": [
+    0.532744,
+    0.002432
+  ],
+  "hole_offsets_xy_m": [
+    [
+      0,
+      -0.075
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0.075
+    ]
+  ],
+  "hole_radius_m": 0.003823,
+  "hole_depth_m": 0.012,
+  "hole_wall_segments": 32,
+  "mold_cell_half_xy_m": [
+    0.02,
+    0.0375
+  ],
+  "mold_floor_thickness_m": 0.004,
+  "contact_solref": [
+    0.003,
+    1.0
+  ],
+  "contact_solimp": [
+    0.95,
+    0.99,
+    0.0001
+  ],
+  "placement_margin_m": 0.0,
+  "drop_table_height_tolerance_m": 0.001,
+  "max_bottom_gap_m": 0.0005,
+  "max_floor_penetration_m": 0.0001,
+  "min_floor_support_force_n": 0.001,
+  "placement_notes_vi": "Mục tiêu độ nhô = chiều cao vật - độ sâu lỗ: 35 - 12 = 23 mm. protrusion_tolerance_m=0.0005 nghĩa là độ nhô thực tế 22.5..23.5 mm. Không chấm theo độ nhô một mình: phải đúng lỗ, đứng trong giới hạn góc nghiêng, chạm đáy có lực đỡ và không chạm robot. max_bottom_gap_m và max_floor_penetration_m là kiểm tra đáy riêng, không phải độ nhô mục tiêu.",
+  "tilt_tolerance_deg": 3.0,
+  "stable_linear_speed_m_s": 0.005,
+  "stable_angular_speed_rad_s": 0.1,
+  "stable_seconds": 0.5,
+  "lift_height_m": 0.02,
+  "grasp_contact_force_n": 0.005,
+  "grasp_hold_seconds": 0.1,
+  "release_clearance_m": 0.006,
+  "episode_seconds": 70.0,
+  "reset_settle_seconds": 0.25,
+  "controller": {
+    "ik_iterations": 80,
+    "ik_damping": 0.002,
+    "ik_position_tolerance_m": 5e-05,
+    "ik_rotation_tolerance_rad": 0.0005,
+    "ik_max_joint_delta_rad": 0.12,
+    "max_joint_speed_rad_s": 1.0,
+    "max_translation_per_step_m": 0.025
+  },
+  "demo": {
+    "seed": 42,
+    "down_quaternion_wxyz": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "grasp_height_above_surface_m": 0.026,
+    "hover_z_m": 0.16,
+    "open_width_m": 0.04,
+    "closed_width_m": 0.001,
+    "move_speed_m_s": 0.08,
+    "insertion_speed_m_s": 0.008,
+    "insertion_entry_clearance_m": 0.004,
+    "waypoint_settle_seconds": 0.3,
+    "grasp_seconds": 0.5,
+    "release_seconds": 0.6
+  },
+  "render": {
+    "width": 640,
+    "height": 360,
+    "preview_width": 1280,
+    "preview_height": 720,
+    "video_fps": 10
+  },
+  "table_rgba": [
+    0.35,
+    0.47,
+    0.42,
+    1.0
+  ],
+  "table_pattern": "checker",
+  "table_pattern_rgb2": [
+    0.2988,
+    0.4013,
+    0.3586
+  ],
+  "floor_rgba": [
+    0.146,
+    0.141,
+    0.1653,
+    1.0
+  ],
+  "lighting": {
+    "head_ambient_rgb": [
+      0.3423,
+      0.2449,
+      0.1475
+    ],
+    "head_diffuse_rgb": [
+      0.4647,
+      0.3673,
+      0.27
+    ],
+    "main_diffuse_rgb": [
+      0.5872,
+      0.4898,
+      0.3924
+    ],
+    "fill_diffuse_rgb": [
+      0.27,
+      0.3673,
+      0.4647
+    ],
+    "fill_pos_m": [
+      0.7445,
+      -0.5065,
+      1.3140673148527369
+    ]
+  },
+  "distractors": [
+    {
+      "shape": "sphere",
+      "xy_m": [
+        0.30647,
+        0.22642
+      ],
+      "size_m": [
+        0.01302,
+        0.01302,
+        0.01481
+      ],
+      "rgba": [
+        0.8,
+        0.66,
+        0.2,
+        1.0
+      ],
+      "yaw_deg": -75.37
+    },
+    {
+      "shape": "sphere",
+      "xy_m": [
+        0.52212,
+        0.21622
+      ],
+      "size_m": [
+        0.01235,
+        0.01235,
+        0.01675
+      ],
+      "rgba": [
+        0.32,
+        0.43,
+        0.69,
+        1.0
+      ],
+      "yaw_deg": 14.13
+    },
+    {
+      "shape": "cylinder",
+      "xy_m": [
+        0.5102,
+        0.30624
+      ],
+      "size_m": [
+        0.01699,
+        0.01699,
+        0.01247
+      ],
+      "rgba": [
+        0.36,
+        0.61,
+        0.59,
+        1.0
+      ],
+      "yaw_deg": -54.52
+    },
+    {
+      "shape": "sphere",
+      "xy_m": [
+        0.33064,
+        -0.23373
+      ],
+      "size_m": [
+        0.01299,
+        0.01299,
+        0.01749
+      ],
+      "rgba": [
+        0.18,
+        0.22,
+        0.26,
+        1.0
+      ],
+      "yaw_deg": -26.76
+    }
+  ]
+}

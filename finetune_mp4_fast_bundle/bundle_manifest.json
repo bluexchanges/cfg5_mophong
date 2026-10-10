@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "backend": "mp4_episode_cache_v1",
+  "created_at": "2026-10-08T18:21:36.467375+00:00",
+  "files": [
+    {
+      "path": "src/data/act_dataset.py",
+      "sha256": "230058a5c9abe447b55c6fbb1d2f53713108513e8e07079818ec61be91eb9bc5",
+      "normalized_sha256": "230058a5c9abe447b55c6fbb1d2f53713108513e8e07079818ec61be91eb9bc5",
+      "previous_normalized_sha256": "28f24d078f170892bd0786bc7a8440f1d7e4d9f0afcc4f4d1267dbb22fc6c03d"
+    },
+    {
+      "path": "src/data/mp4_dataset.py",
+      "sha256": "c1002709fe22249554fa11474d8104b2d91c979108821107d397f1db91f52778",
+      "normalized_sha256": "c1002709fe22249554fa11474d8104b2d91c979108821107d397f1db91f52778",
+      "previous_normalized_sha256": "fc9d5b9a317aecbf98891c60847d6f6a4415cb2159b05de5cfe005315308260e"
+    },
+    {
+      "path": "src/training/pretrain.py",
+      "sha256": "0ae9dc84dd3bdc70bfeffa94fc74a7cb4a937f67e07ee95748556a17a08b2321",
+      "normalized_sha256": "0ae9dc84dd3bdc70bfeffa94fc74a7cb4a937f67e07ee95748556a17a08b2321",
+      "previous_normalized_sha256": "ef47ab433213a19460aeb3b75c9f3d5ef5873701f914bd9732b1d915a59199ea"
+    },
+    {
+      "path": "src/training/fork_run.py",
+      "sha256": "6948e29fe5c7dbd4a64a9ae903b875db448b0530471c7afd2b1560c85ef9d1a2",
+      "normalized_sha256": "6948e29fe5c7dbd4a64a9ae903b875db448b0530471c7afd2b1560c85ef9d1a2",
+      "previous_normalized_sha256": "0b40b9c5b75354ae4a8833cc2c0c2df182673b11e20f80dbb8945747f5c1d1cf"
+    },
+    {
+      "path": "scripts/benchmark_mp4_fast.py",
+      "sha256": "49b9cd272a15b5a1afe2572297a7465b7741f4c75b45dfc465635a1725d8f633",
+      "normalized_sha256": "49b9cd272a15b5a1afe2572297a7465b7741f4c75b45dfc465635a1725d8f633"
+    },
+    {
+      "path": "scripts/slurm/benchmark_pick_place_mp4_fast.sbatch",
+      "sha256": "f9dc0430c299b6187d9f7081fa9abb7417108871779313212e852dfd55deda7b",
+      "normalized_sha256": "f9dc0430c299b6187d9f7081fa9abb7417108871779313212e852dfd55deda7b"
+    },
+    {
+      "path": "scripts/slurm/train_pick_place_mp4_fast.sbatch",
+      "sha256": "1deadd8753886b315f0af8dfed43ad458f6226b07fd682d3ae653f7b293c5d04",
+      "normalized_sha256": "1deadd8753886b315f0af8dfed43ad458f6226b07fd682d3ae653f7b293c5d04"
+    },
+    {
+      "path": "tests/test_mp4_fast.py",
+      "sha256": "079f9bd3d259ce5009e472339d203d0ae47b02e47ae68177467af050a446e475",
+      "normalized_sha256": "079f9bd3d259ce5009e472339d203d0ae47b02e47ae68177467af050a446e475"
+    },
+    {
+      "path": "tests/test_mp4_benchmark.py",
+      "sha256": "424e4593fede2941f9355b52753d98bafe0ebebba67744937fb26cf82216664c",
+      "normalized_sha256": "424e4593fede2941f9355b52753d98bafe0ebebba67744937fb26cf82216664c"
+    },
+    {
+      "path": "tests/test_mp4_dataset.py",
+      "sha256": "800aa7980496e6041cf8d2a13436d889748290c641793014ba03091786b1ce85",
+      "normalized_sha256": "800aa7980496e6041cf8d2a13436d889748290c641793014ba03091786b1ce85",
+      "previous_normalized_sha256": "800aa7980496e6041cf8d2a13436d889748290c641793014ba03091786b1ce85"
+    },
+    {
+      "path": "tests/test_sim_finetune_data.py",
+      "sha256": "a51f540091c3f1589473cae6f961ba4ba5820ff20d6f67d161588f9b908aef3f",
+      "normalized_sha256": "a51f540091c3f1589473cae6f961ba4ba5820ff20d6f67d161588f9b908aef3f",
+      "previous_normalized_sha256": "a51f540091c3f1589473cae6f961ba4ba5820ff20d6f67d161588f9b908aef3f"
+    },
+    {
+      "path": "tests/test_cuda_prefetch.py",
+      "sha256": "b099a32daeb3b02e646eca2bbc16bf64fff345253cdbbf3f4a64debea3cbcef1",
+      "normalized_sha256": "b099a32daeb3b02e646eca2bbc16bf64fff345253cdbbf3f4a64debea3cbcef1",
+      "previous_normalized_sha256": "b099a32daeb3b02e646eca2bbc16bf64fff345253cdbbf3f4a64debea3cbcef1"
+    },
+    {
+      "path": "docs/MP4_FAST_VI.md",
+      "sha256": "0b15fb8009ac90db54f3630d853d6ba6aeec586e002d7cea776d10e1c66877a7",
+      "normalized_sha256": "0b15fb8009ac90db54f3630d853d6ba6aeec586e002d7cea776d10e1c66877a7"
+    }
+  ],
+  "prerequisites": {
+    "src/data/common.py": "a2093d3de94dd7eda2855859f541cef2db36cd46f1bd3c4d12ca75a77d062bd6",
+    "src/data/sim_demos.py": "3003af53b9c0f8ef1b7f4ca42cdf3b5ffa8256436940dd68ce66abf0c11d56cf",
+    "scripts/train.py": "4b12de5dd38bdbea986b0c8a28e8c976d940730df9dc3e4d363d62801d308c52",
+    "scripts/_bootstrap.py": "0cb67ba91674c07e557440292720aa3c3c111f4c41b7db1f4d219a7c68dc6f52",
+    "scripts/prepare_mp4_finetune.py": "d6991575342a2329decebc1c4786e32ec35c22304c2b0667c7f6b5980781fe55"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "checkpoint": "/home/user08/cfg5-pretrain/edabk-physical-ai-robot/04-Src/software/cfg5_act/outputs/act_pretrain/best.pt",
+  "checkpoint_sha256": "edca36c9c80c453bb38ed56f68b77a2e3fcd4b175f8296119670131c5c7ffc71",
+  "checkpoint_epoch": 5,
+  "split": "val",
+  "seed": 42,
+  "episodes": [
+    "pick_place_000938",
+    "pick_place_000168",
+    "pick_place_000056",
+    "pick_place_000495",
+    "pick_place_000461",
+    "pick_place_000425",
+    "pick_place_000197",
+    "pick_place_000161",
+    "pick_place_000976",
+    "pick_place_000840"
+  ],
+  "split_hash": "701f22b222d5fca1ec8bb4acf4373b141eb8b9a844f09b34f38b5d66ba6839e4",
+  "normalization": "original checkpoint training stats, unchanged",
+  "optimizer_steps": 0,
+  "scope": "small transfer diagnostic; val is development data; not official full test"
+}

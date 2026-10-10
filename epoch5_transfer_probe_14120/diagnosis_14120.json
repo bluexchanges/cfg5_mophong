@@ -1,0 +1,118 @@
+{
+  "checkpoint_epoch": 5,
+  "checkpoint_sha256": "edca36c9c80c453bb38ed56f68b77a2e3fcd4b175f8296119670131c5c7ffc71",
+  "optimizer_steps": 0,
+  "completed_rollouts": 10,
+  "successful_rollouts": 0,
+  "offline": {
+    "normalized_l1": 0.368219493516287,
+    "normalized_mae_per_dimension": [
+      0.39975092450781774,
+      0.3249550358590733,
+      0.38530331694763836,
+      0.07862263157832101,
+      0.6907537796547801,
+      0.19279201785984632,
+      0.07266153836240508,
+      0.8009167033604143
+    ],
+    "position_mean_distance_mm": 66.65049658406757,
+    "position_mae_xyz_mm": [
+      27.988609511499003,
+      33.901785641608726,
+      36.02056892114869
+    ],
+    "gripper_mae_mm": 29.16669673457298,
+    "orientation_mean_angle_deg": 24.043597233091102,
+    "orientation_valid_targets": 97340,
+    "orientation_invalid_targets": 0,
+    "samples": 4962,
+    "batches": 626,
+    "episodes": 10,
+    "valid_action_steps": 97340,
+    "valid_action_elements": 778720
+  },
+  "episodes": [
+    {
+      "episode": "pick_place_000056",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 72.37271088328214,
+      "minimum_tcp_z_mm": 76.70288532972336,
+      "initial_command_gripper_mm": 1.1319279357415966,
+      "actual_gripper_at_1s_mm": 5.346211139112711,
+      "tcp_z_at_1s_mm": 308.02008509635925
+    },
+    {
+      "episode": "pick_place_000161",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 70.19682199440199,
+      "minimum_tcp_z_mm": 76.7364427447319,
+      "initial_command_gripper_mm": 1.1291647606561754,
+      "actual_gripper_at_1s_mm": 4.960076883435249,
+      "tcp_z_at_1s_mm": 308.00172686576843
+    },
+    {
+      "episode": "pick_place_000168",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 74.05296204091358,
+      "minimum_tcp_z_mm": 76.7286866903305,
+      "initial_command_gripper_mm": 1.132911217999015,
+      "actual_gripper_at_1s_mm": 5.383895244449377,
+      "tcp_z_at_1s_mm": 308.05158615112305
+    },
+    {
+      "episode": "pick_place_000197",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 68.08098192356981,
+      "minimum_tcp_z_mm": 76.73487067222595,
+      "initial_command_gripper_mm": 1.1339878360998554,
+      "actual_gripper_at_1s_mm": 5.177341867238283,
+      "tcp_z_at_1s_mm": 308.0132305622101
+    },
+    {
+      "episode": "pick_place_000425",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 70.95628733645552,
+      "minimum_tcp_z_mm": 76.7066478729248,
+      "initial_command_gripper_mm": 1.1318128938880776,
+      "actual_gripper_at_1s_mm": 4.899396561086178,
+      "tcp_z_at_1s_mm": 308.03337693214417
+    },
+    {
+      "episode": "pick_place_000461",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 69.41514040669506,
+      "minimum_tcp_z_mm": 76.75760239362717,
+      "initial_command_gripper_mm": 1.1331391311050418,
+      "actual_gripper_at_1s_mm": 4.813660867512226,
+      "tcp_z_at_1s_mm": 308.01981687545776
+    },
+    {
+      "episode": "pick_place_000495",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 76.8528686020091,
+      "minimum_tcp_z_mm": 76.74601674079895,
+      "initial_command_gripper_mm": 1.1316066867921513,
+      "actual_gripper_at_1s_mm": 4.630004055798054,
+      "tcp_z_at_1s_mm": 308.0538213253021
+    },
+    {
+      "episode": "pick_place_000840",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 70.01381333146173,
+      "minimum_tcp_z_mm": 76.7134353518486,
+      "initial_command_gripper_mm": 1.132305620317294,
+      "actual_gripper_at_1s_mm": 5.093535874038935,
+      "tcp_z_at_1s_mm": 308.0306053161621
+    },
+    {
+      "episode": "pick_place_000938",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 68.89348869856624,
+      "minimum_tcp_z_mm": 76.71266049146652,
+      "initial_command_gripper_mm": 1.132550898231395,
+      "actual_gripper_at_1s_mm": 5.421379581093788,
+      "tcp_z_at_1s_mm": 308.02103877067566
+    },
+    {
+      "episode": "pick_place_000976",
+      "minimum_tcp_xy_distance_to_configured_peg_mm": 77.77114846268823,
+      "minimum_tcp_z_mm": 76.72183960676193,
+      "initial_command_gripper_mm": 1.1312268316154421,
+      "actual_gripper_at_1s_mm": 5.0009628757834435,
+      "tcp_z_at_1s_mm": 308.03728103637695
+    }
+  ],
+  "note_vi": "E5 ra lệnh đóng kẹp ở tick đầu khi TCP còn cao, không tiếp cận vị trí gắp trong các trace. Khoảng cách XY tính với vị trí chốt trong scene config, không thay thế contact geometry hoặc measured object pose."
+}

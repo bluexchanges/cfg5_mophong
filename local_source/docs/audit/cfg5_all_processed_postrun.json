@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-09-28T11:13:52.985428+00:00",
+  "root": "D:\\Download\\mophong_RH20T\\data\\processed\\cfg5_all",
+  "expected_counts": {
+    "train": 531,
+    "val": 66,
+    "test": 66
+  },
+  "actual_counts": {
+    "train": 531,
+    "val": 66
+  },
+  "processed_root_flat_layout": true,
+  "partial_directories": [],
+  "missing_train_val": [],
+  "unexpected_or_test": [],
+  "steps_by_split": {
+    "train": 65427,
+    "val": 6968
+  },
+  "bytes_by_split": {
+    "train": 361800921586,
+    "val": 38531966252
+  },
+  "image_bytes_by_split": {
+    "train": 361785207168,
+    "val": 38530261248
+  },
+  "array_headers_checked": 4776,
+  "errors": [],
+  "source_payload_rehashed": false,
+  "image_pixels_full_scan": false,
+  "training_executed": false,
+  "split_hash": "aa8318240bba9d072b95a011e60a29b05322001d12a5977dd34ab4330f573825"
+}
