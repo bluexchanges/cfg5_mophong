@@ -6,11 +6,12 @@ Repository lưu code, cấu hình, tài liệu và các gói triển khai của 
 
 - [Hướng dẫn dự án chính](local_source/README.md).
 - [Các quyết định kỹ thuật và cập nhật theo thời gian](local_source/docs/DECISIONS.md).
+- Hai bản bàn giao `BAN_GIAO_CODEX_CFG5_MCR_2026-10-13.md` và `.txt` hiện giữ ở local, chưa công bố vì có thông tin vận hành máy chủ; xem báo cáo đồng bộ để biết phần đang chờ xác nhận.
 - [Rule cho AI agent](AGENTS.md) và [yêu cầu dự án gốc](local_source/references/requests/PROJECT_INSTRUCTIONS_VI.md).
 - [Sơ đồ AI có giải thích](https://cfg5-act-ai-flow.icy-cat-0191.chatgpt.site/) hoặc [bản HTML trong repo](ai-flow-site/dist/index.html).
 - [Báo cáo đối chiếu và đồng bộ GitHub ngày 2026-10-13](docs/GITHUB_SYNC_20261013_VI.md).
 
-Một số README/báo cáo trong source mô tả trạng thái ở các mốc cũ. Đọc quyết định, config, checkpoint metadata và báo cáo thực tế của run cần làm việc; không xem trạng thái lịch sử là kết luận về mọi phiên bản hiện tại.
+Một số README/báo cáo trong source mô tả trạng thái ở các mốc cũ. Đọc bản bàn giao, quyết định, config, checkpoint metadata và báo cáo thực tế của run cần làm việc; không xem trạng thái lịch sử là kết luận về mọi phiên bản hiện tại. Bản bàn giao ghi source đang chỉnh sửa nằm trong `local_source_(1)/`; thư mục này không được kiểm tra hoặc xuất bản trong đợt đồng bộ theo yêu cầu người dùng.
 
 ## Các thư mục chính
 

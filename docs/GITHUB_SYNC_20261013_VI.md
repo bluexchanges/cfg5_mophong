@@ -41,3 +41,9 @@ Không thay đổi logic model/trainer, không chạy preprocessing, training ho
 - HTML được lưu dưới mode `100644`, thay cho gitlink `160000` trước đây. Không cần lấy submodule để đọc trang sau clone.
 
 SHA-256 trong audit là nội dung file trên workspace tại lúc kiểm tra; Git có thể chuẩn hóa CRLF thành LF khi lưu text. Danh sách audit được lập trước khi thêm chính hai file báo cáo audit để tránh checksum tự tham chiếu.
+
+## Bổ sung khi kiểm tra cuối
+
+Sau lần push đầu (`5e46a6c`), xuất hiện thêm `BAN_GIAO_CODEX_CFG5_MCR_2026-10-13.md` và bản `.txt` ở root. Hai file có nội dung giống nhau. Lần commit/push bổ sung hai file này bị duyệt tự động từ chối vì bản bàn giao chứa địa chỉ, tài khoản và thông tin vận hành máy chủ; công bố bản đầy đủ cần xác nhận riêng. Hai file còn ở local, chưa stage/commit/push, không bị chỉnh sửa. Audit JSON ghi tên, dung lượng và hash để xác định chính xác bản đang chờ; không sao chép nội dung nhạy cảm vào audit.
+
+Bản bàn giao mô tả pipeline joint + gripper, MCR frozen cache và các quyết định mới từ cuộc trao đổi nguồn. Source đang chỉnh sửa được ghi là `local_source_(1)/`; vẫn không kiểm tra hoặc đồng bộ thư mục đó. Các nhận định trạng thái GitHub trong bản bàn giao thuộc mốc trước lần push này; báo cáo đồng bộ hiện tại là nguồn xác nhận commit đã đẩy.

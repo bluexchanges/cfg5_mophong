@@ -804,5 +804,22 @@
     "training_or_rollout_run": false,
     "bash_syntax_files": 14,
     "new_readme_file_links": "passed"
+  },
+  "first_push_commit": "5e46a6c0a5c52e11c075ebf34ab1358dda7fb661",
+  "local_handoff_files_pending_approval": [
+    {
+      "path": "BAN_GIAO_CODEX_CFG5_MCR_2026-10-13.md",
+      "bytes": 23314,
+      "sha256": "4ff824e794f0e081dafb3417223920268047aaf4b2ef3f0e78c0fc3a72044de7"
+    },
+    {
+      "path": "BAN_GIAO_CODEX_CFG5_MCR_2026-10-13.txt",
+      "bytes": 23314,
+      "sha256": "4ff824e794f0e081dafb3417223920268047aaf4b2ef3f0e78c0fc3a72044de7"
+    }
+  ],
+  "handoff_publication": {
+    "status": "not_staged_not_committed_not_pushed",
+    "reason": "automatic approval review rejected publishing operational/server details; separate explicit approval required for full originals"
   }
 }

@@ -6,6 +6,7 @@
 - Đọc `README.md`, kiểm tra Git status, rồi chỉ khảo sát các thư mục liên quan đến yêu cầu.
 - Code/config/tài liệu làm việc chính nằm trong `local_source/`. Khi sửa ở đó, đọc thêm `local_source/AGENTS.md`, `local_source/references/requests/PROJECT_INSTRUCTIONS_VI.md` và `local_source/docs/DECISIONS.md`.
 - Các báo cáo cũ ghi trạng thái ở thời điểm lập báo cáo. Xác minh code, config và kết quả thực tế trước khi mô tả trạng thái hiện tại.
+- Nếu có ở local, đọc thêm `BAN_GIAO_CODEX_CFG5_MCR_2026-10-13.md` khi tiếp tục pipeline MCR. Bản đầy đủ hiện chưa được công bố lên GitHub vì chứa thông tin vận hành máy chủ. Đây là bản bàn giao từ cuộc trao đổi nguồn, không phải bằng chứng mọi lệnh trong đó đã chạy; mục GitHub của bản bàn giao có trước đợt đồng bộ hiện tại. Nó ghi source đang chỉnh sửa ở `local_source_(1)/`, vẫn giữ ngoài phạm vi đợt này.
 - `github_source/` và các thư mục `*_bundle*` là snapshot hoặc gói triển khai; không ghi đè code chính bằng một phiên bản cũ nếu chưa đối chiếu.
 - `server_pretrain_current.py` và `server_pretrain_masked_verified.py` là snapshot trainer để đối chiếu, không phải entrypoint chạy trực tiếp tại root.
 
