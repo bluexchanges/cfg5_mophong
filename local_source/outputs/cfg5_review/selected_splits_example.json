@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "config_hash": "e751a61fec977943e6a507c145a71ef31f0dea4fa3e1270bb39afe6d18bd2383",
+  "manifest_hash": "92941c5e36fd6387a7e7a8529d7692bff04ef8c9ba073dcd539e2952c2faaade",
+  "seed": 42,
+  "group_fields": [
+    "task",
+    "user",
+    "calib"
+  ],
+  "groups": {
+    "train": [
+      "17|10|1640071679624",
+      "4|14|1640071679624",
+      "8|10|1640071679624",
+      "8|7|1641974450000",
+      "14|10|1640071679624",
+      "13|10|1640071679624",
+      "13|7|1641974450000"
+    ],
+    "val": [
+      "14|7|1641974450000"
+    ],
+    "test": [
+      "4|10|1640071679624"
+    ]
+  },
+  "splits": {
+    "train": [
+      "task_0004_user_0014_scene_0002_cfg_0005",
+      "task_0004_user_0014_scene_0003_cfg_0005",
+      "task_0004_user_0014_scene_0005_cfg_0005",
+      "task_0004_user_0014_scene_0006_cfg_0005",
+      "task_0004_user_0014_scene_0007_cfg_0005",
+      "task_0004_user_0014_scene_0008_cfg_0005",
+      "task_0004_user_0014_scene_0010_cfg_0005",
+      "task_0008_user_0007_scene_0002_cfg_0005",
+      "task_0008_user_0007_scene_0004_cfg_0005",
+      "task_0008_user_0007_scene_0005_cfg_0005",
+      "task_0008_user_0007_scene_0006_cfg_0005",
+      "task_0008_user_0007_scene_0007_cfg_0005",
+      "task_0008_user_0007_scene_0008_cfg_0005",
+      "task_0008_user_0007_scene_0009_cfg_0005",
+      "task_0008_user_0010_scene_0001_cfg_0005",
+      "task_0008_user_0010_scene_0002_cfg_0005",
+      "task_0008_user_0010_scene_0003_cfg_0005",
+      "task_0008_user_0010_scene_0005_cfg_0005",
+      "task_0008_user_0010_scene_0008_cfg_0005",
+      "task_0008_user_0010_scene_0009_cfg_0005",
+      "task_0008_user_0010_scene_0010_cfg_0005",
+      "task_0013_user_0007_scene_0001_cfg_0005",
+      "task_0013_user_0007_scene_0007_cfg_0005",
+      "task_0013_user_0007_scene_0010_cfg_0005",
+      "task_0013_user_0010_scene_0001_cfg_0005",
+      "task_0013_user_0010_scene_0002_cfg_0005",
+      "task_0013_user_0010_scene_0003_cfg_0005",
+      "task_0013_user_0010_scene_0004_cfg_0005",
+      "task_0013_user_0010_scene_0007_cfg_0005",
+      "task_0013_user_0010_scene_0008_cfg_0005",
+      "task_0013_user_0010_scene_0009_cfg_0005",
+      "task_0014_user_0010_scene_0002_cfg_0005",
+      "task_0014_user_0010_scene_0004_cfg_0005",
+      "task_0014_user_0010_scene_0005_cfg_0005",
+      "task_0014_user_0010_scene_0006_cfg_0005",
+      "task_0014_user_0010_scene_0008_cfg_0005",
+      "task_0014_user_0010_scene_0009_cfg_0005",
+      "task_0014_user_0010_scene_0010_cfg_0005",
+      "task_0017_user_0010_scene_0001_cfg_0005",
+      "task_0017_user_0010_scene_0002_cfg_0005",
+      "task_0017_user_0010_scene_0003_cfg_0005",
+      "task_0017_user_0010_scene_0005_cfg_0005",
+      "task_0017_user_0010_scene_0006_cfg_0005",
+      "task_0017_user_0010_scene_0007_cfg_0005",
+      "task_0017_user_0010_scene_0008_cfg_0005",
+      "task_0017_user_0010_scene_0009_cfg_0005",
+      "task_0017_user_0010_scene_0010_cfg_0005"
+    ],
+    "val": [
+      "task_0014_user_0007_scene_0001_cfg_0005",
+      "task_0014_user_0007_scene_0004_cfg_0005",
+      "task_0014_user_0007_scene_0006_cfg_0005",
+      "task_0014_user_0007_scene_0007_cfg_0005",
+      "task_0014_user_0007_scene_0010_cfg_0005"
+    ],
+    "test": [
+      "task_0004_user_0010_scene_0003_cfg_0005",
+      "task_0004_user_0010_scene_0004_cfg_0005",
+      "task_0004_user_0010_scene_0006_cfg_0005",
+      "task_0004_user_0010_scene_0007_cfg_0005",
+      "task_0004_user_0010_scene_0009_cfg_0005"
+    ]
+  },
+  "counts": {
+    "train": 47,
+    "val": 5,
+    "test": 5
+  },
+  "note": "Groups are disjoint; calibration/camera backgrounds may be shared across different task-user groups.",
+  "split_hash": "e62e8fb7880a0ba6bff5d6669f429dd1ceadf6ec7af2e18202cafc554ffa0723"
+}

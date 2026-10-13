@@ -1,0 +1,117 @@
+{
+  "records": [
+    {
+      "episode": "pick_place_000042",
+      "path": "F:\\cfg5_mophong\\pick_place_000042",
+      "seed": 42,
+      "profile": "fixed",
+      "camera_rig_hash": "fe84b355096a6e0641c2b6bd214cac323d071c78cd33e39139f074b22bf99eac",
+      "source_fingerprint": "7053780fb4e3014ea659edfe5977de85191fcca3fdb84372e2c4d6cfc07b7c45",
+      "trajectory_hash": "bbeee75a55fcb7c4d5ad984ddeea9d5b8c230c0c462e9cc8c392777649f017aa",
+      "quality": {
+        "steps": 497,
+        "segments": 1,
+        "videos": {
+          "036422060215": {
+            "frames": 497,
+            "width": 640,
+            "height": 360
+          },
+          "037522062165": {
+            "frames": 497,
+            "width": 640,
+            "height": 360
+          },
+          "104122061850": {
+            "frames": 497,
+            "width": 640,
+            "height": 360
+          },
+          "104122063678": {
+            "frames": 497,
+            "width": 640,
+            "height": 360
+          },
+          "104422070042": {
+            "frames": 497,
+            "width": 640,
+            "height": 360
+          },
+          "104422070044": {
+            "frames": 497,
+            "width": 640,
+            "height": 360
+          },
+          "105422061350": {
+            "frames": 497,
+            "width": 640,
+            "height": 360
+          },
+          "135122079702": {
+            "frames": 497,
+            "width": 640,
+            "height": 360
+          }
+        }
+      },
+      "processed_image_bytes": 2748211200
+    },
+    {
+      "episode": "pick_place_000487",
+      "path": "F:\\cfg5_mophong\\pick_place_000487",
+      "seed": 487,
+      "profile": "rich",
+      "camera_rig_hash": "fe84b355096a6e0641c2b6bd214cac323d071c78cd33e39139f074b22bf99eac",
+      "source_fingerprint": "6a7f9380749bb4b7ab78e4652b02147c2d78529fda8230b92d14f272c6d0abff",
+      "trajectory_hash": "770be581712e2dc8f6e905a3804b826f8256dc4a2ac51278b646693a5996a721",
+      "quality": {
+        "steps": 503,
+        "segments": 1,
+        "videos": {
+          "036422060215": {
+            "frames": 503,
+            "width": 640,
+            "height": 360
+          },
+          "037522062165": {
+            "frames": 503,
+            "width": 640,
+            "height": 360
+          },
+          "104122061850": {
+            "frames": 503,
+            "width": 640,
+            "height": 360
+          },
+          "104122063678": {
+            "frames": 503,
+            "width": 640,
+            "height": 360
+          },
+          "104422070042": {
+            "frames": 503,
+            "width": 640,
+            "height": 360
+          },
+          "104422070044": {
+            "frames": 503,
+            "width": 640,
+            "height": 360
+          },
+          "105422061350": {
+            "frames": 503,
+            "width": 640,
+            "height": 360
+          },
+          "135122079702": {
+            "frames": 503,
+            "width": 640,
+            "height": 360
+          }
+        }
+      },
+      "processed_image_bytes": 2781388800
+    }
+  ],
+  "notes": "Samples inspected only; no full-server split created, no raw modified."
+}

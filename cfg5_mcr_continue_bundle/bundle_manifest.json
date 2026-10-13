@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "prerequisites": [
+    "scripts/_bootstrap.py",
+    "scripts/download_mcr.py",
+    "src/data/staged_mcr.py",
+    "src/data/cfg5_masked.py",
+    "configs/act/cfg5_robot_all_masked.json",
+    "data/splits/cfg5_robot_all_masked_manifest.json"
+  ],
+  "files": [
+    {
+      "path": "scripts/prepare_mcr_cache.py",
+      "sha256": "f11566d76c439341ad6b9f4c3997553c978afb6492e1c220b0c0d831fc5f9f4d",
+      "required_existing": true,
+      "before_sha256": [
+        "d5b0e6f06084c6886487dce1c986fdd1ffb4c5078e88c42efab2dbbcab086a32"
+      ]
+    },
+    {
+      "path": "scripts/slurm/cfg5_mcr_continue.sbatch",
+      "sha256": "74931748707f94600184793e02748ec8907c76aaac9eb896281e1123a65de18c",
+      "required_existing": false,
+      "before_sha256": []
+    },
+    {
+      "path": "docs/MCR_CONTINUE_PREPROCESS_VI.md",
+      "sha256": "11f595864f5c3944d0079fb505fecece94d925349d74b143a7374da60d747b9b",
+      "required_existing": false,
+      "before_sha256": []
+    },
+    {
+      "path": "tests/test_mcr_storage_policy.py",
+      "sha256": "be99d327fd9c4f8a95abdbcca1a17308042bef2cb1c483263f51d4734af5353f",
+      "required_existing": false,
+      "before_sha256": []
+    }
+  ]
+}

@@ -40,3 +40,15 @@ Thumbs.db
 /outputs/backbones/*
 !/outputs/backbones/mcr_resnet50.pth
 !/outputs/backbones/mcr_resnet50.provenance.json
+
+# Publish small reports/previews by user request (2026-10-13).
+# Numeric payloads, videos and unselected model weights remain ignored.
+!/outputs/**/
+!/outputs/**/*.md
+!/outputs/**/*.json
+!/outputs/**/*.csv
+!/outputs/**/*.html
+!/outputs/**/*.svg
+!/outputs/**/*.png
+!/outputs/**/*.jpg
+!/outputs/**/*.jpeg

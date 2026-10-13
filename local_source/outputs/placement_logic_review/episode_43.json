@@ -1,0 +1,235 @@
+{
+  "mode": "scripted_controller_privileged_state",
+  "act_model_used": false,
+  "checkpoint": null,
+  "seed": 43,
+  "sim_time_s": 49.69999999997429,
+  "failure": null,
+  "stages": [
+    {
+      "stage": "peg0_approach",
+      "position_error_m": 0.0001935388270255765,
+      "time_s": 4.099999999999787
+    },
+    {
+      "stage": "peg0_descend",
+      "position_error_m": 0.0002370489205442496,
+      "time_s": 6.100000000000455
+    },
+    {
+      "stage": "peg0_lift",
+      "position_error_m": 0.0002179032807889665,
+      "time_s": 8.600000000000534
+    },
+    {
+      "stage": "peg0_transfer",
+      "position_error_m": 0.00024956526712383763,
+      "time_s": 11.099999999999149
+    },
+    {
+      "stage": "peg0_preinsert",
+      "position_error_m": 0.0001866576917448675,
+      "time_s": 12.899999999998151
+    },
+    {
+      "stage": "peg0_insert",
+      "position_error_m": 7.040766143216404e-05,
+      "time_s": 15.199999999996876
+    },
+    {
+      "stage": "peg0_retreat",
+      "position_error_m": 0.0001811799779757838,
+      "time_s": 17.799999999999077
+    },
+    {
+      "stage": "peg1_approach",
+      "position_error_m": 0.00022671972754372883,
+      "time_s": 21.000000000002988
+    },
+    {
+      "stage": "peg1_descend",
+      "position_error_m": 0.00023880918101869638,
+      "time_s": 23.000000000005432
+    },
+    {
+      "stage": "peg1_lift",
+      "position_error_m": 0.00021893411294678943,
+      "time_s": 25.500000000008487
+    },
+    {
+      "stage": "peg1_transfer",
+      "position_error_m": 0.0002529934815260706,
+      "time_s": 28.000000000011543
+    },
+    {
+      "stage": "peg1_preinsert",
+      "position_error_m": 0.00018779481717061332,
+      "time_s": 29.800000000013743
+    },
+    {
+      "stage": "peg1_insert",
+      "position_error_m": 8.069225592825346e-05,
+      "time_s": 32.10000000001531
+    },
+    {
+      "stage": "peg1_retreat",
+      "position_error_m": 0.00018186606221489983,
+      "time_s": 34.70000000000925
+    },
+    {
+      "stage": "peg2_approach",
+      "position_error_m": 0.000217872242964767,
+      "time_s": 37.90000000000179
+    },
+    {
+      "stage": "peg2_descend",
+      "position_error_m": 0.00023636131304746632,
+      "time_s": 39.89999999999713
+    },
+    {
+      "stage": "peg2_lift",
+      "position_error_m": 0.00021744531390122376,
+      "time_s": 42.3999999999913
+    },
+    {
+      "stage": "peg2_transfer",
+      "position_error_m": 0.00024969661497770265,
+      "time_s": 44.899999999985475
+    },
+    {
+      "stage": "peg2_preinsert",
+      "position_error_m": 0.0001864873820241749,
+      "time_s": 46.69999999998128
+    },
+    {
+      "stage": "peg2_insert",
+      "position_error_m": 6.465830133047815e-05,
+      "time_s": 48.99999999997592
+    }
+  ],
+  "metrics": {
+    "objects": [
+      {
+        "object": "peg_0",
+        "target_hole": 0,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.16974581233029662,
+        "stable_seconds": 34.32000000000174,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "floor_supported": true,
+        "floor_support_force_n": 0.04905157083959117,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "bottom_seated": true,
+        "insertion_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004767564361017171,
+        "tilt_deg": 0.0027168511914537068,
+        "bottom_height_error_m": -1.3532959766580574e-06,
+        "peg_bottom_z_m": 0.003998646704023342,
+        "peg_top_z_m": 0.03899893117266653,
+        "hole_floor_z_m": 0.004,
+        "hole_mouth_z_m": 0.016,
+        "floor_penetration_m": 1.3532959766580574e-06,
+        "insertion_depth_m": 0.01200135329597666,
+        "protrusion_above_mouth_m": 0.022998931172666527,
+        "expected_protrusion_m": 0.023000000000000003,
+        "protrusion_error_m": -1.0688273334759357e-06,
+        "inserted_section_envelope_radius_m": 0.0034774883246231794
+      },
+      {
+        "object": "peg_1",
+        "target_hole": 1,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.17100272116231718,
+        "stable_seconds": 17.44999999999993,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "floor_supported": true,
+        "floor_support_force_n": 0.04904863345128067,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "bottom_seated": true,
+        "insertion_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004782040569770581,
+        "tilt_deg": 0.0017932212977847296,
+        "bottom_height_error_m": -1.2994752075683527e-06,
+        "peg_bottom_z_m": 0.003998700524792432,
+        "peg_top_z_m": 0.03899888829334563,
+        "hole_floor_z_m": 0.004,
+        "hole_mouth_z_m": 0.016,
+        "floor_penetration_m": 1.2994752075683527e-06,
+        "insertion_depth_m": 0.012001299475207568,
+        "protrusion_above_mouth_m": 0.022998888293345628,
+        "expected_protrusion_m": 0.023000000000000003,
+        "protrusion_error_m": -1.1117066543754606e-06,
+        "inserted_section_envelope_radius_m": 0.0034781794122454375
+      },
+      {
+        "object": "peg_2",
+        "target_hole": 2,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.16992381134603643,
+        "stable_seconds": 0.5600000000000003,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "floor_supported": true,
+        "floor_support_force_n": 0.04905196824539396,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "bottom_seated": true,
+        "insertion_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004923740925992348,
+        "tilt_deg": 0.002922463222148276,
+        "bottom_height_error_m": -1.367304134820141e-06,
+        "peg_bottom_z_m": 0.00399863269586518,
+        "peg_top_z_m": 0.038998938689968704,
+        "hole_floor_z_m": 0.004,
+        "hole_mouth_z_m": 0.016,
+        "floor_penetration_m": 1.367304134820141e-06,
+        "insertion_depth_m": 0.01200136730413482,
+        "protrusion_above_mouth_m": 0.022998938689968704,
+        "expected_protrusion_m": 0.023000000000000003,
+        "protrusion_error_m": -1.0613100312993617e-06,
+        "inserted_section_envelope_radius_m": 0.003492760787029807
+      }
+    ],
+    "grasp_success": true,
+    "lift_success": true,
+    "place_success": true,
+    "task_success": true,
+    "episode_length": 497,
+    "object_dropped": false
+  },
+  "config_hash": "3000c4a73e575cf2060fa3a44ce6546d3aa2d7e9ddf0f867481ac4813b62f44d"
+}

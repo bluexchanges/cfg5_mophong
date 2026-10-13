@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "prerequisites": [
+    "scripts/_bootstrap.py",
+    "scripts/download_mcr.py",
+    "src/data/staged_mcr.py",
+    "src/data/cfg5_masked.py",
+    "configs/act/cfg5_robot_all_masked.json",
+    "data/splits/cfg5_robot_all_masked_manifest.json"
+  ],
+  "files": [
+    {
+      "path": "src/models/mcr_act.py",
+      "sha256": "9a89d7612d1fba763742ef9986b2e200f5a945a8934e6bd63ebffb9ba9527257",
+      "required_existing": true,
+      "before_sha256": [
+        "3a62b701292c1329498045797dc2253a06c98881bdefb100cb39f378d5ba26a9"
+      ]
+    },
+    {
+      "path": "src/data/feature_cache.py",
+      "sha256": "92caa1d069e562624b7e5544603b70e3348f7721ad7669929d10658c485d3b1e",
+      "required_existing": true,
+      "before_sha256": [
+        "58efb92a0f390a3bbe0dc46ca0c98f6523af2072b4407032c76a9762d5da5d9f"
+      ]
+    },
+    {
+      "path": "scripts/prepare_mcr_cache.py",
+      "sha256": "d5b0e6f06084c6886487dce1c986fdd1ffb4c5078e88c42efab2dbbcab086a32",
+      "required_existing": true,
+      "before_sha256": [
+        "66e26642d600724fa4314f5076abca806f69e9dffefa355e24e912a2185b30e0"
+      ]
+    },
+    {
+      "path": "scripts/train_mcr_act.py",
+      "sha256": "0af5a10ae20dae19b119bd79ad69b14c0bf2dea434a68ed8202545fec9ab125d",
+      "required_existing": true,
+      "before_sha256": [
+        "9656340808e9bc37c1c367690d99c3dee841b374d95eb47f0a5ff5b5474b50e9"
+      ]
+    },
+    {
+      "path": "scripts/check_mcr_frozen.py",
+      "sha256": "49b126c81ac9c01a4bb5766a7a6e407198a10d6453a98a3ac22aa2f75da81d97",
+      "required_existing": false,
+      "before_sha256": [
+        "f12e03bd7fc94a1fa4d7755532c7c6058312fdbf84c4e70963d7a400075bc9eb"
+      ]
+    },
+    {
+      "path": "scripts/report_cfg5_cameras.py",
+      "sha256": "fe072decaf3b1290770a0f04a92f052700ce7ed73661126b96df09bebf067b26",
+      "required_existing": false
+    },
+    {
+      "path": "scripts/evaluate_mcr_frozen.py",
+      "sha256": "f82bfb10a7a48f0709e2fec692b66dfb15a2a864d0cd5f05c3b346281eb2a243",
+      "required_existing": false
+    },
+    {
+      "path": "scripts/slurm/cfg5_mcr_preflight.sbatch",
+      "sha256": "6bda2203a10e636b18eef625a6b3c02c37640140364558d5b70a3bd225729ea8",
+      "required_existing": false,
+      "before_sha256": [
+        "da5f9e9bc8c20c26141555f572be3f866cb89b76ec699543ca090b270172fc6b"
+      ]
+    },
+    {
+      "path": "scripts/slurm/cfg5_mcr_features.sbatch",
+      "sha256": "311d865d9cfc7defbf1192c1c53773f68f80a2cab63e6c5f788faca2618a2cc8",
+      "required_existing": false,
+      "before_sha256": [
+        "3393460ae70e2a74b440234f2d34ef528ec9084d3d34efdffcb32e8613a3fd70"
+      ]
+    },
+    {
+      "path": "scripts/slurm/cfg5_mcr_joint_train.sbatch",
+      "sha256": "0cc6e2ad271a61a95d731f4ef0734b577078874a816f3159b413f983d31e1234",
+      "required_existing": false,
+      "before_sha256": [
+        "97a75ac253305d5b90a8742baf002bb51fe7dfd4b40c1dc6a71326bc3a14269e"
+      ]
+    },
+    {
+      "path": "tests/test_camera_dropout_mcr.py",
+      "sha256": "6629968ef2aa33cf9a1348d4b3bd4a0347ce811c9478550add37377268e8af79",
+      "required_existing": false
+    },
+    {
+      "path": "docs/CFG5_FROZEN_THREE_SPLITS_DROPOUT_VI.md",
+      "sha256": "4abb36c6252f1ef52605c74c9315c26f006d75ebbd94c92b79b5ea4443d9c541",
+      "required_existing": false
+    },
+    {
+      "path": "docs/STAGED_MCR_CACHE_VI.md",
+      "sha256": "7281b345362e6a314e5d0021f8d0acf14c2d8070bc6504399d46e2c365b7c364",
+      "required_existing": false,
+      "before_sha256": [
+        "05376302962cf1735e407c4e35979df191adfb618c393d5a4ecfcbae38d04f44"
+      ]
+    },
+    {
+      "path": "docs/MCR_CHECK_AND_CAMERA_REPORT_VI.md",
+      "sha256": "15a7b099d2d171766ec5c79f91f0fc84d843f54d7565fc6f47cd967c92611730",
+      "required_existing": false,
+      "before_sha256": [
+        "07dd26a4d1c753f7737269eec1b2498085b182745f404f7e84330226243dc73d"
+      ]
+    }
+  ]
+}

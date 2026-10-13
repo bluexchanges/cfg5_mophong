@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "episode": "pick_place_000042",
+      "frames": 4,
+      "shape": [
+        4,
+        8,
+        360,
+        640,
+        3
+      ],
+      "target_matches_recorded_command": true,
+      "smoke_only": true
+    },
+    {
+      "episode": "pick_place_000487",
+      "frames": 4,
+      "shape": [
+        4,
+        8,
+        360,
+        640,
+        3
+      ],
+      "target_matches_recorded_command": true,
+      "smoke_only": true
+    }
+  ],
+  "full_preprocess_run": false
+}

@@ -1,0 +1,193 @@
+{
+  "mode": "scripted_controller_privileged_state",
+  "act_model_used": false,
+  "checkpoint": null,
+  "seed": 42,
+  "sim_time_s": 49.69999999997429,
+  "failure": null,
+  "stages": [
+    {
+      "stage": "peg0_approach",
+      "position_error_m": 0.0001933137813707136,
+      "time_s": 4.099999999999787
+    },
+    {
+      "stage": "peg0_descend",
+      "position_error_m": 0.0002370158384502087,
+      "time_s": 6.100000000000455
+    },
+    {
+      "stage": "peg0_lift",
+      "position_error_m": 0.00021787585398732662,
+      "time_s": 8.600000000000534
+    },
+    {
+      "stage": "peg0_transfer",
+      "position_error_m": 0.0002493782032240539,
+      "time_s": 11.099999999999149
+    },
+    {
+      "stage": "peg0_preinsert",
+      "position_error_m": 0.00018675919595788563,
+      "time_s": 12.899999999998151
+    },
+    {
+      "stage": "peg0_insert",
+      "position_error_m": 8.315597096547958e-05,
+      "time_s": 15.199999999996876
+    },
+    {
+      "stage": "peg0_retreat",
+      "position_error_m": 0.00018120580707468116,
+      "time_s": 17.799999999999077
+    },
+    {
+      "stage": "peg1_approach",
+      "position_error_m": 0.00022454395486169376,
+      "time_s": 21.000000000002988
+    },
+    {
+      "stage": "peg1_descend",
+      "position_error_m": 0.00023832634402631345,
+      "time_s": 23.000000000005432
+    },
+    {
+      "stage": "peg1_lift",
+      "position_error_m": 0.00021868056960934508,
+      "time_s": 25.500000000008487
+    },
+    {
+      "stage": "peg1_transfer",
+      "position_error_m": 0.0002500749904210521,
+      "time_s": 28.000000000011543
+    },
+    {
+      "stage": "peg1_preinsert",
+      "position_error_m": 0.00018770146190044982,
+      "time_s": 29.800000000013743
+    },
+    {
+      "stage": "peg1_insert",
+      "position_error_m": 8.596163775113355e-05,
+      "time_s": 32.10000000001531
+    },
+    {
+      "stage": "peg1_retreat",
+      "position_error_m": 0.00018175905452838328,
+      "time_s": 34.70000000000925
+    },
+    {
+      "stage": "peg2_approach",
+      "position_error_m": 0.0002194460628061204,
+      "time_s": 37.90000000000179
+    },
+    {
+      "stage": "peg2_descend",
+      "position_error_m": 0.00023654203249970482,
+      "time_s": 39.89999999999713
+    },
+    {
+      "stage": "peg2_lift",
+      "position_error_m": 0.00021755191085121863,
+      "time_s": 42.3999999999913
+    },
+    {
+      "stage": "peg2_transfer",
+      "position_error_m": 0.0002511961501339149,
+      "time_s": 44.899999999985475
+    },
+    {
+      "stage": "peg2_preinsert",
+      "position_error_m": 0.00018669645258861503,
+      "time_s": 46.69999999998128
+    },
+    {
+      "stage": "peg2_insert",
+      "position_error_m": 9.323169012081442e-05,
+      "time_s": 48.99999999997592
+    }
+  ],
+  "metrics": {
+    "objects": [
+      {
+        "object": "peg_0",
+        "target_hole": 0,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.16948584926787932,
+        "stable_seconds": 34.34000000000174,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004827296964057523,
+        "tilt_deg": 0.0011336098345958935,
+        "bottom_height_error_m": -1.260766727474369e-06
+      },
+      {
+        "object": "peg_1",
+        "target_hole": 1,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.16933886329794415,
+        "stable_seconds": 17.46999999999993,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004919408223357927,
+        "tilt_deg": 0.0011962819075493185,
+        "bottom_height_error_m": -1.2666334635808366e-06
+      },
+      {
+        "object": "peg_2",
+        "target_hole": 2,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.17086280578328464,
+        "stable_seconds": 0.5800000000000003,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004920073247221911,
+        "tilt_deg": 0.003485222822960131,
+        "bottom_height_error_m": -1.4006140944596707e-06
+      }
+    ],
+    "grasp_success": true,
+    "lift_success": true,
+    "place_success": true,
+    "task_success": true,
+    "episode_length": 497,
+    "object_dropped": false
+  },
+  "config_hash": "9922d6f175a034f5f1357972ac7341be57bf81031b6b8ed070d05723bbdd5afa"
+}

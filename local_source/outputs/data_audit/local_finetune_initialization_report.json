@@ -1,0 +1,27 @@
+{
+  "method": "pretrained_weights_fresh_optimizer",
+  "checkpoint_sha256": "7567df2b01291fbd8f096cce5693bde542fbfc9709b9d5b2d7f18d722863ac9e",
+  "checkpoint_epoch": 58,
+  "source_contract": {
+    "model_config_hash": "8c0d868b8e49d9c50f9e72c3e3d6902e24aa16b2694b43d2bb02b6a7e1940b56",
+    "data_config_hash": "de250bbb344778b840d2850597f0a2b514b70ca2f4359ac9f7f37d007bdc1165",
+    "split_hash": "e9bbc5170d36be05b55a2b99a8b9bc69e68cf675e641d7d48772d04e97a9347d",
+    "stats_hash": "daee3c381fb9009be5666e7a8ea776aef21bced317f8648cb4020c2a7350aae4",
+    "manifest_hash": "2d43a772b8f3e6dbf0fccb1f51cae4ed4912ae40bc02f9fc0afa5a6135e80915",
+    "camera_serials": [
+      "036422060215",
+      "037522062165",
+      "104122061850",
+      "104122063678",
+      "104422070042",
+      "104422070044",
+      "105422061350",
+      "135122079702"
+    ],
+    "representation": "rh20t_aligned_tcp_base_wxyz_gripper_m",
+    "upstream_commit": "107ce1287a46be3a1a7ea954f8bbdec3bb103288"
+  },
+  "target_action_semantics": "recorded command at observation tick",
+  "parameters": 83873929,
+  "strict_full_state_load": true
+}

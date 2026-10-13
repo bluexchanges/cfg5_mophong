@@ -1,0 +1,14 @@
+{
+  "mode": "scripted_controller_privileged_state",
+  "act_model_used": false,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "episodes": 3,
+  "successful_episodes": 3,
+  "success_rate": 1.0,
+  "config_hash": "3000c4a73e575cf2060fa3a44ce6546d3aa2d7e9ddf0f867481ac4813b62f44d",
+  "scope": "engineering smoke checks; not ACT or statistical generalization evidence"
+}

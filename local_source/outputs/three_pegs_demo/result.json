@@ -1,0 +1,378 @@
+{
+  "mode": "scripted_controller_privileged_state",
+  "act_model_used": false,
+  "checkpoint": null,
+  "seed": 42,
+  "sim_time_s": 49.69999999997429,
+  "failure": null,
+  "stages": [
+    {
+      "stage": "peg0_approach",
+      "position_error_m": 0.0001933137813707136,
+      "time_s": 4.099999999999787
+    },
+    {
+      "stage": "peg0_descend",
+      "position_error_m": 0.0002370158384502087,
+      "time_s": 6.100000000000455
+    },
+    {
+      "stage": "peg0_lift",
+      "position_error_m": 0.00021787585398732662,
+      "time_s": 8.600000000000534
+    },
+    {
+      "stage": "peg0_transfer",
+      "position_error_m": 0.0002493782032240539,
+      "time_s": 11.099999999999149
+    },
+    {
+      "stage": "peg0_preinsert",
+      "position_error_m": 0.00018675919595788563,
+      "time_s": 12.899999999998151
+    },
+    {
+      "stage": "peg0_insert",
+      "position_error_m": 8.315597096547958e-05,
+      "time_s": 15.199999999996876
+    },
+    {
+      "stage": "peg0_retreat",
+      "position_error_m": 0.00018120580707468116,
+      "time_s": 17.799999999999077
+    },
+    {
+      "stage": "peg1_approach",
+      "position_error_m": 0.00022454395486169376,
+      "time_s": 21.000000000002988
+    },
+    {
+      "stage": "peg1_descend",
+      "position_error_m": 0.00023832634402631345,
+      "time_s": 23.000000000005432
+    },
+    {
+      "stage": "peg1_lift",
+      "position_error_m": 0.00021868056960934508,
+      "time_s": 25.500000000008487
+    },
+    {
+      "stage": "peg1_transfer",
+      "position_error_m": 0.0002500749904210521,
+      "time_s": 28.000000000011543
+    },
+    {
+      "stage": "peg1_preinsert",
+      "position_error_m": 0.00018770146190044982,
+      "time_s": 29.800000000013743
+    },
+    {
+      "stage": "peg1_insert",
+      "position_error_m": 8.596163775113355e-05,
+      "time_s": 32.10000000001531
+    },
+    {
+      "stage": "peg1_retreat",
+      "position_error_m": 0.00018175905452838328,
+      "time_s": 34.70000000000925
+    },
+    {
+      "stage": "peg2_approach",
+      "position_error_m": 0.0002194460628061204,
+      "time_s": 37.90000000000179
+    },
+    {
+      "stage": "peg2_descend",
+      "position_error_m": 0.00023654203249970482,
+      "time_s": 39.89999999999713
+    },
+    {
+      "stage": "peg2_lift",
+      "position_error_m": 0.00021755191085121863,
+      "time_s": 42.3999999999913
+    },
+    {
+      "stage": "peg2_transfer",
+      "position_error_m": 0.0002511961501339149,
+      "time_s": 44.899999999985475
+    },
+    {
+      "stage": "peg2_preinsert",
+      "position_error_m": 0.00018669645258861503,
+      "time_s": 46.69999999998128
+    },
+    {
+      "stage": "peg2_insert",
+      "position_error_m": 9.323169012081442e-05,
+      "time_s": 48.99999999997592
+    }
+  ],
+  "metrics": {
+    "objects": [
+      {
+        "object": "peg_0",
+        "target_hole": 0,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.16948584926787932,
+        "stable_seconds": 34.34000000000174,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004827296964057523,
+        "tilt_deg": 0.0011336098345958935,
+        "bottom_height_error_m": -1.260766727474369e-06
+      },
+      {
+        "object": "peg_1",
+        "target_hole": 1,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.16933886329794415,
+        "stable_seconds": 17.46999999999993,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004919408223357927,
+        "tilt_deg": 0.0011962819075493185,
+        "bottom_height_error_m": -1.2666334635808366e-06
+      },
+      {
+        "object": "peg_2",
+        "target_hole": 2,
+        "grasp_success": true,
+        "lift_success": true,
+        "place_success": true,
+        "task_success": true,
+        "object_dropped": false,
+        "object_displacement_m": 0.17086280578328464,
+        "stable_seconds": 0.5800000000000003,
+        "contact_left_right": [
+          false,
+          false
+        ],
+        "released": true,
+        "failure_reason": [],
+        "contained": true,
+        "height_ok": true,
+        "tilt_ok": true,
+        "stable": true,
+        "radial_error_m": 0.0004920073247221911,
+        "tilt_deg": 0.003485222822960131,
+        "bottom_height_error_m": -1.4006140944596707e-06
+      }
+    ],
+    "grasp_success": true,
+    "lift_success": true,
+    "place_success": true,
+    "task_success": true,
+    "episode_length": 497,
+    "object_dropped": false
+  },
+  "config_hash": "9922d6f175a034f5f1357972ac7341be57bf81031b6b8ed070d05723bbdd5afa",
+  "config": {
+    "schema_version": 1,
+    "task": "three_color_matched_pegs",
+    "robot_xml": "mujoco/models/franka_emika_panda/panda.xml",
+    "scene_xml": "mujoco/scenes/panda_three_pegs.xml",
+    "camera_rig": "configs/mujoco/cfg5_camera_rig.json",
+    "data_config": "configs/data/cfg5_base8.json",
+    "timestep_s": 0.001,
+    "control_hz": 10,
+    "evaluation_hz": 100,
+    "solver_iterations": 100,
+    "table_surface_z_m": 0.0,
+    "table_center_xy_m": [
+      0.45,
+      0.0
+    ],
+    "table_half_size_m": [
+      0.4,
+      0.4,
+      0.025
+    ],
+    "home_joints_rad": [
+      0.0,
+      -0.4,
+      0.0,
+      -2.2,
+      0.0,
+      1.8,
+      0.7853981634
+    ],
+    "tcp_in_hand_pos_m": [
+      0.0,
+      0.0,
+      0.1034
+    ],
+    "tcp_in_hand_quat_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "tcp_mapping_note": "Virtual aligned TCP at Panda grasp centre, axes of Menagerie hand. Matches the policy base/xyz/wxyz convention; physical RH20T factory EE offset not independently calibrated.",
+    "workspace_min_m": [
+      0.22,
+      -0.28,
+      0.012
+    ],
+    "workspace_max_m": [
+      0.72,
+      0.28,
+      0.65
+    ],
+    "gripper_width_range_m": [
+      0.0,
+      0.08
+    ],
+    "gripper_force_limit_n": 20.0,
+    "finger_friction": [
+      1.2,
+      0.01,
+      0.0001
+    ],
+    "gravity_compensation": true,
+    "peg_radius_m": 0.003,
+    "peg_length_m": 0.035,
+    "peg_mass_kg": 0.005,
+    "peg_initial_xy_m": [
+      [
+        0.36,
+        -0.075
+      ],
+      [
+        0.36,
+        0.0
+      ],
+      [
+        0.36,
+        0.075
+      ]
+    ],
+    "peg_colors_rgba": [
+      [
+        0.9,
+        0.12,
+        0.1,
+        1
+      ],
+      [
+        0.1,
+        0.6,
+        0.24,
+        1
+      ],
+      [
+        0.1,
+        0.3,
+        0.95,
+        1
+      ]
+    ],
+    "initial_xy_jitter_m": 0.001,
+    "mold_center_xy_m": [
+      0.53,
+      0.0
+    ],
+    "hole_offsets_xy_m": [
+      [
+        0,
+        -0.075
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0.075
+      ]
+    ],
+    "hole_radius_m": 0.0035,
+    "hole_depth_m": 0.012,
+    "hole_wall_segments": 32,
+    "mold_cell_half_xy_m": [
+      0.02,
+      0.0375
+    ],
+    "mold_floor_thickness_m": 0.004,
+    "contact_solref": [
+      0.003,
+      1.0
+    ],
+    "contact_solimp": [
+      0.95,
+      0.99,
+      0.0001
+    ],
+    "placement_margin_m": 0.0,
+    "drop_table_height_tolerance_m": 0.001,
+    "seated_height_tolerance_m": 0.0006,
+    "tilt_tolerance_deg": 3.0,
+    "stable_linear_speed_m_s": 0.005,
+    "stable_angular_speed_rad_s": 0.1,
+    "stable_seconds": 0.5,
+    "lift_height_m": 0.02,
+    "grasp_contact_force_n": 0.005,
+    "grasp_hold_seconds": 0.1,
+    "release_clearance_m": 0.006,
+    "episode_seconds": 70.0,
+    "reset_settle_seconds": 0.25,
+    "controller": {
+      "ik_iterations": 80,
+      "ik_damping": 0.002,
+      "ik_position_tolerance_m": 5e-05,
+      "ik_rotation_tolerance_rad": 0.0005,
+      "ik_max_joint_delta_rad": 0.12,
+      "max_joint_speed_rad_s": 1.0,
+      "max_translation_per_step_m": 0.025
+    },
+    "demo": {
+      "seed": 42,
+      "down_quaternion_wxyz": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "grasp_height_above_surface_m": 0.026,
+      "hover_z_m": 0.16,
+      "open_width_m": 0.04,
+      "closed_width_m": 0.001,
+      "move_speed_m_s": 0.08,
+      "insertion_speed_m_s": 0.008,
+      "insertion_entry_clearance_m": 0.004,
+      "waypoint_settle_seconds": 0.3,
+      "grasp_seconds": 0.5,
+      "release_seconds": 0.6
+    },
+    "render": {
+      "width": 640,
+      "height": 360,
+      "preview_width": 1280,
+      "preview_height": 720,
+      "video_fps": 10
+    }
+  }
+}

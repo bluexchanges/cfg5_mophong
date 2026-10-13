@@ -1,0 +1,22 @@
+{
+  "accepted_episodes": 57,
+  "rejected_episodes": 42,
+  "split_counts": {
+    "train": 47,
+    "val": 5,
+    "test": 5
+  },
+  "accepted_per_task": {
+    "4": 12,
+    "8": 14,
+    "13": 10,
+    "14": 12,
+    "17": 9
+  },
+  "timeline_steps": 5473,
+  "potential_samples": 4789,
+  "samples_with_full_chunk": 275,
+  "estimated_images_bytes": 30263500800,
+  "manifest_hash": "5eb62fd272c77f2a9af5e919fcd83bac48d86696c8458253cb80ceb6e5775dac",
+  "decoded_in_this_command": false
+}

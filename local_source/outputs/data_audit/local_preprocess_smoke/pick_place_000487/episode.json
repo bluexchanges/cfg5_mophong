@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "episode": "pick_place_000487",
+  "steps": 4,
+  "config_hash": "720ab7774b7c85f70049dc0163313d8ea05a641a6073082aea1b3fbb458b9a5f",
+  "split_hash": "local_sample_inspection_only",
+  "camera_serials": [
+    "036422060215",
+    "037522062165",
+    "104122061850",
+    "104122063678",
+    "104422070042",
+    "104422070044",
+    "105422061350",
+    "135122079702"
+  ],
+  "source_fingerprint": "6a7f9380749bb4b7ab78e4652b02147c2d78529fda8230b92d14f272c6d0abff",
+  "representation": "tcp_base_xyz_wxyz_gripper_width_m",
+  "smoke_only": true,
+  "action_target_offset": 0,
+  "action_semantics": "commanded TCP base xyz/wxyz/gripper metres at observation tick; not measured future pose",
+  "quality": {
+    "steps": 503,
+    "segments": 1,
+    "videos": {
+      "036422060215": {
+        "frames": 503,
+        "width": 640,
+        "height": 360
+      },
+      "037522062165": {
+        "frames": 503,
+        "width": 640,
+        "height": 360
+      },
+      "104122061850": {
+        "frames": 503,
+        "width": 640,
+        "height": 360
+      },
+      "104122063678": {
+        "frames": 503,
+        "width": 640,
+        "height": 360
+      },
+      "104422070042": {
+        "frames": 503,
+        "width": 640,
+        "height": 360
+      },
+      "104422070044": {
+        "frames": 503,
+        "width": 640,
+        "height": 360
+      },
+      "105422061350": {
+        "frames": 503,
+        "width": 640,
+        "height": 360
+      },
+      "135122079702": {
+        "frames": 503,
+        "width": 640,
+        "height": 360
+      }
+    }
+  }
+}
